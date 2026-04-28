@@ -4,6 +4,8 @@ import { TranslationProvider } from '../context/TranslationContext';
 import Navbar from '../components/Navbar';
 import MainFooter from '../components/Footer';
 import Script from 'next/script';
+import CookieConsentProvider from "../components/cookie/CookieConsentProvider.jsx";
+
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -63,6 +65,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <MainFooter />
+          <CookieConsentProvider />
         </TranslationProvider>
       </body>
     </html>

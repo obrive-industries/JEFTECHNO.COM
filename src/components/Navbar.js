@@ -449,12 +449,12 @@ function ServicesComponent() {
 
    const services = [
   {
-    icon: '/nav-earthing-icon2.png',
+    icon: '/nav-earthing-icon3.png',
     text: 'EARTHING STUDIES',
     path: '/earthing-studies',
   },
   {
-    icon: '/nav-lightning-protection-icon2.png',
+    icon: '/nav-esa-icon3.png',
     text: 'LIGHTNING PROTECTION STUDIES',
     path: '/lightning-protection-studies',
   },
@@ -472,7 +472,7 @@ function ServicesComponent() {
 
   const services2 = [
   {
-    icon: '/nav-esa-icon2.png',
+    icon: '/nav-esa-icon3.png',
     text: 'ESA',
     path: '/earthing-studies',
   },
