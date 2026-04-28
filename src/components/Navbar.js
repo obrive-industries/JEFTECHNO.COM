@@ -576,7 +576,7 @@ function ServicesComponent() {
 
             {/* ===== SERVICES 1 ===== */}
             <div
-              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-center
+              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-start
               transition-all duration-300
               ${isHovered ? "opacity-100 z-10" : "opacity-0 pointer-events-none z-0"}`}
             >
@@ -587,7 +587,7 @@ function ServicesComponent() {
 
             {/* ===== SERVICES 2 ===== */}
             <div
-              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-center
+              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-start
               transition-all duration-300
               ${isHovered2 ? "opacity-100 z-10" : "opacity-0 pointer-events-none z-0"}`}
             >
@@ -598,7 +598,7 @@ function ServicesComponent() {
 
             {/* ===== SERVICES 3 ===== */}
             <div
-              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-center
+              className={`absolute inset-0 grid grid-cols-2 gap-x-20 gap-y-10 content-start
               transition-all duration-300
               ${isHovered3 ? "opacity-100 z-10" : "opacity-0 pointer-events-none z-0"}`}
             >
