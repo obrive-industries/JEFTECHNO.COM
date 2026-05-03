@@ -118,26 +118,21 @@ const Navbar = () => {
     exit: { opacity: 0, y: -50, transition: { duration: 0.6, ease: "easeIn" } },
   };
 
-  const menuVariants = {
+  const dropdownVariants = {
     hidden: {
       opacity: 0,
-      transition: {
-        when: "afterChildren",
-      },
+      y: -20,
+      transition: { duration: 0.3, ease: "easeOut" },
     },
     visible: {
       opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.15,
-      },
+      y: 0,
+      transition: { duration: 0.3, ease: "easeOut" },
     },
     exit: {
       opacity: 0,
-      transition: {
-        when: "afterChildren",
-        staggerChildren: 0.15,
-      },
+      y: -20,
+      transition: { duration: 0.3, ease: "easeIn" },
     },
   };
 
@@ -307,30 +302,47 @@ const Navbar = () => {
       </div>
 
       {/* Conditionally Render Sections */}
-      {activeSection === "About" && (
-        <div
-          onMouseEnter={() => handleMenuHover("About")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <AboutSection />
-        </div>
-      )}
-      {activeSection === "Our Business" && (
-        <div
-          onMouseEnter={() => handleMenuHover("Our Business")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <ServicesComponent />
-        </div>
-      )}
-      {activeSection === "Our Industries" && (
-        <div
-          onMouseEnter={() => handleMenuHover("Our Industries")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <IndustriesComponent />
-        </div>
-      )}
+      <AnimatePresence>
+        {activeSection === "About" && (
+          <motion.div
+            key="about"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={dropdownVariants}
+            onMouseEnter={() => handleMenuHover("About")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <AboutSection />
+          </motion.div>
+        )}
+        {activeSection === "Our Business" && (
+          <motion.div
+            key="business"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={dropdownVariants}
+            onMouseEnter={() => handleMenuHover("Our Business")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <ServicesComponent />
+          </motion.div>
+        )}
+        {activeSection === "Our Industries" && (
+          <motion.div
+            key="industries"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={dropdownVariants}
+            onMouseEnter={() => handleMenuHover("Our Industries")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <IndustriesComponent />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Mobile Navbar Content */}
       <div
