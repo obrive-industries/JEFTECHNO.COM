@@ -46,8 +46,7 @@ function MainFooter() {
         { name: 'Earthing Studies', path: '/earthing-studies' },
         { name: 'LPS System Studies', path: '/lightning-protection-studies' },
         { name: 'Instrumentation Studies', path: '/instrumentation-earthing-studies' },
-        { name: 'Root Cause Analysis', path: '/root-cause-analysis' },
-        { name: 'EMI EMC', path: '/emi-emc' },
+        
 
     ];
 
@@ -111,7 +110,7 @@ function Footer() {
                     </div>
                     <div className="sm:text-xs text-[10px] card-slider-footer mx-auto lg:mx-0 flex gap-0 tracking-wide max-md:max-w-full">
                         Copyright 2025. All Rights Reserved © jeftechno | Designed by
-                        <a className=' ml-[5px]' href="https://obnov.in" target="_blank" rel="noopener noreferrer"><img src="https://obnov.in/MainObnovImg.png" alt="ObnovLogo" className='h-4' /></a>
+                        <a className=' ml-[5px]' href="https://obnov.in" target="_blank" rel="noopener noreferrer"><img src="../FooterLogo/footerbird.png" alt="ObnovLogo" className='h-4' /></a>
                     </div>
                 </div>
             </div>
