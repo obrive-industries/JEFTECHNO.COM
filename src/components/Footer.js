@@ -122,7 +122,7 @@ function Footer() {
                     </div>
                     <div className="sm:text-xs text-[10px] card-slider-footer mx-auto lg:mx-0 flex gap-0 tracking-wide max-md:max-w-full">
                        <p className="text-xs text-gray-400">
-  CThis site is protected by reCaptcha and the google{" "}
+  This site is protected by reCaptcha and the google{" "}
   <span>
     <Link href="/privacypolicy" className="text-white transition text-sm">
       Privacy Policy
