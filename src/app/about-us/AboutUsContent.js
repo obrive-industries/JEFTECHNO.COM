@@ -12,6 +12,8 @@ const AboutUsContent = () => {
   const [showPanel, setShowPanel] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+const pauseRef = useRef(false);
   const intervalRef = useRef(null);
   const progressRef = useRef(null);
   const TAB_DURATION = 5000;
@@ -39,27 +41,29 @@ const AboutUsContent = () => {
   }, [showPanel]);
 
   const startProgress = (tabIndex) => {
-    setProgress(0);
-    clearInterval(intervalRef.current);
-    clearInterval(progressRef.current);
+  clearInterval(progressRef.current);
 
-    const startTime = Date.now();
+  let currentProgress = 0;
 
-    progressRef.current = setInterval(() => {
-      const elapsed = Date.now() - startTime;
-      const pct = Math.min((elapsed / TAB_DURATION) * 100, 100);
-      setProgress(pct);
-    }, 16);
+  progressRef.current = setInterval(() => {
+    if (pauseRef.current) return;
 
-    intervalRef.current = setTimeout(() => {
+    currentProgress += 100 / (TAB_DURATION / 16);
+
+    setProgress(currentProgress);
+
+    if (currentProgress >= 100) {
       clearInterval(progressRef.current);
+
       setActiveTab((prev) => {
         const next = (prev + 1) % whatWeDoData.length;
+        setProgress(0);
         startProgress(next);
         return next;
       });
-    }, TAB_DURATION);
-  };
+    }
+  }, 16);
+};
 
   useEffect(() => {
     startProgress(0);
@@ -68,6 +72,9 @@ const AboutUsContent = () => {
       clearInterval(progressRef.current);
     };
   }, []);
+  useEffect(() => {
+  pauseRef.current = isPaused;
+}, [isPaused]);
 
   const handleTabClick = (index) => {
     clearTimeout(intervalRef.current);
@@ -277,7 +284,7 @@ const AboutUsContent = () => {
       <p className="text-[20px] font-normal leading-[150%] text-white font-montserrat text-center w-full max-w-[1255px]">
         JEF is a specialist electrical engineering company with an
         uncompromising focus on the safety and reliability of electrical
-        systems. Founded in Bengaluru in 1994, we have built our global
+        systems. Founded in 1994, we have built our global
         presence the hard way — one technically demanding project at a
         time, in industries and environments where the standard of
         engineering is determined by the consequences of getting it wrong.
@@ -325,7 +332,7 @@ const AboutUsContent = () => {
 
     <div className="flex flex-col gap-8 px-16">
       <p className="text-[20px] font-light leading-[150%] text-gray-600 font-montserrat">
-        Three decades of this work, across 30 countries and 10k customers,
+        Three decades of this work, across 30+ countries and 10k+ customers,
         have produced something that cannot be replicated quickly: a depth
         of methodology, a body of proprietary technology, and a team
         capable of operating at the frontier of what electrical
@@ -345,7 +352,9 @@ const AboutUsContent = () => {
       WHAT WE DO
     </h1>
 
-    <div className="relative w-full max-w-[900px] min-h-[253px] mb-[100px]">
+    <div className="relative w-full max-w-[900px] min-h-[253px] mb-[100px]"
+     onMouseEnter={() => setIsPaused(true)}
+  onMouseLeave={() => setIsPaused(false)}>
       {whatWeDoData.map((tab, index) => (
         <p
           key={index}
@@ -363,6 +372,7 @@ const AboutUsContent = () => {
     <div className="flex flex-wrap gap-[64px] w-full max-w-[906px]">
       {whatWeDoData.map((tab, index) => (
         <button
+        
           key={index}
           onClick={() => handleTabClick(index)}
           className="flex flex-col items-start group cursor-pointer w-[259px]" 

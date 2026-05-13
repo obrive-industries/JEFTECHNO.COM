@@ -2706,7 +2706,7 @@ function IndustriesSection() {
       <div className="pt-[62px] pl-[100px] relative z-10">
         {/* HEADING */}
         <h2 className="text-[32px] font-bold tracking-[2px] uppercase text-[#C02429] leading-[150%]">
-          Our Industries
+           Industries We Serve
         </h2>
 
         {/* BUTTONS */}

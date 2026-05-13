@@ -350,7 +350,7 @@ tagDescriptions: [
     return (
       <div
         style={{
-          backgroundColor: "#F9F7F2",
+          backgroundColor: "#1B1818",
           minHeight: "980px",
           fontFamily: "Montserrat, sans-serif",
           overflowX: "hidden", // ✅ FIXED
@@ -400,7 +400,7 @@ tagDescriptions: [
 >
             {/* Paragraphs */}
             <div
-              style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+              style={{ display: "flex", flexDirection: "column", gap: "24px", }}
             >
               {React.Children.map(page.content.props.children, (child, i) => {
                 if (child.type === "p") {
@@ -411,7 +411,7 @@ tagDescriptions: [
                         fontSize: "20px",
                         fontWeight: 400,
                         lineHeight: "150%",
-                        color: "#1a1a1a",
+                        color: "white",
                       }}
                     >
                       {child.props.children}
@@ -497,8 +497,8 @@ tagDescriptions: [
                   : "transparent",
               color:
                 activeTag === `${si}-${ti}`
-                  ? "#fff"
-                  : "#333",
+                  ? "white"
+                  : "white",
             }}
           >
             {tag}
@@ -584,6 +584,7 @@ tagDescriptions: [
                         fontWeight: 400,
                         lineHeight: "150%",
                         marginTop: "20px",
+                        color: "white",
                       }}
                     >
                       {sub.footer}
@@ -654,7 +655,7 @@ tagDescriptions: [
                     letterSpacing: "1.49px",
                     textTransform: "uppercase",
                     fontWeight: activePage === index ? 600 : 400,
-                    color: activePage === index ? "#1a1a1a" : "#888",
+                    color: activePage === index ? "white" : "#888",
                     lineHeight: 1.5,
                     whiteSpace: "pre-line",
                   }}
@@ -1039,7 +1040,7 @@ tagDescriptions: [
     <>
       {/* Landing Img Section */}
 
-      <section className="flex overflow-hidden h-screen flex-col bg-white">
+      <section className="flex overflow-hidden h-screen flex-col bg-[#1B1818]">
         <div className="flex relative flex-col w-full h-screen max-md:pb-24 max-md:max-w-full">
           <video
             autoPlay
@@ -1076,9 +1077,9 @@ tagDescriptions: [
 
       {/* Contact Us section */}
 
-      <section className="flex h-auto -mb-11 md:mb-0 overflow-hidden flex-col bg-[#F9F7F2]">
+      <section className="flex h-auto -mb-11 md:mb-0 overflow-hidden flex-col bg-[#1B1818]">
         <div className="flex overflow-hidden flex-col w-full bg-white max-md:max-w-full" />
-        <nav className="flex flex-col justify-center py-6 px-24 w-full bg-[#F9F7F2] min-h-[64px] max-md:px-5 max-md:max-w-full">
+        <nav className="flex flex-col justify-center py-6 px-24 w-full  min-h-[64px] max-md:px-5 max-md:max-w-full">
           <div className="flex w-full max-md:max-w-full">
             <div className="flex items-center h-full min-w-[240px]">
               {navItems.map((item, index) => (
@@ -1110,7 +1111,7 @@ tagDescriptions: [
             </div>
           </div>
         </nav>
-        <header className="flex flex-col items-center justify-center text-center gap-[32px] w-full px-5 mx-auto mt-[80px]">
+        <header className="flex flex-col items-center justify-center text-center gap-[32px] w-full px-5 mx-auto mt-[80px] bg-[#1B1818]">
           {/* Logo */}
           <img
             src="./SerivePage/CLPS img.png"
@@ -1124,7 +1125,7 @@ tagDescriptions: [
           </h1>
 
           {/* Paragraph 1 */}
-          <p className="text-[20px] font-normal leading-[150%] text-[#4B4B4B] font-montserrat max-w-[1200px]">
+          <p className="text-[20px] font-normal leading-[150%] text-white  font-montserrat max-w-[1200px]">
             Lightning strikes are a persistent threat to structures, equipment,
             and people. The damage they cause is not limited to the point of
             impact — a strike on or near a facility can propagate destructive
@@ -1133,7 +1134,7 @@ tagDescriptions: [
           </p>
 
           {/* Paragraph 2 */}
-          <p className="text-[20px] font-normal leading-[150%] text-[#4B4B4B] font-montserrat max-w-[1200px]">
+          <p className="text-[20px] font-normal leading-[150%] text-white font-montserrat max-w-[1200px]">
             A well-designed lightning protection system does not prevent
             lightning from occurring. Its purpose is to give the electrical
             energy of a strike a controlled, predictable path to earth — one
