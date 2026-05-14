@@ -340,7 +340,7 @@ export default function BlogsSection() {
 
 function BlogCard({ imageSrc, title, path }) {
   return (
-    <article className="w-[400px] ">
+    <article className="w-full max-w-[400px] mx-auto">
       {/* IMAGE */}
       <div className="w-full h-[290px] overflow-hidden">
         <img
