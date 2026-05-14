@@ -368,9 +368,7 @@ const FAQComponent = () => {
         <section className="flex overflow-hidden relative flex-col">
             <div className="flex absolute inset-0 z-0 flex-col py-0.5 w-full max-md:max-w-full"></div>
             <div className="flex z-0 flex-col self-center w-[95%] xl:w-[70%] lg:w-[80%]">
-                <h1 className="pb-px w-full text-4xl leading-loose uppercase whitespace-nowrap text-zinc-800 tracking-[3.36px] max-md:max-w-full">
-                    FAQ
-                </h1>
+               
                 <div className="flex max-md:flex-col justify-between items-start w-full max-md:max-w-full">
                     <div className="flex flex-col pt-5 min-w-[240px] w-full lg:w-[48%] max-md:max-w-full">
                         {faqData.slice(0, 7).map((item, index) => (
