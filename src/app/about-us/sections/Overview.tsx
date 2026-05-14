@@ -84,7 +84,7 @@ const Overview = () => {
           }}
           viewport={{ once: true, amount: 0.2 }}
           className="
-            text-[#C02429]
+            text-white
 
             text-[26px]
             md:text-[32px]
@@ -99,7 +99,7 @@ const Overview = () => {
             text-center
           "
         >
-          BY THE NUMBERS
+          OUR REACH
         </motion.h1>
 
         {/* STATS GRID */}

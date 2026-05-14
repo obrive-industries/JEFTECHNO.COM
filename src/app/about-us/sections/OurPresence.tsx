@@ -45,7 +45,7 @@ import Image from "next/image";
           }}
           viewport={{ once: true, amount: 0.2 }}
           className="
-            text-[#C02429]
+            text-white
 
             text-[12px]
             md:text-[14px]
@@ -71,7 +71,7 @@ import Image from "next/image";
           }}
           viewport={{ once: true }}
           className="
-            text-white
+            text-[#C02429]
 
             text-[28px]
             md:text-[36px]
