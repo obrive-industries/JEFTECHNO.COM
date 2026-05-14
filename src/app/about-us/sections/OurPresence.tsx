@@ -31,7 +31,7 @@ import Image from "next/image";
   ];
 
   return (
-    <section className="bg-[#1B1818] overflow-hidden py-20 md:py-28 px-5 sm:px-8 md:px-14 xl:px-20">
+    <section className="bg-[#232427] overflow-hidden py-20 md:py-28 px-5 sm:px-8 md:px-14 xl:px-20">
       
       {/* HEADER */}
       <div className="max-w-7xl mx-auto mb-16 md:mb-20">
