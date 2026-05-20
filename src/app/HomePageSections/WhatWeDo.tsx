@@ -53,127 +53,152 @@ useEffect(() => {
   return () => window.removeEventListener("resize", checkMobile);
 }, []);
 
-  const services = [
-    {
-      id: 0,
-      title: "EARTHING STUDIES",
-      heading: "GROUNDING EARTHING STUDIES",
-      description:
-        "Earthing is an essential part of any electrical installation, essentialfor the safety from electrical shock, and fire and for operation of most oftheprotective systems of the electrical installation.",
-      top: "180px",
-      left: "140px",
-      width: "280px",
-      background: "./HomePageImg/WhatWeDoSection/Solution-1.png",
-       x: 290,
-  y: 180,
-  xmob: 315,
-ymob:449,
+ const services = [
+  {
+    id: 0,
+    title: "EARTHING STUDIES",
+    heading: "EARTHING HEALTH ASSESSMENT",
+    description: `
+• Detects hidden faults in your earthing network
 
-  labelLeft: "-100px",
-  labelTop: "-35px",
-  labelWidth: "100px",
+• Prevents equipment damage and shock risk
 
-  mobileLabelLeft: "-50px",
-  mobileLabelTop: "-22px",
-  mobileLabelWidth: "50px",
+• Meets safety compliance standards
+    `,
+    top: "180px",
+    left: "140px",
+    width: "280px",
+    background: "./HomePageImg/WhatWeDoSection/Solution-1.png",
+    x: 290,
+    y: 180,
+    xmob: 315,
+    ymob: 449,
 
-    },
+    labelLeft: "-100px",
+    labelTop: "-35px",
+    labelWidth: "100px",
 
-    {
-      id: 1,
-      title: "LIGHTNING PROTECTION SYSTEM STUDIES",
-      heading: "LIGHTNING PROTECTION SYSTEM STUDIES",
-      description:
-        "The purpose of Lightning Protection Systemaudit is to conduct lightning risk assessment and determine the level of protectionrequired to the structure/facility as per the latest relevant standards. LPS Adequacyaudit helps to manage and mitigate the risk due to lightning and protect the life andassets.",
-      top: "290px",
-      left: "420px",
-      width: "280px",
-      background: "./HomePageImg/WhatWeDoSection/Solution-4.png",
-       x: 25,
-  y: 355,
-  xmob: -15,
-ymob: 660,
- labelLeft: "-70px",
-  labelTop: "-50px",
-  labelWidth: "170px",
+    mobileLabelLeft: "-50px",
+    mobileLabelTop: "-22px",
+    mobileLabelWidth: "50px",
+  },
 
-  mobileLabelLeft: "15px",
-  mobileLabelTop: "-22px",
-  mobileLabelWidth: "150px",
-    },
+  {
+    id: 1,
+    title: "LIGHTNING PROTECTION SYSTEM STUDIES",
+    heading: "LIGHTNING PROTECTION ADEQUACY",
+    description: `
+• Reviews rods, conductors, and bonding
 
-    {
-      id: 2,
-      title: "POWER SYSTEM STUDIES",
-      heading: "POWER SYSTEM STUDIES",
-      description:
-        "A Power System Study involves analyzing various aspectsof an electrical power system to identify potential issues and optimize performance. These studies include load flow analysis, short circuit studies, relay coordination, arcflash analysis, and more, all aimed at enhancing system reliability and safety.",
-      top: "410px",
-      left: "190px",
-      width: "300px",
-      background: "./HomePageImg/WhatWeDoSection/Solution-3.png",
-       x: 140,
-  y:500,
-  xmob: 130,
-ymob: 845,
- labelLeft: "10px",
-  labelTop: "50px",
-  labelWidth: "150px",
+• Checks surge protection on critical systems
 
-  mobileLabelLeft: "15px",
-  mobileLabelTop: "20px",
-  mobileLabelWidth: "100px",
-    },
+• Validates against current IEC/IS standards
+    `,
+    top: "290px",
+    left: "420px",
+    width: "280px",
+    background: "./HomePageImg/WhatWeDoSection/Solution-4.png",
+    x: 25,
+    y: 355,
+    xmob: -15,
+    ymob: 660,
 
-    {
-      id: 3,
-      title: "POWER QUALITY & ROOT CAUSE ANALYSIS",
-      heading: "POWER QUALITY & ROOT CAUSE ANALYSIS",
-      description:
-        "A Power Quality Study involves acomprehensive analysis of your electrical system to identify disturbances anddeviations in voltage, current, and frequency. These studies are essential forensuring that your power supply is stable and free from issues that can lead toequipment malfunction or inefficiencies.",
-      top: "490px",
-      left: "550px",
-      width: "300px",
-      background: "./HomePageImg/WhatWeDoSection/Solution-2.png",
-        x:250,
-  y: 390,
-  xmob: 265,
-ymob: 715,
- labelLeft: "-00px",
-  labelTop: "60px",
-  labelWidth: "170px",
+    labelLeft: "-70px",
+    labelTop: "-50px",
+    labelWidth: "170px",
 
-  mobileLabelLeft:" 20px",
-  mobileLabelTop: "20px",
-  mobileLabelWidth: "150px",
+    mobileLabelLeft: "15px",
+    mobileLabelTop: "-22px",
+    mobileLabelWidth: "150px",
+  },
 
-    },
+  {
+    id: 2,
+    title: "POWER SYSTEM STUDIES",
+    heading: "POWER QUALITY STUDY",
+    description: `
+• Identifies harmonics, dips, and surges
 
-    {
-      id: 4,
-      title: "INSTRUMENTATION EARTHING",
-      heading: "INSTRUMENTATION EARTHING",
-      description:
-        "An Instrumentation Earthing Study involves evaluatingthe earthing system of instrumentation and control systems to ensure propergrounding. This study helps prevent electrical noise, surges, and other issues thatcan affect the accuracy and reliability of instrumentation.",
-      top: "580px",
-      left: "310px",
-      width: "300px",
-      background: "./HomePageImg/WhatWeDoSection/Solution-5.png",
-        x: 375,
-  y: 275,
+• Reduces unplanned downtime and failures
+
+• Cuts energy waste and utility penalties
+    `,
+    top: "410px",
+    left: "190px",
+    width: "300px",
+    background: "./HomePageImg/WhatWeDoSection/Solution-3.png",
+    x: 140,
+    y: 500,
+    xmob: 130,
+    ymob: 845,
+
+    labelLeft: "10px",
+    labelTop: "50px",
+    labelWidth: "150px",
+
+    mobileLabelLeft: "15px",
+    mobileLabelTop: "20px",
+    mobileLabelWidth: "100px",
+  },
+
+  {
+    id: 3,
+    title: "POWER QUALITY & ROOT CAUSE ANALYSIS",
+    heading: "POWER QUALITY STUDY",
+    description: `
+• Spots overloaded circuits and wiring faults
+
+• Checks fire suppression and alarm systems
+
+• Keeps you legally compliant and insurable
+    `,
+    top: "490px",
+    left: "550px",
+    width: "300px",
+    background: "./HomePageImg/WhatWeDoSection/Solution-2.png",
+    x: 250,
+    y: 390,
+    xmob: 265,
+    ymob: 715,
+
+    labelLeft: "-00px",
+    labelTop: "60px",
+    labelWidth: "170px",
+
+    mobileLabelLeft: "20px",
+    mobileLabelTop: "20px",
+    mobileLabelWidth: "150px",
+  },
+
+  {
+    id: 4,
+    title: "INSTRUMENTATION EARTHING",
+    heading: "INSTRUMENTATION EARTHING",
+    description: `
+• Eliminates noise and signal interference
+
+• Protects sensitive control systems
+
+• Ensures accurate, reliable readings
+    `,
+    top: "580px",
+    left: "310px",
+    width: "300px",
+    background: "./HomePageImg/WhatWeDoSection/Solution-5.png",
+    x: 375,
+    y: 275,
     xmob: 425,
-ymob: 560,
-   labelLeft: "-20px",
-  labelTop: "30px",
-  labelWidth: "170px",
+    ymob: 560,
 
-  mobileLabelLeft: "-0px",
-  mobileLabelTop: "25px",
-  mobileLabelWidth: "100px",
+    labelLeft: "-20px",
+    labelTop: "30px",
+    labelWidth: "170px",
 
-    },
-  ];
-
+    mobileLabelLeft: "-0px",
+    mobileLabelTop: "25px",
+    mobileLabelWidth: "100px",
+  },
+];
   const handleCardClick = (service) => {
     setActiveCard(service.id);
     setPanelOpen(true);
@@ -462,9 +487,9 @@ ymob: 560,
           {services[activeCard].heading}
         </h3>
 
-        <p className="text-white/90 text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.8] font-light">
-          {services[activeCard].description}
-        </p>
+       <div className="text-white/90 text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.2] font-light whitespace-pre-line">
+  {services[activeCard].description}
+</div>
       </div>
     </div>
 
