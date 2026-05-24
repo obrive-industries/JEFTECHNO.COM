@@ -1,20 +1,31 @@
-"use client"
+"use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import "./components/whatwedo.css";
 
 export default function WhatWeDoSection() {
-  const [activeCard, setActiveCard] = useState(0);
-  const [panelOpen, setPanelOpen] = useState(false);
-  const [background, setBackground] = useState("./HomePageImg/WhatWeDoSection/Solution-1.png");
   const sectionRef = useRef(null);
   const videoRef = useRef(null);
 
   const [showContent, setShowContent] = useState(false);
   const [videoStarted, setVideoStarted] = useState(false);
+
+  const [activeSection, setActiveSection] = useState("products");
+  const [activeCard, setActiveCard] = useState(0);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,7 +40,7 @@ export default function WhatWeDoSection() {
       },
       {
         threshold: 0.5,
-      },
+      }
     );
 
     if (sectionRef.current) {
@@ -39,461 +50,625 @@ export default function WhatWeDoSection() {
     return () => observer.disconnect();
   }, [videoStarted]);
 
-  const [isMobile, setIsMobile] = useState(false);
+  const sections = {
+    products: {
+      png: "/HomePageImg/WhatWeDoSection/E.png",
 
-useEffect(() => {
-  const checkMobile = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
+      dots: [
+        {
+          heading: "CLPS",
+          description: `
+• Full coverage — from rooftop to foundation
 
-  checkMobile();
+• Designed to IEC and IS standards
 
-  window.addEventListener("resize", checkMobile);
+• Protects people, equipment, and structures
+          `,
+          x: 200,
+          y: 0,
+          xmob: 290,
+          ymob: 450,
+        },
 
-  return () => window.removeEventListener("resize", checkMobile);
-}, []);
+        {
+          heading: "EARTHING & GROUNDING SOLUTIONS",
+          description: `
+• Reduces shock risk and equipment damage
 
- const services = [
-  {
-    id: 0,
-    title: "EARTHING STUDIES",
-    heading: "EARTHING HEALTH ASSESSMENT",
-    description: `
+• Works for industrial, commercial, and utility sites
+
+• Low-resistance, long-lasting installations
+          `,
+          x: 20,
+          y: 230,
+          xmob: 440,
+          ymob: 590,
+        },
+
+        {
+          heading: "EARLY STREAMER EMISSION",
+          description: `
+• Up to 107m protection radius per unit
+
+• Fewer rods, lower installation cost
+
+• Certified to NFC 17-102 standard
+          `,
+          x: 475,
+          y: 150,
+          xmob: 420,
+          ymob: 720,
+        },
+
+        {
+          heading: "SURGE PROTECTION DEVICES",
+          description: `
+• Protects panels, motors, and sensitive electronics
+
+• Available for Type 1, 2, and 3 applications
+
+• Compliant with IEC 61643 standard
+          `,
+          x: 320,
+          y: 235,
+          xmob: 300,
+          ymob: 880,
+        },
+
+        {
+          heading: "JEF SHIELD & E-BUILD",
+          description: `
+• Full risk assessment to IS/IEC 62305 — instantly
+
+• Outputs design drawings and bill of materials
+
+• Finds the most cost-effective protection option
+
+• Step-by-step guided installation workflow
+          `,
+          x: 280,
+          y: 410,
+          xmob: 130,
+          ymob: 700,
+        },
+      ],
+    },
+
+    audit: {
+      png: "/HomePageImg/J.png",
+
+      dots: [
+        {
+          heading: "EARTHING HEALTH ASSESSMENT",
+          description: `
 • Detects hidden faults in your earthing network
 
 • Prevents equipment damage and shock risk
 
 • Meets safety compliance standards
-    `,
-    top: "180px",
-    left: "140px",
-    width: "280px",
-    background: "./HomePageImg/WhatWeDoSection/Solution-1.png",
-    x: 290,
-    y: 180,
-    xmob: 315,
-    ymob: 449,
+          `,
+          x: 350,
+          y: 20,
+          xmob: 315,
+          ymob: 449,
+        },
 
-    labelLeft: "-100px",
-    labelTop: "-35px",
-    labelWidth: "100px",
-
-    mobileLabelLeft: "-50px",
-    mobileLabelTop: "-22px",
-    mobileLabelWidth: "50px",
-  },
-
-  {
-    id: 1,
-    title: "LIGHTNING PROTECTION SYSTEM STUDIES",
-    heading: "LIGHTNING PROTECTION ADEQUACY",
-    description: `
+        {
+          heading: "LIGHTNING PROTECTION ADEQUACY",
+          description: `
 • Reviews rods, conductors, and bonding
 
 • Checks surge protection on critical systems
 
 • Validates against current IEC/IS standards
-    `,
-    top: "290px",
-    left: "420px",
-    width: "280px",
-    background: "./HomePageImg/WhatWeDoSection/Solution-4.png",
-    x: 25,
-    y: 355,
-    xmob: -15,
-    ymob: 660,
+          `,
+          x: 20,
+          y: 350,
+          xmob: 500,
+          ymob: 660,
+        },
 
-    labelLeft: "-70px",
-    labelTop: "-50px",
-    labelWidth: "170px",
-
-    mobileLabelLeft: "15px",
-    mobileLabelTop: "-22px",
-    mobileLabelWidth: "150px",
-  },
-
-  {
-    id: 2,
-    title: "POWER SYSTEM STUDIES",
-    heading: "POWER QUALITY STUDY",
-    description: `
+        {
+          heading: "POWER QUALITY STUDY",
+          description: `
 • Identifies harmonics, dips, and surges
 
 • Reduces unplanned downtime and failures
 
 • Cuts energy waste and utility penalties
-    `,
-    top: "410px",
-    left: "190px",
-    width: "300px",
-    background: "./HomePageImg/WhatWeDoSection/Solution-3.png",
-    x: 140,
-    y: 500,
-    xmob: 130,
-    ymob: 845,
+          `,
+          x: 230,
+          y: 440,
+          xmob: 130,
+          ymob: 845,
+        },
 
-    labelLeft: "10px",
-    labelTop: "50px",
-    labelWidth: "150px",
-
-    mobileLabelLeft: "15px",
-    mobileLabelTop: "20px",
-    mobileLabelWidth: "100px",
-  },
-
-  {
-    id: 3,
-    title: "POWER QUALITY & ROOT CAUSE ANALYSIS",
-    heading: "POWER QUALITY STUDY",
-    description: `
+        {
+          heading: "ELECTRICAL & FIRE SAFETY AUDIT",
+          description: `
 • Spots overloaded circuits and wiring faults
 
 • Checks fire suppression and alarm systems
 
 • Keeps you legally compliant and insurable
-    `,
-    top: "490px",
-    left: "550px",
-    width: "300px",
-    background: "./HomePageImg/WhatWeDoSection/Solution-2.png",
-    x: 250,
-    y: 390,
-    xmob: 265,
-    ymob: 715,
+          `,
+          x: 350,
+          y: 280,
+          xmob: 265,
+          ymob: 715,
+        },
 
-    labelLeft: "-00px",
-    labelTop: "60px",
-    labelWidth: "170px",
-
-    mobileLabelLeft: "20px",
-    mobileLabelTop: "20px",
-    mobileLabelWidth: "150px",
-  },
-
-  {
-    id: 4,
-    title: "INSTRUMENTATION EARTHING",
-    heading: "INSTRUMENTATION EARTHING",
-    description: `
+        {
+          heading: "INSTRUMENTATION EARTHING",
+          description: `
 • Eliminates noise and signal interference
 
 • Protects sensitive control systems
 
 • Ensures accurate, reliable readings
-    `,
-    top: "580px",
-    left: "310px",
-    width: "300px",
-    background: "./HomePageImg/WhatWeDoSection/Solution-5.png",
-    x: 375,
-    y: 275,
-    xmob: 425,
-    ymob: 560,
+          `,
+          x: 460,
+          y: 90,
+          xmob: 425,
+          ymob: 560,
+        },
+      ],
+    },
 
-    labelLeft: "-20px",
-    labelTop: "30px",
-    labelWidth: "170px",
+    consulting: {
+      png: "/HomePageImg/WhatWeDoSection/F.png",
 
-    mobileLabelLeft: "-0px",
-    mobileLabelTop: "25px",
-    mobileLabelWidth: "100px",
-  },
-];
-  const handleCardClick = (service) => {
-    setActiveCard(service.id);
-    setPanelOpen(true);
-    setBackground(service.background);
+      dots: [
+        {
+          heading: "POWER SYSTEM STUDIES - RENEWABLE",
+          description: `
+• Grid integration, load flow, and fault analysis
+
+• Ensures stable, compliant grid connections
+
+• Supports solar, wind, and hybrid projects
+          `,
+          x: 490,
+          y: 220,
+          xmob: 370,
+          ymob: 560,
+        },
+
+        {
+          heading: "POWER SYSTEM STUDIES - INDUSTRIAL",
+          description: `
+• Short circuit, arc flash, and protection studies
+
+• Identifies weak points before they cause failures
+
+• Supports plant upgrades, expansions, and audits
+          `,
+          x: 330,
+          y: 290,
+          xmob: 270,
+          ymob: 720,
+        },
+      ],
+    },
   };
 
-  const handlePrev = () => {
-    const prevIndex = (activeCard - 1 + services.length) % services.length;
-    setActiveCard(prevIndex);
-  };
+  const currentSection = sections[activeSection];
+  const currentData = currentSection.dots[activeCard];
 
- 
+  const backgrounds = [
+    "/HomePageImg/WhatWeDoSection/Solution-1.png",
+    "/HomePageImg/WhatWeDoSection/Solution-2.png",
+    "/HomePageImg/WhatWeDoSection/Solution-3.png",
+    "/HomePageImg/WhatWeDoSection/Solution-4.png",
+    "/HomePageImg/WhatWeDoSection/Solution-5.png",
+  ];
 
-  // Lock body scroll when panel is open
-  useEffect(() => {
-    if (panelOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [panelOpen]);
+  const background =
+    backgrounds[activeCard % backgrounds.length];
 
   return (
-<section
-  ref={sectionRef}
-  className="relative w-full min-h-[1150px] md:min-h-[700px] lg:min-h-[850px] overflow-hidden bg-black"
->
-  {/* Background Image */}
-  <img
-    src={background}
-    alt="What We Do Background"
-    className={`absolute inset-0 w-full h-full object-cover transition-all duration-[1800ms] ease-in-out ${
-      showContent ? "opacity-100 scale-100" : "opacity-0 scale-105"
-    } z-0`}
-  />
-
-  {/* VIDEO */}
-  <video
-    ref={videoRef}
-    muted
-    playsInline
-    onEnded={() => setShowContent(true)}
-    className={`absolute inset-0 w-full h-full object-cover z-0 transition-all duration-1000 ${
-      showContent ? "opacity-0" : "opacity-100"
-    }`}
-  >
-    <source src="/HomePageImg/Earthzoom.mp4" type="video/mp4" />
-  </video>
-   {/* HEADING */}
-  <div className="absolute top-[35px] left-[20px] sm:left-[40px] lg:top-[70px] lg:left-[70px] z-[30]">
-  <h2 className="font-montserrat font-bold text-[24px] sm:text-[30px] lg:text-[36px] leading-none tracking-[3px] lg:tracking-[4px] uppercase text-white">
-    WHAT WE DO
-  </h2>
-  <div className="w-full max-w-sm text-white p-3">
-  {[
-    { name: "OUR PRODUCTS", path: "/about-us" },
-    { name: "AUDIT SERVICES", path: "/audit-services" },
-    { name: "CONSULTING SERVICES", path: "/consulting-services" },
-  ].map((item, index) => (
-    <Link key={index} href={item.path}>
-      <div className="group py-4 cursor-pointer">
-        
-        {/* Line */}
-        <div className="relative h-[1px] bg-gray-500 overflow-hidden">
-          <span className="absolute left-0 top-0 h-full w-0 bg-[#C02427] transition-all duration-500 ease-out group-hover:w-full"></span>
-        </div>
-
-        {/* Text */}
-        <h2 className="mt-6 text-lg md:text-lg font-semibold tracking-[3px] transition-colors duration-300 ease-out group-hover:text-[#C02427]">
-          {item.name}
-        </h2>
-      </div>
-    </Link>
-  ))}
-</div>
-</div>
-
-  {/* MAIN CONTENT WRAPPER */}
-  <div
-    className={`
-      absolute inset-0
-      z-10
-      transition-opacity duration-1000
-      ${showContent ? "opacity-100" : "opacity-0"}
-    `}
-  >
-
-    {/* DARK OVERLAY */}
-    <div
-      className={`
-        absolute inset-0
-        z-[20]
-        transition-all duration-700
-        ${
-          panelOpen
-            ? "bg-black/40"
-            : "bg-black/40"
-        }
-      `}
-    />
-
-    {/* J WRAPPER */}
-    <div
+    <section
+      ref={sectionRef}
       className="
-        absolute
-        inset-0
-        z-[50] 
+        relative
+        w-full
 
-        left-1/2
-       lg:-translate-x-[50%]
-       -translate-x-[50%]
+        h-[1200px]
+        md:h-[1350px]
+        lg:h-[650px]
 
-
-        scale-[0.62]
-        sm:scale-[0.72]
-        md:scale-100
-
-        origin-top-left
-        md:origin-center
-        lg:mt-30
+        overflow-hidden
+        bg-black
       "
     >
-
-      {/* J PNG */}
+      {/* BG */}
       <img
-        src="/HomePageImg/J.png"
-        alt="J Path"
-        className="
-    absolute
-    rotate-[46deg]
-    hidden
-    md:block
-          top-[400px]
-          left-[30px]
-          md:top-[145px]
-          md:left-[70px]
-
-          w-100px]
-          md:w-[100px]
-          lg:w-[200px]
-
-          opacity-90
-          pointer-events-none
-          z-[45]
-        "
+        src={background}
+        alt=""
+        className={`absolute inset-0 w-full h-full object-cover transition-all duration-[1800ms] ease-in-out ${
+          showContent
+            ? "opacity-100 scale-100"
+            : "opacity-0 scale-105"
+        }`}
       />
 
-      {/* INTERACTIVE DOTS */}
-      {services.map((service) => {
-        const isActive = activeCard === service.id;
+      {/* VIDEO */}
+      <video
+        ref={videoRef}
+        muted
+        playsInline
+        onEnded={() => setShowContent(true)}
+        className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${
+          showContent ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <source
+          src="/HomePageImg/Earthzoom.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-        return (
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/55 z-10" />
+
+      {/* MAIN */}
+      <div className="absolute inset-0 z-20">
+
+        {/* CENTER ROW */}
+        <div
+          className="
+            absolute
+            inset-0
+
+            flex
+            flex-col
+            
+            lg:flex-row
+
+            items-center
+            lg:items-center
+
+            justify-start
+            lg:justify-center
+
+            gap-[20px]
+            lg:gap-[60px]
+            xl:gap-[140px]
+
+            px-[20px]
+            sm:px-[30px]
+            lg:px-[40px]
+
+            pt-[40px]
+            md:pt-[70px]
+            lg:pt-0
+          "
+        >
+
+          {/* LEFT */}
           <div
-            key={service.id}
-            className="absolute z-[60] group"
-            style={{
-  top: isMobile ? `${service.ymob}px` : `${service.y}px`,
-  left: isMobile ? `${service.xmob}px` : `${service.x}px`,
-}}
-            onMouseEnter={() => handleCardClick(service)}
-            onClick={() => handleCardClick(service)}
+            className="
+              w-full
+              max-w-[320px]
+
+              lg:w-[180px]
+
+              shrink-0
+
+              flex
+              flex-col
+
+              items-start
+
+              text-left
+
+              z-[60]
+            "
           >
+            <div className="mb-8 lg:mb-20">
+              <h2
+                className="
+                  font-montserrat
+                  font-bold
 
-            {/* LABEL */}
-            <div
-             
-               className={`
-    absolute
-    text-[8px] md:text-[11px]
-    tracking-[1px] md:tracking-[2px]
-    uppercase
-    font-medium
-    leading-[1.35]
-    break-words
-    whitespace-normal
-    transition-all
-    duration-500
-    flex
-    items-end
-    text-center
-    ${
-      isActive
-        ? "text-white"
-        : "text-white/70 group-hover:text-white"
-    }
-  `}
-              style={{
-  left: isMobile
-    ? service.mobileLabelLeft
-    : service.labelLeft,
+                  text-[24px]
+                  sm:text-[28px]
+                  xl:text-[34px]
 
-  top: isMobile
-    ? service.mobileLabelTop
-    : service.labelTop,
-
-  width: isMobile
-    ? service.mobileLabelWidth
-    : service.labelWidth,
-}}
-            >
-              {service.title}
+                  tracking-[4px]
+                  uppercase
+                  text-white
+                  whitespace-nowrap
+                "
+              >
+                WHAT WE DO
+              </h2>
             </div>
 
-            {/* DOT BUTTON */}
-            <button className="relative flex items-center justify-center">
+            <div className="w-full">
+              {[
+                {
+                  id: "products",
+                  title: "OUR PRODUCT",
+                },
+                {
+                  id: "audit",
+                  title: "AUDIT SERVICES",
+                },
+                {
+                  id: "consulting",
+                  title: "CONSULTING SERVICES",
+                },
+              ].map((item) => (
+                <div
+                  key={item.id}
+                  onClick={() => {
+                    setActiveSection(item.id);
+                    setActiveCard(0);
+                  }}
+                  className="group py-4 sm:py-5 cursor-pointer"
+                >
+                  <div className="relative h-[1px] bg-white/20 overflow-hidden mb-3">
+                    <span
+                      className={`absolute left-0 top-0 h-full bg-[#C61F26] transition-all duration-500 ${
+                        activeSection === item.id
+                          ? "w-full"
+                          : "w-0 group-hover:w-full"
+                      }`}
+                    />
+                  </div>
 
-              {/* OUTER RING */}
-              <span
+                  <div
+                    className={`text-[13px] sm:text-[15px] whitespace-nowrap tracking-[1.5px] uppercase transition-all duration-300 flex items-center justify-between ${
+                      activeSection === item.id
+                        ? "text-[#C61F26]"
+                        : "text-white"
+                    }`}
+                  >
+                    {item.title}
+
+                    {activeSection === item.id && (
+                      <span className="text-[#C61F26] text-[12px]">
+                        →
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CENTER GRAPH */}
+          <div
+            className={`
+              absolute
+              left-1/2
+              -translate-x-1/2
+
+              top-[180px]
+              md:top-[320px]
+
+              lg:relative
+              lg:top-auto
+              lg:left-auto
+              lg:translate-x-0
+
+              scale-[0.62]
+              sm:scale-[0.72]
+              md:scale-[0.9]
+              lg:scale-100
+
+              origin-top-left
+              lg:origin-center
+
+              w-[500px]
+              h-[500px]
+   md:mt-30 lg:mt-0
+              shrink-0
+
+              transition-opacity
+              duration-1000
+
+              ${showContent ? "opacity-100" : "opacity-0"}
+            `}
+          >
+
+            {!isMobile && (
+              <img
+                key={activeSection}
+                src={currentSection.png}
+                alt=""
                 className={`
                   absolute
-                  w-[24px]
-                  h-[24px]
-                  md:w-[34px]
-                  md:h-[34px]
-                  rounded-full
-                  border
-                  transition-all
-                  duration-500
-                  ${
-                    isActive
-                      ? "border-white scale-110 opacity-100"
-                      : "border-white/40 opacity-70 group-hover:border-white group-hover:scale-110"
-                  }
-                `}
-              />
+                  inset-0
+                  w-full
+                  h-full
+                  object-contain
+                  opacity-90
+                  pointer-events-none
+                  z-[10]
+                  select-none
 
-              {/* INNER DOT */}
-              <span
-                className={`
-                  w-[12px]
-                  h-[12px]
-                  md:w-[18px]
-                  md:h-[18px]
-                  rounded-full
                   transition-all
-                  duration-500
+                  duration-700
+                  ease-[cubic-bezier(0.22,1,0.36,1)]
+
+                  animate-[fadeScale_0.7s_ease]
+
                   ${
-                    isActive
-                      ? "bg-white scale-110"
-                      : "bg-[#C61F26] group-hover:bg-white"
+                    activeSection === "audit"
+                      ? "rotate-[-12deg]"
+                      : ""
                   }
                 `}
               />
-            </button>
+            )}
+
+            {currentSection.dots.map((dot, index) => {
+              const isActive = activeCard === index;
+
+              return (
+                <div
+                  key={`${activeSection}-${index}`}
+                  className="
+                    absolute
+                    z-[30]
+                    group
+                    cursor-pointer
+
+                    animate-[fadeScale_0.7s_ease]
+                  "
+                  style={{
+                    top: isMobile
+                      ? `${dot.ymob}px`
+                      : `${dot.y}px`,
+                    left: isMobile
+                      ? `${dot.xmob}px`
+                      : `${dot.x}px`,
+                  }}
+                  onMouseEnter={() => setActiveCard(index)}
+                  onClick={() => setActiveCard(index)}
+                >
+                  <button className="relative flex items-center justify-center">
+                    <span
+                      className={`
+                        absolute
+
+                        w-[24px]
+                        h-[24px]
+
+                        sm:w-[30px]
+                        sm:h-[30px]
+
+                        rounded-full
+                        border
+                        transition-all
+                        duration-500
+
+                        ${
+                          isActive
+                            ? "border-white scale-110 opacity-100"
+                            : "border-white/40 opacity-70"
+                        }
+                      `}
+                    />
+
+                    <span
+                      className={`
+                        w-[12px]
+                        h-[12px]
+
+                        sm:w-[16px]
+                        sm:h-[16px]
+
+                        rounded-full
+                        transition-all
+                        duration-500
+
+                        ${
+                          isActive
+                            ? "bg-white scale-110"
+                            : "bg-[#C61F26]"
+                        }
+                      `}
+                    />
+                  </button>
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
 
-   
+          {/* RIGHT */}
+          <div
+            className={`
+          absolute
 
-    {/* RIGHT CONTENT PANEL */}
-    <div
-      className="
-        absolute
-        z-[60] lg:mt-25
+left-1/2
+-translate-x-1/2
 
-        left-0
-        right-0
+w-full
+md:w-[600px]
 
-        px-5
+px-5
 
-        top-[760px]
+top-[920px]
 
-        md:left-auto
-        md:right-[90px]
-        md:top-[190px]
+md:top-[1080px]
 
-        md:max-w-[500px]
-        max-w-full
-      "
-    >
+lg:relative
+lg:top-auto
+lg:left-auto
+lg:right-auto
+lg:translate-x-0
 
-      {/* RED LINE */}
-      <div className="w-full h-[2px] bg-[#C61F26] mb-6 md:mb-8 opacity-90" />
+lg:px-0
 
-      {/* ANIMATED CONTENT */}
-      <div
-        key={activeCard}
-        className="animate-[fadeUp_0.7s_ease]"
-      >
-        <h3 className="text-white uppercase tracking-[2px] md:tracking-[4px] text-[20px] sm:text-[24px] lg:text-[28px] font-light leading-[1.3] mb-5 md:mb-8">
-          {services[activeCard].heading}
-        </h3>
+              w-full
+              max-w-[500px]
 
-       <div className="text-white/90 text-[15px] sm:text-[17px] lg:text-[20px] leading-[1.2] font-light whitespace-pre-line">
-  {services[activeCard].description}
-</div>
+              lg:block
+
+              shrink-0
+
+              transition-opacity
+              duration-1000
+
+              ${showContent ? "opacity-100" : "opacity-0"}
+            `}
+          >
+            <div className="w-full h-[2px] bg-[#C61F26] mb-6" />
+
+            <div
+              key={activeCard + activeSection}
+              className="
+                animate-[fadeUp_0.7s_ease]
+                transition-all
+                duration-700
+              "
+            >
+              <h3
+                className="
+                  text-white
+                  uppercase
+
+                  tracking-[2px]
+                  lg:tracking-[3px]
+
+                  text-[22px]
+                  lg:text-[28px]
+
+                  font-light
+                  leading-[1.4]
+
+                  mb-6
+                  lg:mb-8
+                "
+              >
+                {currentData.heading}
+              </h3>
+
+              <div
+                className="
+                  text-white/90
+
+                  text-[15px]
+                  sm:text-[17px]
+                  lg:text-[18px]
+
+                  leading-[1.2]
+                  lg:leading-[1.2]
+
+                  whitespace-pre-line
+                  font-light
+                "
+              >
+                {currentData.description}
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
   );
 }
