@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const pages = [
   {
     label: "LIGHTNING THREAT AND WHY PROTECTION",
-    nav: "LIGHTNING THREAT\n& PROTECTION",
+    nav: "LIGHTNING THREAT \nAND WHY\n PROTECTION",
     title: "THE LIGHTNING THREAT AND WHY PROTECTION IS REQUIRED",
     content: (
       <>
@@ -54,7 +54,7 @@ const pages = [
   },
   {
     label: "IEC 62305:2024 STANDARD FRAMEWORK",
-    nav: "IEC 62305:2024\nFRAMEWORK",
+    nav: "IEC 62305:2024\nSTANDARD\nFRAMEWORK",
     title: "THE IEC 62305:2024 STANDARD FRAMEWORK",
     content: (
       <>
@@ -139,7 +139,7 @@ const pages = [
   },
   {
     label: "COMPREHENSIVE LIGHTNING PROTECTION SYSTEM",
-    nav: "COMPREHENSIVE\nSYSTEM",
+    nav: "COMPREHENSIVE\nLIGHTNING\nPROTECTION SYSTEM",
     title: "THE COMPREHENSIVE LIGHTNING PROTECTION SYSTEM",
     content: (
       <>
