@@ -5,7 +5,7 @@ import Link from "next/link";
 import { TranslationContext } from "../../context/TranslationContext";
 
 const MobileMenu = () => {
-  const { isArabic, toggleTranslation } = useContext(TranslationContext);
+  
   const [activeMenu, setActiveMenu] = useState("main");
 
   const faqData = {
