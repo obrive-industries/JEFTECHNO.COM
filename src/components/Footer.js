@@ -109,6 +109,7 @@ function Footer() {
                     <a href="https://www.facebook.com/JEFTECHNO/" target="_blank" className="object-contain card-slider-footer"><img src="../FooterLogo/Link - Facebook.png" alt="FacebookImg" /></a>
                     <a href="https://www.linkedin.com/showcase/jef-engineering-services-middle-east/" target="_blank" className="object-contain  card-slider-footer"><img src="../FooterLogo/Link - Linkedin.png" alt="LinkedInImg" /></a>
                     <a href="https://x.com/JeftechnoIndia" target="_blank" className="object-contain card-slider-footer"><img src="../FooterLogo/Link - Twitter.png" alt="TwitterImg" /></a>
+                    <a href="https" target="_blank" className="object-contain h-8 text-gray-400 w-8 card-slider-footer"><img src="../FooterLogo/Instagram.png" alt="InstagramImg" /></a>
                 </div>
             </div>
             <div className="flex overflow-hidden flex-col justify-center items-center py-7 mt-6 w-screen text-white bg-stone-900">
