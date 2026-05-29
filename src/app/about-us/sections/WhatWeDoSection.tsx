@@ -206,7 +206,7 @@ export default function AboutUsServicesSection() {
         md:w-10
         md:h-10
         rounded-full
-        bg-[#C61F26]/30
+        bg-[#C02429]/30
         animate-ping
       "
     />
@@ -245,7 +245,7 @@ export default function AboutUsServicesSection() {
       ${
         isActive
           ? "bg-white scale-110"
-          : "bg-[#C61F26] animate-pulse"
+          : "bg-[#C02429] animate-pulse"
       }
     `}
   />
@@ -264,7 +264,7 @@ export default function AboutUsServicesSection() {
             lg:mt-40
           "
         >
-          <div className="w-full h-[2px] bg-[#C61F26] mb-8" />
+          <div className="w-full h-[2px] bg-[#C02429] mb-8" />
 
           <h3
             className="
