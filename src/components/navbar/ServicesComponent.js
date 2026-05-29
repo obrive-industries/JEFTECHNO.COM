@@ -63,7 +63,7 @@ const ServicesComponent = () => {
     { icon: "/nav-earthing-grounding.png", text: "EARTHING GROUNDING", path: "/earthing-studies" },
     { icon: "/nav-ese.png", text: "ESE", path: "/ese-lightning-protection" },
     { icon: "/nav-ese-lightning-protection.png", text: "ESA LIGHTNING PROTECTION", path: "/lightning-protection-studies" },
-    { icon: "/nav-jef-shield.png", text: "JEF-SHIELD & E-BUILD", path: "/coming-soon" },
+    { icon: "/nav-jef-shield.png", text: "JEF-SHIELD & E-BUILD", path: "/JEF-shield" },
     { icon: "/nav-spd.png", text: "SPD", path: "/coming-soon" },
   ];
 

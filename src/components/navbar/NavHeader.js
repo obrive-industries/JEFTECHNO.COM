@@ -13,7 +13,7 @@ const menuItems = [
   { label: "Our Blogs", hasDropdown: false, path: "/blog" },
   //{ label: "Our Industries", hasDropdown: true },
   { label: "JEF UAE", hasDropdown: false },
-  { label: "JEF SHIELD", hasDropdown: false },
+  { label: "JEF SHIELD", hasDropdown: false,path:"/JEF-shield" },
  
 ];
 
