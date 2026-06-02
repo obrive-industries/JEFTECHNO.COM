@@ -18,7 +18,7 @@ export default function ProductIntro() {
           {navItems.map((item, index) => (
             <React.Fragment key={index}>
               <span
-                className={`text-[8px] md:text-xs tracking-[1.2px] uppercase flex-shrink-0 ${
+                className={`text-[8px] md:text-xs tracking-tight md:tracking-[1.2px] uppercase flex-shrink-0 ${
                   item.isActive ? "text-[#C02429]" : "text-neutral-300"
                 }`}
               >

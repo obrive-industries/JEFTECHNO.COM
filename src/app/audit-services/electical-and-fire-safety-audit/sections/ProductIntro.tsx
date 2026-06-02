@@ -60,7 +60,7 @@ const expandedText = (
           {navItems.map((item, index) => (
             <React.Fragment key={index}>
               <span
-                className={`text-[6px] md:text-[11px] uppercase tracking-[1px] ${
+                className={`text-[8px] md:text-[11px] uppercase tracking-tight md:tracking-[1px] ${
                   item.isActive ? "text-[#C02429]" : "text-neutral-300"
                 }`}
               >

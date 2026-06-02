@@ -14,7 +14,7 @@ const PowerSystemStudies = () => {
 
   return (
     <div className="bg-[#232427]">
-      <Hero videoSrc="./HomePageImg/Banner-1.mp4" />
+      <Hero videoSrc="/Consultancy/Consulting - Industrial.mp4" />
       <ProductIntro 
         
         

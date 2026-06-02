@@ -14,7 +14,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source
-          src="./SerivePage/Lightning Protection Banner video.mp4"
+          src="./Products/ESE.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

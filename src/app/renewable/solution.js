@@ -12,7 +12,7 @@ const RenewableEnergy = () => {
 
   return (
     <div className="bg-[#232427]">
-      <Hero  videoSrc="./HomePageImg/Banner-2.mp4" />
+      <Hero  videoSrc="/Consultancy/Consulting - Renewable.mp4" />
       <ProductIntro 
        
       />

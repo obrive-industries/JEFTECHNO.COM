@@ -33,7 +33,7 @@ const MobileMenu = () => {
       { label: "Employee Login", path: "/coming-soon" },
     ],
     business: [
-      { label: "Our Products", key: "products" },
+      { label: "Products", key: "products" },
       { label: "Audit Services", key: "audit" },
       { label: "Consulting Services", key: "consulting" },
     ],

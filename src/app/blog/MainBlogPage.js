@@ -263,7 +263,7 @@ const MainBlogPage = () => {
 
       {/* Breadcrumbs */}
       <div className="w-full bg-[#2D2E30] py-4 border-t border-white/5">
-        <div className="section-container px-4 sm:px-6 lg:px-0 flex flex-wrap items-center gap-2 text-[10px] tracking-[1px] uppercase">
+        <div className="section-container px-4 sm:px-6 lg:px-0 flex flex-wrap items-center gap-2 text-[8px] sm:text-[10px] md:text-xs tracking-tight md:tracking-[1px] uppercase">
           <Link href="/" className="text-white/40 hover:text-[#C02429]">Home</Link>
           <span className="text-white/20">›</span>
           <Link href="/blog" className="text-[#C02429] hover:text-[#C02429]">Our Blogs</Link>

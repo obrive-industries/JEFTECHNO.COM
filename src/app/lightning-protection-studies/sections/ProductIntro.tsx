@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navItems = [
   { label: "HOME", isActive: true },
   { label: "OUR BUSINESS", isActive: true },
-  { label: "OUR SERVICES", isActive: true },
+  { label: "PRODUCTS", isActive: true },
   { label: "ESE LIGHTNING PROTECTION", isActive: false },
 ];
 
@@ -20,7 +20,7 @@ export default function ProductIntro() {
           {navItems.map((item, index) => (
             <React.Fragment key={index}>
               <span
-                className={`text-[10px] sm:text-[11px] md:text-xs tracking-[1.2px] uppercase flex-shrink-0 ${
+                className={`text-[8px] sm:text-[11px] md:text-xs tracking-tight md:tracking-[1.2px] uppercase flex-shrink-0 ${
                   item.isActive ? "text-[#C02429]" : "text-neutral-300"
                 }`}
               >

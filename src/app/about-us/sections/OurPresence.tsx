@@ -124,9 +124,9 @@ import Image from "next/image";
           grid-cols-1
           md:grid-cols-2
           xl:grid-cols-3
-          gap-12
-          md:gap-16
-          xl:gap-24
+          gap-8
+          md:gap-10
+          xl:gap-12
         "
       >
         {locations.map((location, index) => (

@@ -6,23 +6,23 @@ import Image from "next/image";
 const Overview = () => {
   const stats = [
      {
-      img: "/AboutUs/30plusyears.png",
+      img: "/AboutUs/30_plus_years.png",
       label: "30+ YEARS",
     },
     {
-      img: "/AboutUs/countries.png",
+      img: "/AboutUs/30_plus_countries.png",
       label: "30+ COUNTRIES",
     },
     {
-      img: "/AboutUs/customers.png",
+      img: "/AboutUs/10k_customers.png",
       label: "10K CUSTOMERS",
     },
     {
-      img: "/AboutUs/patents.png",
+      img: "/AboutUs/9_patents.png",
       label: "9 PATENTS",
     },
     {
-      img: "/AboutUs/retention_rate.png",
+      img: "/AboutUs/90_percent_retention_rate.png",
       label: "90% RETENTION RATE",
     },
    
@@ -91,24 +91,22 @@ const Overview = () => {
             text-center
           "
         >
-          OUR REACH
+          OUR LEGACY
         </motion.h1>
 
         {/* STATS GRID */}
         <div
           className="
             w-full
-    max-w-[1200px]
-    mx-auto
-    grid
-    grid-cols-2
-    md:grid-cols-3
-    xl:grid-cols-5
-    gap-y-[40px]
-    gap-x-[12px]
-    place-items-center
-
-            place-items-center
+            max-w-[1000px]
+            mx-auto
+            flex
+            flex-wrap
+            justify-center
+            gap-y-[30px]
+            gap-x-[30px]
+            md:gap-x-[50px]
+            xl:gap-x-[70px]
           "
         >
           {stats.map((item, index) => (

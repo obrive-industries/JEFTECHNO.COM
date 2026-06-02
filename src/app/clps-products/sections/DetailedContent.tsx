@@ -148,7 +148,12 @@ const pages = [
 {
   label: "JEF CLPS PRODUCTS",
   nav: "JEF CLPS\nPRODUCTS",
-  title: "JEF CLPS PRODUCTS — TYPE-TESTED TO 200 KA / 10/350 μs",
+  title: (
+  <>
+    JEF CLPS PRODUCTS — TYPE-TESTED TO 200 KA / 10/350{" "}
+    <span className="font-normal text-[0.9em]">μ</span>s
+  </>
+),
   content: (
     <>
       <p>
