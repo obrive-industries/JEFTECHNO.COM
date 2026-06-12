@@ -13,7 +13,7 @@ const pages = [
     label: "WHY DO YOU NEED\nLPS ADEQUACY\nAUDIT?",
     title: "WHY DO YOU NEED LPS ADEQUACY AUDIT?",
     content: (
-      <ul className="list-disc space-y-3 pl-5">
+      <ul className="list-disc space-y-3 pl-5 text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed text-white">
         <li>To measure lightning risk to the structure and its contents.</li>
         <li>Identify structures which require protection and determine the level of protection required as per latest standards.</li>
         <li>To assess the condition and integrity of the existing LPS.</li>
@@ -30,7 +30,7 @@ const pages = [
     title: "APPLICATION AREA",
     content: (
       <>
-        <p>
+        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
           Commercial & Cultural Heritage Buildings, Public Service Structures &
           Utilities, IT/ITES Facilities, Hospitals, Hotels, Retails outlets &
           shopping malls, Factories, Industries, Manufacturing plants, Oil & Gas,
@@ -39,9 +39,9 @@ const pages = [
           more
         </p>
 
-        <p>Get your risk assessment report, concept design drawings & bill of materials.</p>
+        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">Get your risk assessment report, concept design drawings & bill of materials.</p>
 
-        <button className="w-fit rounded-full bg-white px-6 py-2 text-[#C02429] text-sm">
+        <button className="w-fit rounded-full bg-white px-6 py-2 text-[#C02429] text-[14px] font-bold uppercase hover:underline">
           JEF Shield
         </button>
       </>
@@ -87,20 +87,20 @@ export default function DetailedContent() {
             initial={{ opacity: 0, x: -18 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.45 }}
-            className="text-[#C02429] text-[18px] sm:text-[22px] md:text-[28px] font-bold uppercase tracking-[4px] leading-[1.5]"
+            className="text-[#C02429] text-[20px] md:text-[26px] font-bold uppercase tracking-[1px] md:tracking-[1.49px] leading-[1.4]"
           >
             {page.title}
           </motion.h2>
           
-          <div className="flex items-center gap-2 text-[#C02429] text-xs font-bold tracking-widest uppercase bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+          <div className="flex items-center gap-2 text-[#C02429] text-[14px] font-bold uppercase tracking-[1px] bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
             {isPaused ? (
               <>
-                <Play size={14} fill="currentColor" />
+                <Play size={16} fill="currentColor" />
                 <span>Paused</span>
               </>
             ) : (
               <>
-                <Pause size={14} fill="currentColor" />
+                <Pause size={16} fill="currentColor" />
                 <span>Playing</span>
               </>
             )}
@@ -112,7 +112,7 @@ export default function DetailedContent() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
-          className="flex-1 text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-[1.65] text-white/95"
+          className="flex-1"
         >
           <div className="flex max-w-[1500px] flex-col gap-6">{page.content}</div>
         </motion.div>
@@ -142,7 +142,7 @@ export default function DetailedContent() {
                   </div>
 
                   <span
-                    className={`whitespace-pre-line text-[10px] sm:text-[11px] md:text-[13px] lg:text-[16px] uppercase tracking-[1.8px] leading-[1.35] transition-all ${
+                    className={`whitespace-pre-line text-[12px] md:text-[18px] uppercase tracking-[1px] md:tracking-[2.5px] font-medium leading-[1.35] transition-all ${
                       isCurrent
                         ? "text-[#C02429]"
                         : "text-[#d4d0c8] group-hover:text-white"

@@ -14,7 +14,7 @@ const EarthingHealthAssessment = () => {
 
   return (
     <div className="bg-[#232427]">
-      <Hero title="EARTHING HEALTH ASSESSMENT" videoSrc="/Audit Services/Earthing Audit - Audit Services.mp4" />
+      <Hero title="EARTHING HEALTH ASSESSMENT" videoSrc="/Products/7. Earth Health Assessment.mp4" />
       <ProductIntro 
        
       />

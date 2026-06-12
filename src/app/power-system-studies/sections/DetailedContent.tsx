@@ -227,7 +227,7 @@ const DetailedContent = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-[#C02427] text-[18px] md:text-[24px] font-bold tracking-[1.5px] md:tracking-[2px] leading-[1.4] uppercase"
+          className="text-[#C02429] text-[20px] md:text-[26px] font-bold tracking-[1px] md:tracking-[1.49px] leading-[1.4] uppercase"
         >
           {page.title}
         </motion.h2>
@@ -246,7 +246,7 @@ const DetailedContent = () => {
                 return (
                   <p
                     key={i}
-                    className="text-[13px] md:text-[15px] lg:text-[16px] font-normal leading-[1.75] text-white text-left"
+                    className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify"
                   >
                     {element.props.children}
                   </p>
@@ -270,7 +270,7 @@ const DetailedContent = () => {
                 >
                   <div className="w-full h-[2px] bg-[#d4d0c8] mb-3 relative z-10">
                     <motion.div
-                      className="absolute top-0 left-0 h-full bg-[#C02427]"
+                      className="absolute top-0 left-0 h-full bg-[#C02429]"
                       initial={{ width: 0 }}
                       animate={{
                         width: isCurrent
@@ -284,9 +284,9 @@ const DetailedContent = () => {
                   </div>
 
                   <span
-                    className={`text-[9px] md:text-[11px] lg:text-[12px] tracking-[1px] font-medium uppercase mt-1 transition-all duration-300 text-left whitespace-pre-line ${
+                    className={`text-[12px] md:text-[18px] tracking-[1px] md:tracking-[2.5px] font-medium uppercase mt-1 transition-all duration-300 text-left whitespace-pre-line ${
                       isCurrent
-                        ? "text-[#C02427]"
+                        ? "text-[#C02429]"
                         : "text-[#d4d0c8] group-hover:text-white"
                     }`}
                   >
@@ -294,7 +294,7 @@ const DetailedContent = () => {
                   </span>
 
                   {isCurrent && isManualPaused && (
-                    <span className="mt-2 text-[9px] uppercase tracking-[1px] text-[#C02427]">
+                    <span className="mt-2 text-[14px] uppercase tracking-[1px] font-bold text-[#C02429]">
                       Paused
                     </span>
                   )}
