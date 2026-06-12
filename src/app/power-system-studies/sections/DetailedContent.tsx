@@ -18,8 +18,8 @@ const pages = [
         <br />
         <p>
           • <span className="text-[#C02429]">Power System Studies</span> -
-          Steady-state and dynamic analysis using ETAP, PSS®E DIgSILENT
-          PowerFactory, and SKM for Load flow, short circuit, Motor starting,
+          Steady-state and dynamic analysis using ETAP, PSS®E, DIgSILENT
+          PowerFactory and SKM for Load flow, short circuit, Motor starting,
           Harmonic analysis, Protection coordination, Arc flash assessment,
           Transient stability & Load shedding studies
         </p>
@@ -61,7 +61,7 @@ const pages = [
     ),
   },
   {
-    label: "ELECTROMAGNETIC TRANSIENT AND",
+    label: "ELECTROMAGNETIC TRANSIENT AND IC STUDIES'",
     nav: "ELECTROMAGNETIC\nTRANSIENT AND",
     title: "ELECTROMAGNETIC TRANSIENT AND INSULATION COORDINATION STUDIES",
     content: (

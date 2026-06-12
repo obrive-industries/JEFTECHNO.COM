@@ -440,7 +440,7 @@ export default function WhatWeDoSection() {
           </div>
          </div>
 
-          {/* CENTER GRAPH */}
+       
          {/* CENTER GRAPH */}
 <div
   className={`
@@ -460,6 +460,7 @@ export default function WhatWeDoSection() {
     duration-1000
     mx-auto
     lg:mx-0
+   
     ${showContent ? "opacity-100" : "opacity-0"}
   `}
 >

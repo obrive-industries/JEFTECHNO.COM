@@ -12,13 +12,13 @@ const pages = [
       <>
         <p>
           Low resistance alone does not define a good earthing system — impedance
-          determines how the system behaves during actual fault conditions
+          determines how the system behaves during actual fault conditions.
         </p>
         <br />
         <p>
           High loop impedance limits fault current, preventing protective devices
           from detecting and clearing faults — the root cause of prolonged fault
-          events, equipment damage, fire, and electric shock
+          events, equipment damage, fire, and electric shock.
         </p>
       </>
     ),

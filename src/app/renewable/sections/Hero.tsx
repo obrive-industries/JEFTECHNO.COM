@@ -33,7 +33,7 @@ const Hero = ({ videoSrc }) => {
           >
             {/* Heading */}
             <h1 className="font-montserrat text-[24px] font-bold uppercase leading-[1.15] tracking-[0.5px] sm:text-[30px] md:text-[42px] md:leading-[1.1]">
-              RENEWABLE
+              RENEWABLE ENERGY CONSULTING SERVICES
             </h1>
 
             {/* Description */}

@@ -14,7 +14,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source
-          src="/Products/Earthing Instrumentation.mp4"
+          src="/Products/7. Earth Health Assessment.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

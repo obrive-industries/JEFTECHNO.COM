@@ -33,7 +33,7 @@ const pages = [
               <h4 className="text-[#C02429] text-[16px] md:text-[18px] font-bold uppercase">Internal LPS Components:</h4>
               <div className="flex flex-wrap gap-9 text-white/90 text-[14px] md:text-[16px]">
                 <span>• Equipotential bonding</span>
-                <span>• Surge protection Devices (SPD)</span>
+                <span>• Surge Protection Devices (SPD)</span>
               </div>
             </div>
           </div>

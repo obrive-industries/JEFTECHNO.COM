@@ -73,7 +73,7 @@ const pages = [
     ),
   },
   {
-    label: "WHY STANDARD\nELECTRICAL TESTING",
+    label: "WHY STANDARD\nELECTRICAL TESTING IS NOT ENOUGH",
     title: "WHY STANDARD ELECTRICAL TESTING DOES NOT SOLVE THIS",
     content: (
       <>

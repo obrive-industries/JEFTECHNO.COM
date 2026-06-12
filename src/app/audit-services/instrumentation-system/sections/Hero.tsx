@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 
 
-const Hero = ({ title = "INSTRUMENTATION SYSTEMS", videoSrc }) => {
+const Hero = ({ title = "INSTRUMENTATION EARTHING AUDIT", videoSrc }) => {
   return (
     <section className="relative h-[75vh] sm:h-[85vh] lg:h-screen overflow-hidden bg-[#232427] font-montserrat">
       <video

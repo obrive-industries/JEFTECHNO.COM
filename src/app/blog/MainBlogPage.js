@@ -496,87 +496,164 @@ export const blogData = {
           </ul>
         </div>
 
-        <p>
-          We have been working with AIS and GIS substations, commercial buildings, retail outlets, warehouses, data centers, factories, manufacturing plants, oil and gas companies, metro rail projects, process plants, wind and solar plants, tank farms, critical structures like communication towers, power plants and more.
-        </p>
-
-        <p>To know more about how we can protect your facility with our lightning protection solution suite, please write to marketing@jeftechno.com or visit our website.</p>
+        <p>For any query: marketing@jeftechno.com</p>
       </div>
     )
   },
 
   'blog8': {
     category: "BLOG",
-    title: "ENSURING SAFETY IN THE OIL AND GAS INDUSTRY",
-    date: "",
-    imageUrl: "/BlogImg/blog-10.png",
+    title: "WHEN FAITH MEETS ENGINEERING: HOW JEF BUILT THE WORLD'S FIRST 200kA LIGHTNING PROTECTION SYSTEM FOR AYODHYA'S RAM MANDIR",
+    date: "April 2026",
+    imageUrl: "/BlogImg/HomePageBlog4.png",
     metaTags: {
-      title: "Ensuring Safety in the Oil and Gas Industry | Electrical Safety, Risk Management & Compliance | JEF Techno",
-      description: "Learn how to ensure safety in the oil and gas industry through electrical safety audits, risk assessments, grounding systems, lightning protection, power system studies, compliance standards, and proactive safety management strategies.",
-      keywords: "Oil and Gas Industry Safety, Electrical Safety in Oil and Gas, Oil and Gas Risk Management, Oil and Gas Safety Audit, Hazardous Area Safety, Electrical Safety Audit, Grounding Systems Oil and Gas, Lightning Protection Oil and Gas, Power System Studies, Arc Flash Analysis, EMI EMC Study, Pipeline Safety, Refinery Safety, Industrial Safety Compliance, Oil and Gas Safety Standards",
+      title: "Ram Mandir Lightning Protection System | 200kA Lightning Protection | JEF Techno",
+      description: "Discover how JEF built the world's first complete sequentially type-tested 200kA lightning protection system for the Shree Ram Janmabhoomi Temple in Ayodhya.",
+      keywords: "Ram Mandir lightning protection, Ayodhya lightning protection, 200kA lightning protection system, JEF lightning protection, lightning protection for temples, heritage lightning protection",
       robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-      canonical: "https://www.jeftechno.com/blog/ensuring-safety-in-the-oil-and-gas-industry",
+      canonical: "https://www.jeftechno.com/blog/ram-mandir-lightning-protection",
     },
     content: (
       <div className="flex flex-col gap-8 text-white/80 font-light leading-relaxed">
         <p>
-          The Oil & Gas industry is essential to the global economy and plays a pivotal role in many industries. However, it inherits dangers that must not be underestimated.
-        </p>
-        <p>
-          National Disaster Management Authority (NDMA) has reported a staggering 130 documented chemical accidents, resulting in 259 deaths and 563 people with major injuries in the last decade.
+          The Shree Ram Janmabhoomi Temple in Ayodhya is not just a place of worship — it is a landmark of national pride, built to stand for centuries. When the temple trust began planning its infrastructure, they made an extraordinary demand: the lightning protection system had to be twice as powerful as anything the global standards required.
         </p>
 
-        <div>
-          <h3 className="text-white font-bold mb-2 uppercase">Key Challenges</h3>
-          <p>
-            The key challenges in the oil and gas segment range from security system malfunction, equipment malfunction, foundation, and structural failures. The common electrical safety challenges in the oil and gas industry are hazardous environments due to the presence of hazardous flammable gas and liquids.
-          </p>
-          <p className="mt-4">
-            Lightning strikes are another weather condition that can cause transients and surges that can damage electrical equipment and result in system outages. Electromagnetic Interference can disrupt the proper functioning of electronic and control systems and affect sensitive communication systems, compromising safety measures.
-          </p>
-          <p className="mt-4">
-            Mitigating such environments and conditions makes the upgrading and maintenance of electrical infrastructure a crucial part of ensuring the safety of the oil and gas segment.
-          </p>
-        </div>
+        <p>
+          That challenge landed on JEF's desk. What followed was a first in the history of lightning protection engineering worldwide.
+        </p>
 
-        <div>
-          <h3 className="text-white font-bold mb-4 uppercase">Ensuring Safety Measures</h3>
-          <p>Mitigating safety challenges in the oil and gas industry is an ongoing process and needs a very comprehensive and proactive approach. Staying up with industry regulations and compliance and following the best industry practices is the only way to ensure the safety of people and assets.</p>
-          <ul className="list-disc pl-5 flex flex-col gap-2 mt-4">
-            <li>The first and most essential step is education and training of manpower in oil and gas safety management. Employees should be well-trained to identify and respond to such potential risks.</li>
-            <li>It is imperative to implement Safety Management Systems (SMS) that identify potential hazards, implement and establish control to mitigate them, and constantly monitor & improve safety measures. Rigorous hazard assessments, including classification of hazardous areas, are essential.</li>
-            <li>Constant monitoring of the integrity of assets and equipment. Aging of equipment makes it mandatory to conduct risk assessments on a time-to-time basis in compliance with safety management systems and standard safety regulations.</li>
-            <li>A robust design and engineering are mandatory for oil and gas projects. Regular maintenance and installation of proper environmental control system will help in regulating the temperature and humidity.</li>
-            <li>Proper grounding and shielding systems will help in mitigating electromagnetic interference, and regular electromagnetic compatibility studies will ensure the early identification of such threats.</li>
-            <li>An Effective Lightning Protection System is crucial for protecting personnel and equipment. Regular audits and risk assessments are needed to ensure safety against lightning.</li>
-          </ul>
-        </div>
+        <hr />
 
-        <p>Oil and Gas is a diverse segment and comprises the following sub-industries and segments. Explaining the common challenges faced in each of the industries:</p>
-
-        <div>
-          <h3 className="text-white font-bold mb-2 uppercase">1. Offshore and Onshore Platforms:</h3>
-          <p>
-            These platforms comprise complex extraction and production processes and are exposed to harsh environmental conditions. Robust engineering and implementation of safety protocols are mandatory for ensuring the safety of personnel and reliability of equipment. Similarly, onshore platforms consist of drilling rigs and processing facilities. It is important to follow safety and compliance regulations.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-white font-bold mb-2 uppercase">2. Oil and Gas Pipelines:</h3>
-          <p>
-            Electromagnetic Interference can disrupt the operation as they comprise critical electronic systems and equipment. Ensuring the safety and reliability of such systems becomes crucial for uninterrupted operation. Electromagnetic Compatibility (EMI EMC) studies comprising AC/DC interference studies, DC Stray current Analysis, EM Zoning, Matrix & evaluation, shielding, etc., are important for in-depth risk analysis and implementation of mitigation measures.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-white font-bold mb-2 uppercase">3. Refineries and Petrochemical Plants:</h3>
-          <p>
-            Major challenges in such industries include meeting stringent environmental regulations, reducing the emission of pollutants, and ensuring electrical safety. Maintenance of complex machinery and equipment is vital to prevent downtime and spurious tripping. Power quality studies and harmonic analysis are crucial studies to mitigate power quality issues and distortions.
-          </p>
-        </div>
+        <h3 className="text-white font-bold mb-2 uppercase">Why Lightning Protection at This Scale?</h3>
 
         <p>
-          Oil and gas industry as a whole comprises complex processes, equipment, and faces a range of challenges. Addressing these challenges requires expertise and technical experience of finding the core issues and then mitigating them. We at JEF Techno Solutions offer technical and specialized engineering services for ensuring the safeguard of personnel and improving overall operational efficiency.
+          Lightning protection systems are rated by the magnitude of impulse current they can safely conduct. The international benchmark, as defined by IEC 62305, is 100kA — the standard that governs protection design for critical structures across the world.
+        </p>
+
+        <p>
+          The Ram Mandir Trust wanted more. Their mandate: protect the temple at 200kA, an energy level four times higher than what any commercially available lightning protection or earthing product in the world was designed to handle.
+        </p>
+
+        <p>
+          This wasn't an incremental upgrade. It was a leap into entirely uncharted engineering territory.
+        </p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">The Challenge: No Product in the World Qualified</h3>
+
+        <p>
+          When JEF's team assessed the requirement, a hard truth emerged — no manufacturer anywhere had a complete, type-tested range of components rated for 200kA lightning impulse current. Not in Europe. Not in the United States. Not in Asia.
+        </p>
+
+        <p>
+          Type-testing is not a formality. It means subjecting every component — air terminals, down conductors, earthing electrodes, connectors — to internationally accredited laboratory testing at the exact impulse current rating they will be expected to handle in the field.
+        </p>
+
+        <p>
+          A system is only as strong as its weakest link, and every link had to be tested.
+        </p>
+
+        <p>
+          JEF had two options: source components that didn't exist or build them.
+        </p>
+
+        <p>They chose to build them.</p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">India-Made, Europe-Tested: The Engineering Response</h3>
+
+        <p>
+          JEF's engineering team designed and developed an entirely new range of lightning protection and earthing components capable of withstanding 200kA impulse current. These products were:
+        </p>
+
+        <ul className="list-disc pl-5 flex flex-col gap-2">
+          <li>
+            Designed and manufactured in India, aligned with the government's Make in India vision
+          </li>
+          <li>
+            Type-tested by European certification bodies, meeting and surpassing IEC standard requirements
+          </li>
+          <li>
+            Sequentially tested as a complete system — not just individual components in isolation
+          </li>
+        </ul>
+
+        <p>
+          This last point is critical. Sequential type-testing means every component in the system was tested in the order and manner in which it would perform under a real lightning event. It is the most rigorous form of product validation in the industry.
+        </p>
+
+        <p>
+          The result: the world's first complete range of sequentially type-tested 200kA lightning protection system components — developed, built, and proven in India.
+        </p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">What Makes 200kA So Different?</h3>
+
+        <p>
+          To appreciate the engineering achievement, consider what the numbers actually mean.
+        </p>
+
+        <p>
+          A standard IEC 100kA system is designed for Level I protection — the highest classification under the international standard. The energy released by a 200kA lightning strike is not twice as much; because energy scales with the square of current, it is four times the energy of a 100kA event.
+        </p>
+
+        <p>
+          That means every component — every clamp, every conductor, every earth electrode — must absorb and dissipate four times the thermal and mechanical stress compared to a standard Level I system. Materials, cross-sections, connection methods, and grounding depth all had to be re-engineered from the ground up.
+        </p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">A Project Portfolio That Prepared JEF for This Moment</h3>
+
+        <p>
+          JEF did not arrive at the Ram Mandir project without a foundation. Over three decades of protecting India's most critical infrastructure had sharpened the team's capabilities:
+        </p>
+
+        <ul className="list-disc pl-5 flex flex-col gap-2">
+          <li>
+            Statue of Unity — the world's tallest statue, requiring precision lightning risk assessment and protection design
+          </li>
+          <li>
+            Narendra Modi Stadium, Ahmedabad — the world's largest cricket stadium
+          </li>
+          <li>
+            Kempegowda International Airport, Terminal 2, Bengaluru — a modern infrastructure landmark
+          </li>
+          <li>
+            Dozens of industrial facilities, petrochemical plants, power stations, and data centres across India and internationally
+          </li>
+        </ul>
+
+        <p>
+          Each project brought unique challenges. The Ram Mandir brought them all together — heritage significance, structural sensitivity, extreme performance requirements, and the eyes of a nation.
+        </p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">The Outcome: A System Built to Last Centuries</h3>
+
+        <p>
+          The completed lightning and earthing protection system at the Shree Ram Janmabhoomi Temple delivers protection that no other building in the world currently has — a fully type-tested, 200kA-rated system, designed to safeguard the temple and its occupants for generations.
+        </p>
+
+        <p>
+          For JEF, this project is more than a portfolio entry. It is a milestone that redefines what Indian engineering can achieve — and a standard that others will now aspire to meet.
+        </p>
+
+        <hr />
+
+        <h3 className="text-white font-bold mb-2 uppercase">What This Means for the Industry</h3>
+
+        <p>
+          The development of 200kA type-tested components has opened a new frontier in high-risk lightning protection. Industries where the consequences of a direct lightning strike are catastrophic — oil and gas refineries, ammunition depots, nuclear facilities, heritage structures, mission-critical data centres — now have a validated, tested solution available from an Indian manufacturer.
+        </p>
+
+        <p>
+          The engineering work done for Ayodhya has created a product range that is available for any project that demands protection beyond what global standards currently define.
         </p>
       </div>
     )
@@ -614,6 +691,7 @@ export const blogData = {
           <p>
             JEF Shield is a unique automated user-friendly tool for Lightning Protection Risk Assessment as per IS/IEC 62305. This tool helps you to carry out a comprehensive risk assessment with the required data about the structure & equipment that needs protection. JEF Shield is a "ONE STOP SOLUTION" to assess the overall risk of lightning and propose a conceptual design & tentative bill of materials for any green field project.
           </p>
+          <img src="/BlogImg/blog-9.1.png" alt="JEF SHIELD - Lightning Protection Risk Assessment Tool" className="w-full mt-4 rounded-lg" />
         </div>
 
         <div>
@@ -969,6 +1047,7 @@ export const blogData = {
         <p>
           We call this software <a href="https://www.jeftechno.com/JEF_SHIELD/login.php" className="underline">JEF SHIELD</a>. The working premise of JEF SHIELD is that it identifies the risk, analyses it, and then determines your RISK LEVEL. And it can be found on <strong>www.jeftechno.com!</strong>
         </p>
+        <img src="/BlogImg/blog-9.1.png" alt="JEF SHIELD" className="w-full h-auto rounded-lg" />
 
         <p>
           All you have to do is give ACCURATE input data as and when it asks. Your risk assessment results are solely dependent on your INPUT DATA. More the accuracy of your input data, more the accuracy of your risk level!
@@ -1116,6 +1195,7 @@ export const blogData = {
         <p>
           The average wattage losses in a typical industrial facility can be 15-20% of total demanded power. These wattage losses can be reduced by improving the power factor closer to unity and reducing the voltage and current harmonic distortion below 5%.
         </p>
+        <img src="/BlogImg/blog-16.1.png" alt="Power Factor and Harmonic Studies" className="w-full h-auto rounded-lg" />
 
         <p>
           True/Total PF = Displacement PF × Distortion Factor. The distortion power factor is contributed by harmonics in the network and reduction in harmonic levels can improve the total power factor to reduce the overall Energy cost.
@@ -1168,6 +1248,7 @@ export const blogData = {
           </p>
           <p className="mt-2">Typical line losses as a percentage of Power Demand: <strong>1% to 3%</strong></p>
         </div>
+        <img src="/BlogImg/blog-16.2.png" alt="Power Factor and Harmonic Studies" className="w-full h-auto rounded-lg" />
 
         <p>
           The <a href="https://www.jeftechno.com/product_quality.php" className="underline">Power Quality</a> experts at JEF Techno Solutions have extensive experience and knowledge of all the factors impacting the operating efficiencies of each of these components. Our Power Quality service team are equipped with state-of-the-art test and analysis equipment to conduct site evaluation of electrical system losses.
@@ -1326,6 +1407,28 @@ export const blogData = {
         <p>
           Low voltage is defined as any AC RMS voltage up to 1000 V or DC peak voltage up to 1500 V. In general, <a href="https://www.jeftechno.com/surge-protection-device.php" className="underline">SPDs</a> need to be installed at main DB, sub DB and at equipment level.
         </p>
+        <img src="/BlogImg/blog-19.1.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+        <p>Figure 1-Example of installation of Class I, class II and class III tested SPDs <br/>
+In the above figure instead of Class I and Class II, Class I + II can be used if Iimp value is taken care
+It is because SPDs provide an “effective” protection distance of a maximum of 10 meters. It means, if the distance between the SPD and the equipment to be protected is greater than 10 meters, additional SPDs will be required. The crucial point to note in this case is that the “actual” wire length needs to be calculated rather than the physical distance between the SPD and equipment.
+</p>
+<img src="/BlogImg/blog-19.2.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+<p>
+  Figure 2- Difference between physical distance and actual distance.<br/>
+Physical location of equipment is important to select the quantity of SPDs. In the below Figure 3- 2 examples are given. In Example1, the number of PCs are 5 & in Example 2, the number of PCs are 4.. But in Example 1, one SPD is enough to protect all the 5 PCs as the “actual ‘ distance from SPD to the farthest PC- PC 3 is only 5 meters, because all the PCs are kept in one room, next to each other. Whereas. In Example 2, 4 number of SPDs are needed to protect 4 PCs , because 1 PC is located in each floor and the ‘actual” distance exceeds 10 m in Floors 1, 2 & 3.Only PC 1 does not require any additional SPD because the “actual’ distance from the SPD which is in Sub DB is only 5 meters away from PC1.
+
+</p>
+
+
+<img src="/BlogImg/blog-19.3.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+<img src="/BlogImg/blog-19.4.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+<p>
+   
+Figure 2- Difference between physical distance and actual distance.<br/>
+The below selection principle shall be strictly followed:
+a. Protection between Live conductor and PE is COMPULSORY.
+b. Protection between Live conductor and neutral is RECOMMENDED to ensure equipment 
+</p>
 
         <p>
           SPDs provide an "effective" protection distance of a maximum of 10 meters. It means, if the distance between the SPD and the equipment to be protected is greater than 10 meters, additional SPDs will be required. The crucial point to note is that the "actual" wire length needs to be calculated rather than the physical distance between the SPD and equipment.
@@ -1356,6 +1459,18 @@ export const blogData = {
           </ul>
           <p className="mt-2">Only connection type CT-2 need to be followed, due to the constraint in Voltage Protection level and the installation bottleneck.</p>
         </div>
+        <img src="/BlogImg/blog-19.5.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+        <p>
+          Figure- 4 -Connection type CT1 (4+0 configuration) for a 3 phase system with separate neutral and earth terminals (Common mode protection)
+        </p>
+        <img src="/BlogImg/blog-19.6.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+        <p>
+          Figure- 5 - Connection type CT1 (3+0 configuration) for a 3 phase system with separate neutral and earth terminals (Combination of common mode and differential mode protection)
+        </p>
+        <img src="/BlogImg/blog-19.7.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+        <p>
+          Figure- 6 - Connection type CT1 (3+1 configuration) for a 3 phase system with separate neutral and earth terminals (Combination of common mode and differential mode protection)
+        </p>
 
         <div>
           <h3 className="text-white font-bold mb-2 uppercase">Installation - MYTH:</h3>
@@ -1368,6 +1483,14 @@ export const blogData = {
           <h3 className="text-white font-bold mb-2 uppercase">Installation - FACT:</h3>
           <p>
             The total length of the cable — from live wire to OCPD, from OCPD to SPD, and from SPD to earth terminal — has to be <strong>below 0.5 meter</strong> to ensure protection of equipment.
+          </p>
+          <img src="/BlogImg/blog-19.8.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+          <p className="text-white/60 font-bold text-sm">
+            Figure 7- Class I or Class I+II SPD installation to decrease the lead length of SPD supply conductors.
+          </p>
+          <img src="/BlogImg/blog-19.9.png" alt="SPD Selection & Installation Myths & Facts" className="w-full h-auto rounded-lg" />
+          <p className="text-white/60 font-bold text-sm">
+            Figure 8- Class I or Class II SPD installation to decrease the lead length of SPD supply conductors.
           </p>
         </div>
 
@@ -1731,9 +1854,11 @@ export const blogData = {
         <p>
           An electrically independent <a href="https://www.jeftechno.com/grounding-system-solutions" className="underline">earth electrode</a> is defined as one that is positioned "at such a distance from the nearest electrode that the greatest current likely to pass through one of them does not appreciably affect the potential of other electrodes." The distance mentioned is nothing but a distance more than the "sphere of influence".
         </p>
+        <img src="/BlogImg/blog-26.1.png" alt="Sphere of Influence of an Earth Electrode" className="w-full h-auto rounded-lg" />
         <p>
           <strong>IEC 61000 Electromagnetic compatibility (EMC) - Part 5: Installation and mitigation guidelines - Section 2: Earthing and cabling, i.e. IEC 61000-5-2.</strong>
         </p>
+        <img src="/BlogImg/blog-26.2.png" alt="IEC 61000-5-2 - Earthing and Cabling" className="w-full h-auto rounded-lg" />
         <p>
           Generally, Electronics and Instrumentation Engineers feel that <a href="https://www.jeftechno.com/blog/role-of-grounding-in-electrical-safety" className="underline">electrical earthing</a> is "dirty earthing" and their equipment will fail if all earthing systems are interconnected. They wish to keep a separate earthing system for their application. Though Electronic equipment can have independent earth electrodes, they should be connected to other earthing systems below the ground.
         </p>
@@ -1788,14 +1913,18 @@ export const blogData = {
             <li><strong>LPZ 1:</strong> Entry point of power &amp; signal cables from the windmill tower to the building (second level of attenuation)</li>
             <li><strong>LPZ 2:</strong> Place where sensitive electronic equipment is located (final level of attenuation where electric &amp; magnetic fields are very minimum)</li>
           </ul>
+          <img src="/BlogImg/blog-27.1.png" alt="LPZ in Windmill Systems" className="w-full h-auto rounded-lg" />
         </div>
         <p>
+          <img src="/BlogImg/blog-27.2.png" alt="LPZ in Windmill Systems" className="w-full h-auto rounded-lg" />
           <strong>Shielding:</strong> Nacelle are made of metal which is a closed structure by itself to protect from radiated effects of lightning. Shielded cables shall be used with 360-degree bonding at entry &amp; exit points connected to EBB (Equipotential Bonding Bar) on either side of the cable.
         </p>
         <p>
           <strong>Earthing:</strong> "Global earthing" as explained in IS3043 latest edition (2018) shall be followed, including the structural steel reinforcement of the wind turbine with the earth grid surrounding the windmill &amp; the building.
         </p>
         <p>
+          <img src="/BlogImg/blog-27.3.png" alt="Global Earthing in Windmill Systems" className="w-full h-auto rounded-lg" />
+
           <strong>SPDs:</strong> While radiated surges are limited by shielding technique, conducted surges are reduced below the withstanding level of equipment by using <a href="https://www.jeftechno.com/blog/power-line-and-data-line-spd-protection" className="underline">SPDs for power, data, and communication lines</a>. Either Class I or Class I+II 3-phase SPD with 400/690 V compatible with minimum Iimp of 12.5 kA for TN-C system shall be employed in parallel at the main DB.
         </p>
         <p>Please let us know if you need further assistance or have any requirements: marketing@jeftechno.com</p>
@@ -1826,9 +1955,14 @@ export const blogData = {
         <p>
           Soil resistivity can be measured in a variety of methods. Electrical profiling is the best approach for assessing <a href="https://www.jeftechno.com/blog/soil-treatment-for-good-earthing" className="underline">soil resistivity for the design of earthing and safety requirements</a>. Wenner's Four-Point Method is the most popular and user-friendly method. In this method, four spikes with equal spacing are connected to the soil resistivity meter. The current is injected through the extreme spikes and the potential drop is measured between the inner (potential) spikes.
         </p>
+        <img src="/BlogImg/blog-28.1.png" alt="Wenner's Four-Point Method for Soil Resistivity Measurement" className="w-full h-auto rounded-lg" />
+        <img src="/BlogImg/blog-28.2.png" alt="Wenner's Four-Point Method for Soil Resistivity Measurement" className=" mt-5 w-full h-auto rounded-lg" />
         <p>
           The resistivity of the soil is dependent on salt content, moisture, and temperature. The resistivity of the soil cannot stay uniform throughout the life of the system as the soil can be eroded due to wind, rain, floods, and manmade actions.
         </p>
+        <img src="/BlogImg/blog-28.3.png" alt="Factors Affecting Soil Resistivity" className="w-full h-auto rounded-lg" />
+        <img src="/BlogImg/blog-28.4.png" alt="Factors Affecting Soil Resistivity" className="mt-6 w-full h-auto rounded-lg" />
+        <img src="/BlogImg/blog-28.5.png" alt="Factors Affecting Soil Resistivity" className="mt-6 w-full h-auto rounded-lg" />
         <div>
           <h3 className="text-white font-bold mb-4 uppercase">Parameters Impacting the Soil Resistivity Measurement</h3>
           <ul className="list-disc pl-5 flex flex-col gap-3">
@@ -1840,6 +1974,8 @@ export const blogData = {
           </ul>
         </div>
         <p>
+          <img src="/BlogImg/blog-28.6.png" alt="Parameters Impacting Soil Resistivity Measurement" className="w-full h-auto rounded-lg" />
+          <img src="/BlogImg/blog-28.7.png" alt="Parameters Impacting Soil Resistivity Measurement" className="mt-6 w-full h-auto rounded-lg" />
           If variation in readings exceeds 30% in a given direction, the soil is deemed non-uniform and a multilayer soil model shall be used for designing. While using a simple average of measured soil resistivity values for design, the margin of error in safety parameters can easily exceed 100%.
         </p>
         <p>
@@ -1876,9 +2012,11 @@ export const blogData = {
         <p>
           One form of lightning is where a discharge takes place from the negatively charged portion to the positively charged portion within the cloud. This is commonly known as intra-cloud lightning.
         </p>
+        <img src="/BlogImg/blog-29.1.png" alt="Intra Cloud Lightning" className="w-full h-auto rounded-lg" />
         <p>
           Occasionally, the charged mass from the base of a cloud moves towards earth in steps. This stream of charge is known as a natural down streamer and it induces a charge of opposite polarity at any sharp points on the earth's surface. The sharp points on the earth send out their own upward streamers. Since the two streamers are opposite in polarity, they are attracted towards each other. When they meet, the air gap between the cloud and the earth breaks down, resulting in the cloud being wired to the earth. All the energy in the cloud flows down this corridor to the earth — this is termed as lightning. This energy can be of the order of a few hundred mega joules and it hits the earth in a few microseconds.
         </p>
+        <img src="/BlogImg/blog-29.2.png" alt="Cloud to Ground Lightning" className="w-full h-auto rounded-lg" />
         <p>
           It is important to note that for any given downstream from the cloud, there can be many up streamers going from the earth's surface. Whichever up streamer manages to establish contact with the downstream first will route the lightning strike to the point where the up streamer has originated. This entire phenomenon occurs in a few milliseconds and is invisible to the human eye. Given the above, it is almost impossible to predict when and where lightning will strike. Hence, we must be adequately prepared at all times to protect ourselves against these dangerous natural phenomena.
         </p>
@@ -1919,6 +2057,7 @@ export const blogData = {
         <p>
           <a href="https://www.jeftechno.com/blog/earthing-misconceptions" className="underline">Another myth revolves around the concept of Global Grounding.</a> As per the concept of "Global earthing", electrical earthing, electronic earthing, instrumentation earthing, communication earthing, structure earthing and lightning protection system earthing should be interconnected below the ground. This is recommended in IS 3043, IS/IEC 62305, IEC 61000-5-2, and IEEE 142 Standards.
         </p>
+        <img src="/BlogImg/blog-30.1.png" alt="Global Earthing Concept" className="w-full h-auto rounded-lg" />
         <div>
           <h3 className="text-white font-bold mb-4 uppercase">Grounding System Design</h3>
           <p>
@@ -2073,6 +2212,7 @@ export const blogData = {
             <li>IS/IEC 62305-4: Protection of electrical &amp; electronic systems within the structure</li>
           </ul>
         </div>
+        <img src="/BlogImg/blog-33.1.png" alt="IS/IEC 62305 Protection Against Lightning" className="w-full h-auto rounded-lg" />
         <div>
           <h3 className="text-white font-bold mb-4 uppercase">4 Sources of Damage</h3>
           <ul className="list-disc pl-5 flex flex-col gap-2">
@@ -2082,6 +2222,7 @@ export const blogData = {
             <li>S4: Lightning striking near the service</li>
           </ul>
         </div>
+        <img src="/BlogImg/blog-33.2.png" alt="Sources of Damage from Lightning" className="w-full h-auto rounded-lg" />
         <div>
           <h3 className="text-white font-bold mb-4 uppercase">3 Types of Damages</h3>
           <ul className="list-disc pl-5 flex flex-col gap-2">
@@ -2089,6 +2230,7 @@ export const blogData = {
             <li>D2: Physical damage to the structure</li>
             <li>D3: Failure of electrical &amp; electronic equipment</li>
           </ul>
+          <img src="/BlogImg/blog-33.3.png" alt="Types of Damages from Lightning" className="w-full h-auto rounded-lg" />
         </div>
         <p>
           These damages must be controlled within tolerable levels to minimize 4 types of losses: Loss of Human life, Loss of essential public services, Loss of cultural damage, and Economic loss.
@@ -2633,6 +2775,7 @@ export const blogData = {
             </li>
           </ul>
         </div>
+        <img src="/BlogImg/blog-44-1.png" alt="Power Quality Events" className="w-full rounded-lg" />
         <p>Please let us know if you need further assistance or have any requirements: marketing@jeftechno.com</p>
       </div>
     )

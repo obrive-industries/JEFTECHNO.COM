@@ -107,7 +107,7 @@ const Overview = () => {
     xl:grid-cols-5
     gap-6
     md:gap-8
-    lg:gap-40
+    lg:gap-50
     place-items-center
           "
         >

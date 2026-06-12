@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const pages = [
   {
-    label: "CONVENTIONAL EARTHING ASSESSMENT",
-    nav: "CONVENTIONAL\n EARTHING\n ASSESSMENT",
+    label: "HOW CLPS WORKS",
+    nav: "HOW CLPS WORKS",
     title: "THE LIGHTNING THREAT AND WHY PROTECTION IS REQUIRED",
     content: (
       <>
