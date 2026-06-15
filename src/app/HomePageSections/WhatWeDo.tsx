@@ -341,7 +341,8 @@ export default function WhatWeDoSection() {
       flex-col
       lg:flex-row
       items-start
-      lg:items-center
+      lg:items-start
+     
       justify-start
       lg:justify-between
       gap-25
@@ -445,6 +446,7 @@ export default function WhatWeDoSection() {
 <div
   className={`
     relative
+    lg:mt-40
     w-full
     max-w-[450px]
     h-[350px]
@@ -621,6 +623,7 @@ export default function WhatWeDoSection() {
 <div
   className={`
     w-full
+    lg:mt-65
     lg:flex-1
     min-w-0
     max-w-full
