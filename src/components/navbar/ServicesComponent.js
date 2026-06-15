@@ -69,10 +69,10 @@ const ServicesComponent = () => {
 
   const services2 = [
     { icon: "/nav-ehs.png", text: "EARTHING HEALTH ASSESSMENT", path: "/audit-services/earthing-health-assessment" },
-    { icon: "/nav-ie.png", text: "INSTRUMENTATION SYSTEMS", path: "/audit-services/instrumentation-system" },
+    { icon: "/nav-ie.png", text: "INSTRUMENTATION EARTHING SYSTEM", path: "/audit-services/instrumentation-system" },
     { icon: "/nav-lps.png", text: "LIGHTNING PROTECTION AUDIT", path: "/audit-services/lightning-protection-system-adequacy-audit" },
     { icon: "/nav-pqs.png", text: "POWER QUALITY STUDIES", path: "/audit-services/power-quality-studies-and-analysis-services" },
-    { icon: "/nav-efs.png", text: "ELECTRICAL FIRE SAFETY", path: "/audit-services/electrical-and-fire-safety-audit" },
+    { icon: "/nav-efs.png", text: "ELECTRICAL & FIRE SAFETY", path: "/audit-services/electrical-and-fire-safety-audit" },
   ];
 
   const services3 = [

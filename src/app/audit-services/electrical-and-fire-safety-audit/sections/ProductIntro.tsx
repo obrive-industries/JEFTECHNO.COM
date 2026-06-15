@@ -7,7 +7,7 @@ const defaultNavItems = [
   { label: "Home", isActive: true },
   { label: "Our Business", isActive: true },
   { label: "Audit Services", isActive: true },
-  { label: "Electrical Fire Safety", isActive: false },
+  { label: "Electrical & Fire Safety", isActive: false },
 ];
 
 export default function ProductIntro({

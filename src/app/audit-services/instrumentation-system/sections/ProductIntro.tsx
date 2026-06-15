@@ -7,7 +7,7 @@ const defaultNavItems = [
   { label: "Home", isActive: true },
   { label: "Our Business", isActive: true },
   { label: "Audit Services", isActive: true },
-  { label: "Instrumentation System", isActive: false },
+  { label: "Instrumentation Earthing System", isActive: false },
 ];
 
 export default function ProductIntro({

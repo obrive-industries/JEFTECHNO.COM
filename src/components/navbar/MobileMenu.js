@@ -47,10 +47,10 @@ const MobileMenu = () => {
     ],
     audit: [
       { label: "Earthing Health Assessment", path: "/audit-services/earthing-health-assessment" },
-      { label: "Instrumentation Systems", path: "/audit-services/instrumentation-system" },
+      { label: "Instrumentation Earthing System", path: "/audit-services/instrumentation-system" },
       { label: "Lightning Protection Audit", path: "/audit-services/lightning-protection-system-adequacy-audit" },
       { label: "Power Quality Studies", path: "/audit-services/power-quality-studies-and-analysis-services" },
-      { label: "Electrical Fire Safety", path: "/audit-services/electrical-and-fire-safety-audit" },
+      { label: "Electrical & Fire Safety", path: "/audit-services/electrical-and-fire-safety-audit" },
     ],
     consulting: [
       { label: "INDUSTRIAL", path: "/power-system-studies" },

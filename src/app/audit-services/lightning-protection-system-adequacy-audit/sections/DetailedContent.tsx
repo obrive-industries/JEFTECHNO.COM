@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Play, Pause } from "lucide-react";
 
 const PROGRESS_DURATION = 6000;
 const PROGRESS_INTERVAL = 50;
@@ -41,7 +40,7 @@ const pages = [
 
         <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">Get your risk assessment report, concept design drawings & bill of materials.</p>
 
-        <button className="w-fit rounded-full bg-white px-6 py-2 text-[#C02429] text-[14px] font-bold uppercase hover:underline">
+        <button onClick={() => { window.location.href = "/Products/JEF-shield" }} className="w-fit rounded-full bg-black border-2 border-[#C02429] px-6 py-2 text-[#C02429] text-[14px] font-bold uppercase hover:underline">
           JEF Shield
         </button>
       </>
@@ -81,31 +80,15 @@ export default function DetailedContent() {
       className="min-h-[760px] bg-[#161414] py-14 md:py-20 font-montserrat text-white overflow-hidden cursor-pointer"
     >
       <div className="section-container flex min-h-[650px] flex-col px-5 md:px-0">
-        <div className="flex justify-between items-center mb-9">
-          <motion.h2
-            key={`title-${activePage}`}
-            initial={{ opacity: 0, x: -18 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.45 }}
-            className="text-[#C02429] text-[20px] md:text-[26px] font-bold uppercase tracking-[1px] md:tracking-[1.49px] leading-[1.4]"
-          >
-            {page.title}
-          </motion.h2>
-          
-          <div className="flex items-center gap-2 text-[#C02429] text-[14px] font-bold uppercase tracking-[1px] bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-            {isPaused ? (
-              <>
-                <Play size={16} fill="currentColor" />
-                <span>Paused</span>
-              </>
-            ) : (
-              <>
-                <Pause size={16} fill="currentColor" />
-                <span>Playing</span>
-              </>
-            )}
-          </div>
-        </div>
+        <motion.h2
+          key={`title-${activePage}`}
+          initial={{ opacity: 0, x: -18 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.45 }}
+          className="mb-9 text-[#C02429] text-[20px] md:text-[26px] font-bold uppercase tracking-[1px] md:tracking-[1.49px] leading-[1.4]"
+        >
+          {page.title}
+        </motion.h2>
 
         <motion.div
           key={`content-${activePage}`}

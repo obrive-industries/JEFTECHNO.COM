@@ -292,12 +292,6 @@ const DetailedContent = () => {
                   >
                     {tab.nav}
                   </span>
-
-                  {isCurrent && isManualPaused && (
-                    <span className="mt-2 text-[14px] uppercase tracking-[1px] font-bold text-[#C02429]">
-                      Paused
-                    </span>
-                  )}
                 </button>
               );
             })}

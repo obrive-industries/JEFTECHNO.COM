@@ -275,8 +275,17 @@ export default function WhatWeDoSection() {
     "/HomePageImg/WhatWeDoSection/Solution-5.png",
   ];
 
-  const background =
-    backgrounds[activeCard % backgrounds.length];
+const isCLPS =
+  activeSection === "products" &&
+  currentData.heading.includes("CLPS");
+
+const isConsulting = activeSection === "consulting";
+
+const background = isCLPS
+  ? "/HomePageImg/WhatWeDoSection/solution-clps.jpeg"
+  : isConsulting
+  ? "/HomePageImg/WhatWeDoSection/solution-consulting.jpeg"
+  : backgrounds[activeCard % backgrounds.length];
 
   return (
     <section

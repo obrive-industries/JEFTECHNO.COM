@@ -2657,7 +2657,7 @@ b. Protection between Live conductor and neutral is RECOMMENDED to ensure equipm
               <strong>Capacitive Coupling:</strong> Affects only aerial pipelines situated in the proximity of HV Power Lines. For underground pipelines, the effect of capacitive coupling may not be considered because of the screening effect of earth against electric fields.
             </li>
           </ul>
-        </div>
+        </div>w
         <p>
           Pipelines can suffer the potential loss of metal and resultant risk of leakage of product due to AC corrosion. It is very important to understand the interaction between the transmission lines (power system), pipeline and the cathodic protection systems to assess the impact of AC Interference.
         </p>
