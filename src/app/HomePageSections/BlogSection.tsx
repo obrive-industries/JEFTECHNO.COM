@@ -16,35 +16,25 @@ export default function BlogsSection() {
     {
       id: 1,
       title:
-        "PQ SERVICES – ECONOMIC BENEFITS OF POWER FACTOR AND HARMONIC STUDIES",
-      imageSrc: "/BlogImg/HomePageBlog1.png",
-      path: "/blog",
+        "EARTHING AND LIGHTNING PROTECTION FOR RELIGIOUS STRUCTURES",
+      imageSrc: "/BlogImg/blog-1.png",
+      path:"/blog/blog1"
+      
     },
     {
       id: 3,
-      title: "Ensuring Electrical Safety in Greenfield Projects",
-      imageSrc: "/BlogImg/HomePageBlog2.png",
-      path: "/blog",
+      title: "MEASUREMENT, SIMULATION, VALIDATION – THE 3 KEY STEPS OF POWER SYSTEM STUDIES",
+      imageSrc: "/BlogImg/blog-5.png",
+      path:"blog/blog2"
+    
     },
     {
       id: 4,
       title:
-        "Measurement, simulation, validation - The 3 key steps of Power System Studies",
-      imageSrc: "/BlogImg/HomePageBlog3.png",
-      path: "/blog",
-    },
-    {
-      id: 5,
-      title:
-        "Importance of Electrical Safety in Chemical and Pharma Industries: Best Practices for Preventing Workplace Accidents",
-      imageSrc: "/BlogImg/Blog 5.png",
-      path: "/blog/blog4",
-    },
-    {
-      id: 6,
-      title: "Types of Earthing -  Type A and Type B",
-      imageSrc: "/BlogImg/Blog 6.png",
-      path: "/blog/blog6",
+        "CHALLENGES FOR ELECTRICAL SYSTEM DESIGN AND ENGINEERING IN GREENFIELD PROJECTS",
+      imageSrc: "/BlogImg/blog-3.png",
+      path:"/blog/blog3"
+    
     },
   ];
 
@@ -189,7 +179,7 @@ export default function BlogsSection() {
                 className="
                   w-full
                   h-full
-                  object-cover
+                  object-contain
                   transform-gpu
                   transition-transform
                   duration-500
@@ -229,8 +219,9 @@ export default function BlogsSection() {
                   sm:mt-[32px]
                   text-[24px]
                   sm:text-[32px]
+                  lg:text-[25px]
                   leading-[140%]
-                  sm:leading-[48px]
+                  sm:leading-[35px]
                   uppercase
                   text-white
                   font-normal
@@ -255,7 +246,7 @@ export default function BlogsSection() {
               <span
                 className="
                   mt-[28px]
-                  sm:mt-[48px]
+                  sm:mt-[20px]
                   text-[11px]
                   sm:text-[12px]
                   font-light
@@ -267,7 +258,7 @@ export default function BlogsSection() {
                <Link href={blogData[0].path}>
           <div
             className="
-              mt-[35px]
+              mt-[23px]
               flex
               items-center
               gap-[10px]
@@ -356,7 +347,7 @@ function BlogCard({ imageSrc, title, path }) {
           className="
             w-full
             h-full
-            object-cover
+            object-contain
             transform-gpu
             transition-transform
             duration-500

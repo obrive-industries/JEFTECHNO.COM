@@ -12,7 +12,7 @@ const menuItems = [
   //{ label: "Our Industries", hasDropdown: true },
   { label: "JEF UAE", hasDropdown: false , path:"https://www.jefuae.com/"},
   { label: "JEF SHIELD", hasDropdown: false,path:"https://www.jeftechno.com/JEF_SHIELD/login.php" },
-  { label: "COMING SOON", hasDropdown: false, path: "" },
+  { label: "JEF SAFE", hasDropdown: false, path: "/coming-soon" },
  
 ];
 

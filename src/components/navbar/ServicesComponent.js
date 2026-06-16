@@ -80,7 +80,7 @@ const ServicesComponent = () => {
     {
       icon: "/nav-renewable.png",
       text: "Renewable – Power System Studies",
-      path: "/power-system-studies",
+      path: "/renewable",
     
     },
     {

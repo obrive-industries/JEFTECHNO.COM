@@ -284,7 +284,7 @@ const isConsulting = activeSection === "consulting";
 const background = isCLPS
   ? "/HomePageImg/WhatWeDoSection/solution-clps.jpeg"
   : isConsulting
-  ? "/HomePageImg/WhatWeDoSection/solution-consulting.jpeg"
+  ? "/HomePageImg/WhatWeDoSection/.jpeg"
   : backgrounds[activeCard % backgrounds.length];
 
   return (
