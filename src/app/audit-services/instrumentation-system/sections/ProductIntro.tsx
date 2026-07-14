@@ -72,7 +72,7 @@ export default function ProductIntro({
           {introText}
         </p>
 
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {expanded && (
             <motion.div
               initial={{ opacity: 0, height: 0, y: -10 }}
@@ -86,16 +86,16 @@ export default function ProductIntro({
               </p>
             </motion.div>
           )}
-        </AnimatePresence>
+        </AnimatePresence> */}
 
-        <motion.button
+        {/* <motion.button
           onClick={() => setExpanded(!expanded)}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.96 }}
           className="mt-10 text-[11px] md:text-[13px] uppercase tracking-[2px] text-white transition-all hover:text-[#C02429]"
         >
           {expanded ? "READ LESS" : "READ MORE"}
-        </motion.button>
+        </motion.button> */}
       </header>
     </section>
   );

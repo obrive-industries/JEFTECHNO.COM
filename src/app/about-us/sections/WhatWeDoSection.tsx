@@ -67,7 +67,7 @@ export default function AboutUsServicesSection() {
       title: "PRODUCTS",
       heading: "PRODUCTS",
       description:
-        "Type-tested lightning protection components and systems, earthing and grounding system solutions, surge protective devices, and lightning risk assessment tools.",
+        "Supply, installation, testing and commisioning of Type testing lightning protection components and systems, earthing and grounding system solutions, surge protective devices, and lightning risk assessment tools.",
       background: "/HomePageImg/WhatWeDoSection/Solution-5.png",
       x: 460,
       y: 170,

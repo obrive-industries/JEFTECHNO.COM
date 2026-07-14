@@ -38,17 +38,17 @@ const sectors = [
   {
     name: "PROCESS PLANT",
     description:
-      "Petrochemicals, chemicals, pharmaceuticals, fertilisers, food and beverages — audit services, instrumentation earthing, and EMI/EMC studies.",
+      "Petrochemicals, chemicals, pharmaceuticals, fertilisers, food and beverages — audit services, instrumentation earthing, earthing integrity, electrical & fire safety audit and EMI/EMC studies.",
   },
   {
     name: "DATA CENTERS",
     description:
-      "Earthing health assessment, surge protection, EMC management, and power quality studies for critical IT infrastructure.",
+      "Design of lightning protection & earthing systems, earthing health assessment, surge protection, EMC management, and power quality studies for critical IT infrastructure.",
   },
   {
     name: "OIL & GAS",
     description:
-      "Offshore platforms, artificial islands, subsea cable systems, onshore processing facilities, and EPC/EPCC project support across the full power systems study programme.",
+      "Offshore platforms, artificial islands, subsea cable systems, onshore processing facilities, and EPC/EPCC project support across the full power system studies programme.",
   },
 ];
   const maxIndex = sectors.length - 1;

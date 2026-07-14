@@ -18,7 +18,7 @@ import Image from "next/image";
       alt: "JEF UAE Headquarters",
       title: "Abu Dhabi, UAE (GCC HQ)",
       description:
-        "Focused on high-performance engineering services for the energy sector, including power system studies, instrumentation earthing, EMI/EMC analysis, and specialized solutions for oil & gas environments.",
+        "Focused on high-performance engineering services for the energy sector, including power system studies, earthing Integrity study in point, instrumentation earthing, EMI/EMC analysis, and specialized solutions for oil & gas environments.",
     },
 
     {
@@ -228,4 +228,3 @@ import Image from "next/image";
     </section>
   );
 }
-

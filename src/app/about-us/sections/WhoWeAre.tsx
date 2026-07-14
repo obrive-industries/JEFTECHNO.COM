@@ -108,7 +108,7 @@ export default function WhoWeAreSection() {
                   of what electrical engineering analysis and assessment can
                   deliver. Our 9 granted patents — across India, the United
                   States, and the European Union — reflect the same conviction
-                  that has guided the company since 1994: that the right
+                  that has guided the company since 1994; that the right
                   response to a gap in what the industry delivers is to build
                   something better.
                 </motion.p>

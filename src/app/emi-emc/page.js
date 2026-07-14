@@ -1,23 +1,19 @@
-import EmiEmc from "./emiemc";
+
+import RootCauseAnalysis from "./solution";
 
 export const metadata = {
-    title: 'EMI/EMC Testing Services: Ensuring Electrical System Reliability',
-    description: 'JEF UAE offers comprehensive EMI/EMC testing to enhance the performance and compliance of electrical systems, ensuring operational continuity and equipment protection.',
-    keywords: 'EMI testing, EMC testing, electrical system reliability, electromagnetic interference, electromagnetic compatibility, JEF UAE, equipment protection, operational continuity, electrical compliance, system performance',
+    title: 'Root Cause Analysis: Electrical System Troubleshooting | JEF',
+    description: 'Expert Root Cause Analysis services for electrical system failures. Identify underlying issues, prevent recurring problems, and optimize performance.',
+    keywords: 'root cause analysis, RCA, electrical failure analysis, system troubleshooting, power system reliability, JEF engineering',
     alternates: {
-        canonical: 'https://www.jefuae.com/emi-emc',
-    },
-    openGraph: {
-        url: 'https://www.jefuae.com/emi-emc',
-        description: 'JEF UAE offers comprehensive EMI/EMC testing to enhance the performance and compliance of electrical systems, ensuring operational continuity and equipment protection.',
-        siteName: 'EMI/EMC Testing Services: Ensuring Electrical System Reliability',
+        canonical: 'https://www.jefuae.com/root-cause-analysis',
     },
 }
 
-export default function Page() {
+export default function RCAPage() {
     return (
         <>
-            <EmiEmc />
+           <RootCauseAnalysis/>
         </>
     );
-}  
+}   
