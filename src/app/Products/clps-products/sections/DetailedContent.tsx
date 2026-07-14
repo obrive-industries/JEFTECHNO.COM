@@ -29,8 +29,9 @@ const pages = [
 
         <p>
           Modern facilities depend on electronic controls, communications, and data
-          networks. Lightning damage extends beyond repair costs to production downtime,
-          data loss, safety system unavailability, and regulatory exposure.
+          networks. The consequences of lightning damage to these systems extend well 
+          beyond the cost of the damaged equipment — they include production downtime, 
+          data loss, safety system unavailability, and regulatory non-compliance.
         </p>
         <br/>
         
@@ -69,12 +70,12 @@ const pages = [
           "IEC 62305-4:2024 — Electrical & Electronic",
         ],
         isListOnly: true,
-        layout: "row",
+        layout: "col",
       },
       {
         heading: "LIGHTNING PROTECTION LEVELS",
         body: "IEC 62305 defines four Lightning Protection Levels — LPL I through LPL IV. Each level corresponds to a defined set of design parameters, including the lightning current values used for component selection and the geometric parameters used for air termination design. The appropriate LPL for a given structure is determined through the risk assessment process under IEC 62305-2.",
-        tags: ["LPL I", "LPL II", "LPL III", "LPL IV"],
+        // tags: ["LPL I", "LPL II", "LPL III", "LPL IV"],
         isListOnly: true,
         layout: "row",
       },
@@ -87,8 +88,9 @@ const pages = [
     content: (
       <>
         <p>
-          IEC 62305:2024 defines lightning protection as two interdependent
-          systems — neither is sufficient alone.
+          IEC 62305:2024 treats lightning protection as a system with two 
+          interdependent parts. Each addresses a distinct category of threat, 
+          and neither is adequate on its own.
         </p>
         <p>
           The external system manages the direct strike. It intercepts lightning
@@ -121,26 +123,30 @@ const pages = [
           "Down Conductor System",
           "Earth Termination System",
           "Equipotential Bonding",
-          "Air Termination Positioning Methods",
-          "Permitted Air Termination Types",
+          // "Air Termination Positioning Methods",
+          // "Permitted Air Termination Types",
         ],
         isListOnly: false,
         layout: "col",
         tagDescriptions: [
-          null,
-          null,
-          null,
-          null,
           {
-            title: "Air Termination Positioning Methods (IEC 62305-3:2024)",
-            description:
-              "Three positioning methods are recognised under IEC 62305-3. The 2024 revision provides more detailed guidance on their application to complex and modern structures:\n\nMethod\n• Rolling Sphere Method\n• Mesh Method\n• Protective Angle Method",
+            title: "Air Termination System",
+            description: "The air termination system is positioned at the highest and most exposed points of the structure — the locations where a lightning leader is most likely to terminate. By placing conductors and rods at these positions and connecting them to the down conductor system, the air termination gives the strike a defined entry point into the protected system, rather than allowing it to contact uncontrolled elements of the structure such as cladding, roofing materials, or building services.",
           },
           {
-            title: "Permitted Air Termination Types",
-            description:
-              "An air termination system may use any combination of the following:\n\n• Vertical rods and masts - rod terminations at high points, including free-standing masts where elevated protection is needed\n• Horizontal conductors - tape or round conductors routed along roof edges, ridges, and exposed perimeter positions\n• Mesh conductors - conductor grids laid across flat or low-pitch roof surfaces\n• Catenary wires - conductors suspended between elevated points to protect the spaces beneath\n• Natural components - metallic elements permanently part of the structure, such as metal roof decking, reinforced concrete reinforcement, and metallic facades, where they meet the dimensional and electrical continuity requirements of IEC 62305-3:2024",
+            title: "Down Conductor System",
+            description: "The down conductor system is responsible for safely conducting the lightning current from the air termination system to the earth termination system. It consists of conductors that are strategically placed to provide the most effective path for the lightning current.",
           },
+          {
+            title: "Earth Termination System",
+            description: "The earth termination system is responsible for safely dissipating the lightning current into the ground. It consists of electrodes and connections that ensure the lightning current is effectively directed into the earth.",
+          },
+          {
+            title: "Equipotential Bonding",
+            description: "When lightning current flows through the down conductors and into the earth, it raises the electrical potential of the entire LPS — conductors, bonded metalwork, and earthing system — relative to any conducting objects not connected to it. If the potential difference between the LPS and an adjacent metallic service or structural element becomes large enough, a disruptive discharge will occur across the gap between them. This side-flash can ignite combustible materials, damage electrical equipment, and cause injury or death.\nEquipotential bonding prevents this by connecting all conducting elements within and entering the structure to the LPS, so that every conducting part rises to approximately the same potential simultaneously during a strike.",
+          },
+          null,
+          null,
         ],
       },
     ],
@@ -176,7 +182,7 @@ const pages = [
     {
       heading: "TYPE TESTING — JEF'S 200 KA CREDENTIAL",
       body:
-        "The IEC 62561 series specifies that external LPS components be type-tested to a 10/350 μs lightning impulse current. JEF type-tests its CLPS components at 200 kA on the 10/350 μs waveform — double the limit specified in the IEC standard series. This means that every JEF CLPS component has been verified to withstand twice the current magnitude that the standard requires, providing a margin of confidence that standard-minimum testing does not.\n\nType testing covers three sequential stages:",
+        "The IEC 62561 series specifies that external LPS components be type-tested to a 10/350 μs lightning impulse current. JEF type-tests its flagship CLPS components at 200 kA on the 10/350 μs waveform — double the limit specified in the IEC standard series. This means that JEF’s 200 kA every JEF CLPS component has been verified to withstand twice the current magnitude that the standard requires, providing a margin of confidence that standard-minimum testing does not.\n\nType testing covers three sequential stages:",
       tags: ["Ageing Test", "Lightning Impulse Test", "Mechanical Test"],
       isListOnly: false,
       layout: "col",
@@ -204,7 +210,7 @@ const pages = [
 }
 ];
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {
@@ -320,7 +326,7 @@ const DetailedContent = () => {
               {/* Swappable Area: Body OR Tag Description */}
               <div className="min-h-[5[px]50px]">
                 <AnimatePresence mode="wait">
-                  {activeTags[si] !== undefined && sub.tagDescriptions?.[activeTags[si]] ? (
+                  {activeTags[si] !== undefined && sub.tagDescriptions?.[activeTags[si]] ? ( //means if a tag is active and has a description, show the description else show the body where body is not null
                     <motion.div
                       key={`tag-desc-${si}-${activeTags[si]}`}
                       initial={{ opacity: 0, y: 10 }}
@@ -364,10 +370,10 @@ const DetailedContent = () => {
               </div>
 
               {/* Tags Area */}
-              {sub.tags && (
+              {sub.tags && ( // if 
                 <>
                   {/* Conditional rendering for Comprehensive Lightning Protection System page (activePage === 2) */}
-                  {activePage === 2 && sub.heading === "EXTERNAL LIGHTNING PROTECTION" ? (
+                  {activePage === 4 && sub.heading === "EXTERNAL LIGHTNING PROTECTION" ? ( //this determines if the current page is the "COMPREHENSIVE LIGHTNING PROTECTION SYSTEM" page and the subsection is "EXTERNAL LIGHTNING PROTECTION" then render the first 4 tags in a row and the last 2 tags in a column (interactive)
                     <>
                       {/* First 4 tags in a row */}
                       <div className="flex flex-wrap gap-x-8 gap-y-4 mb-4 flex-row items-center">

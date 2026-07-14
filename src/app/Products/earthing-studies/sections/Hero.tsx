@@ -36,9 +36,7 @@ const Hero = () => {
             </h1>
 
             <p className="max-w-[940px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
-              JEF Maintenance-free earthing uses carbon-based backfill with
-              electronic conduction, providing stable, moisture-independent
-              performance for 15+ years without maintenance.
+              JEF offers comprehensive earthing and grounding solutions from site survey to design, supply & implementation to ensure electrical systems perform reliably.
             </p>
           </motion.div>
         </div>

@@ -57,6 +57,11 @@ export default function ProductIntro() {
         </motion.h1>
 
         <div className="flex flex-col gap-5 md:gap-6 max-w-[1500px]">
+
+          <p className="text-white/90 font-montserrat font-light text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] tracking-[0.2px]">
+                       Early Streamer Emission technology uses the atmospheric gradient to generate ionization which subsequently increases the protected volume, facilitating the protection of large areas while simplifying and reducing material and installation costs.
+          </p>
+
           <p className="text-white/90 font-montserrat font-light text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] tracking-[0.2px]">
             Capture system - Air terminal
           </p>
@@ -68,7 +73,7 @@ export default function ProductIntro() {
           <p className="text-white/90 font-montserrat font-light text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] tracking-[0.2px] max-w-[1350px] mx-auto">
             Nimbus® is the series of new generation lightning rods with
             electronic early streaming emission (ESE). Radius of protection up
-            to 100 m based on emission times of 15 μs, 30 μs, 45 μs and 60 μs.
+            to 100m based on emission times of 15 μs, 30 μs, 45 μs and 60 μs.
           </p>
 
           <AnimatePresence>
@@ -103,7 +108,7 @@ export default function ProductIntro() {
                       quality and warranty and our service.
                     </li>
                     <li>
-                      • The nimbus® lightning rods exceed the requirements of the
+                      • The Nimbus® lightning rods exceed the requirements of the
                       new version of standard NFC 17-102 v2011, with the goal of
                       making them more robust, without sacrificing their compact
                       size and with a significant weight reduction.

@@ -6,37 +6,37 @@ const cards = [
   {
     id: 1,
     image: "/EFS/1.png",
-    title: "CEA 2023 COMPLIANCE",
+    title: "COMPLIANCE",
     description:
-      "FORM I / II / III reports satisfying Regulation 32.",
+      "Helps ensure compliance with relevant standards like CEA Regulations 2023, NEC 2023, NBC 2016, and more.",
   },
   {
     id: 2,
     image: "/EFS/2.png",
     title: "REDUCED FIRE RISK",
     description:
-      "Identification and remediation of electrical root causes behind 60% of industrial fire incidents.",
+      "Identification and remediation of the electrical root causes that are responsible for 60% of fire incidents in India: overheating, insulation failure, overloading, short circuits.",
   },
   {
     id: 3,
     image: "/EFS/3.png",    
     title: "PERSONNEL SAFETY",
     description:
-      "Verified earthing, contact protection and confirmed protective device operation.",
+      "Helps in ensuring the safety of personnel against electrical and fire risks in the facility.",
   },
   {
     id: 4,
     image: "/EFS/6.png",
     title: "ASSET PROTECTION",
     description:
-      "Early detection of insulation degradation, overheating, harmonics and power quality issues.",
+      "Early detection of insulation degradation, overheating, harmonics and power quality issues which may otherwise result in damage/failure of equipment.",
   },
   {
     id: 5,
     image: "/EFS/5.png",
     title: "INSURANCE READINESS",
     description:
-      "Documented evidence of periodic inspection for insurers.",
+      "Documented audit reports of periodic inspection for insurers.",
   },
   {
     id: 6,

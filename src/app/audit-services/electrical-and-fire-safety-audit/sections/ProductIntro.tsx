@@ -17,20 +17,20 @@ export default function ProductIntro({
   const [expanded, setExpanded] = useState(false);
 
   const introText =
-    "Building a Safer India — One Facility At A Time\n\nMost safety audits produce reports. JEF produces outcomes.\n\nA comprehensive, multi-discipline inspection of your facility’s complete electrical installation and fire safety systems — conducted by qualified engineers, structured in alignment with CEA Regulations 2023 (FORM I, II & III).";
+    "Building a Safer India — One Facility At A Time\n\nMost safety audits produce reports. JEF produces outcomes.\n\nA comprehensive, multi-discipline inspection of your facility’s complete electrical installation and fire safety systems — conducted by qualified engineers, structured in alignment with CEA Regulations 2023.";
 
 const expandedText = (
-  <div className="flex flex-col gap-6 text-left">
+  <div className="flex flex-col gap-6 text-left  justify-center flex items-center">
     <p>
       <span className="text-[#C02429] font-semibold">
-        1. Electrical Safety
+        Electrical Safety
       </span>{" "}
       — 500+ checkpoints, 15+ tests and measurements
     </p>
 
     <p>
       <span className="text-[#C02429] font-semibold">
-        2. General Fire Safety
+        General Fire Safety
       </span>{" "}
       — 200+ checkpoints, Prevention, Life Safety, Active & Passive Fire
       Protection, Mock Drill Review
@@ -38,7 +38,7 @@ const expandedText = (
 
     <p>
       <span className="text-[#C02429] font-semibold">
-        3. Lift & Escalator
+        Lift & Escalator
       </span>{" "}
       — 150+ checkpoints, Electrical, control, operational and emergency
       systems
@@ -46,7 +46,7 @@ const expandedText = (
 
     <p>
       <span className="text-[#C02429] font-semibold">
-        4. HVAC
+        HVAC
       </span>{" "}
       — 100+ checkpoints, Electrical safety and operational performance
     </p>

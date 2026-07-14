@@ -112,14 +112,14 @@ export default function ProductIntro() {
                     >
                      <p>A Lightning Protection System doesn't prevent strikes — it safely intercepts them and directs their energy to ground through a controlled path, preventing damage to structures and systems. This makes LPS an essential requirement across industries, particularly solar power plants.</p>
 
-<p className="mt-6 text-[#C02429]">A well-designed LPS delivers four key outcomes:
+{/* <p className="mt-6 text-[#C02429]">A well-designed LPS delivers four key outcomes:
 <ul className="text-white">
   <li>·  Safe interception of lightning</li>
   <li>·  Controlled conduction of current</li>
   <li>·  Effective dissipation into earth</li>
   <li>·  Protection of equipment and personnel</li>
 </ul>
-</p>
+</p> */}
                     </p>
                   </div>
                 </div>

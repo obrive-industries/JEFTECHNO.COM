@@ -7,7 +7,7 @@ const navItems = [
   { label: "HOME", isActive: true },
   { label: "OUR BUSINESS", isActive: true },
   { label: "PRODUCTS", isActive: true },
-  { label: "EARTHING & GROUNDING SOLUTIONS", isActive: false },
+  { label: "EARTHING & GROUNDING SOLUTIONS", isActive: false }, 
 ];
 
 

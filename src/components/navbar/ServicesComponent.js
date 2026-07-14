@@ -76,7 +76,10 @@ const ServicesComponent = () => {
   ];
 
   const services3 = [
-    { icon: "/nav-industrial.png", text: "Industrial – Power System Studies", path: "/power-system-studies" },
+    { 
+      icon: "/nav-industrial.png", 
+      text: "Industrial – Power System Studies", 
+      path: "/power-system-studies" },
     {
       icon: "/nav-renewable.png",
       text: "Renewable – Power System Studies",
@@ -87,6 +90,11 @@ const ServicesComponent = () => {
       icon: "/nav-rca.png",
       text: "ROOT CAUSE ANALYSIS",
       path: "/root-cause-analysis",
+    },
+    {
+      icon: "/emi-emc-nav.png",
+      text: "EMI & EMC",
+      path: "/emi-emc",
     }
   ];
 

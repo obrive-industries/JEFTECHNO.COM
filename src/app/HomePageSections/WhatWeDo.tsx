@@ -144,7 +144,7 @@ export default function WhatWeDoSection() {
 
     dots: [
       {
-        heading: "EARTHING\nSTUDIES",
+        heading: "ENSURES COMPLIANCE\nWITH RELEVANT STANDARDS",
         description: `
 • Detects hidden faults in your earthing network
 
@@ -160,7 +160,7 @@ export default function WhatWeDoSection() {
       },
 
       {
-        heading: "LIGHTNING PROTECTION\nSYSTEM STUDIES",
+        heading: "LIGHTNING PROTECTION\n AND SYSTEM ADEQUACY",
         description: `
 • Reviews rods, conductors, and bonding
 
@@ -208,7 +208,7 @@ export default function WhatWeDoSection() {
       },
 
       {
-        heading: "POWER SYSTEM\nSTUDIES",
+        heading: "ELECTRICAL &\n FIRE SAFETY AUDITS", 
         description: `
 • Spots overloaded circuits and wiring faults
 

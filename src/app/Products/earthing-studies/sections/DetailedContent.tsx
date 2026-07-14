@@ -5,11 +5,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const pages = [
   {
-    label: "GROUNDING FUNDAMENTALS",
-    nav: "GROUNDING\nFUNDAMENTALS",
-    title: "GROUNDING FUNDAMENTALS",
+    label: "GROUNDING FUNDAMENTALS - Resistance vs Impedance",
+    nav: "GROUNDING\nFUNDAMENTALS\n- Resistance vs \nImpedance",
+    title: "GROUNDING FUNDAMENTALS - Resistance vs Impedance",
     content: (
       <>
+      <p>Grounding performance is often misunderstood, with most focus placed 
+        on achieving low resistance values. While resistance is important, it 
+        is only one part of the equation. Impedance plays an equally critical 
+        role in determining how the system behaves during faults.
+      </p>        
+      <br />
+
+      <p>Resistance refers to the ability of the grounding system to dissipate 
+        current into the earth. Impedance, on the other hand, represents the 
+        total opposition to current flow, including inductive and reactive components. 
+        During fault conditions, impedance determines the magnitude of fault current.
+      </p>
+      {/* <br />
         <p>
           Low resistance alone does not define a good earthing system — impedance
           determines how the system behaves during actual fault conditions.
@@ -19,7 +32,7 @@ const pages = [
           High loop impedance limits fault current, preventing protective devices
           from detecting and clearing faults — the root cause of prolonged fault
           events, equipment damage, fire, and electric shock.
-        </p>
+        </p> */}
       </>
     ),
     subsections: null,
@@ -31,18 +44,12 @@ const pages = [
     content: (
       <>
         <p>
-          • Salt and charcoal backfill is electrolytic — it depends on moisture
-          and degrades progressively as salt leaches into surrounding soil
+          • Use of salt and charcoal backfill compound introduces long-term issues like corrosion and performance degradation, because the salt dissolves and leaches into the soil, reducing conductivity and increasing resistance. This leads to a gradual decline in performance.
         </p>
         <br />
         <p>
           • Conventional systems require regular watering to maintain performance
           — impractical in areas with limited water availability
-        </p>
-        <br />
-        <p>
-          • Corrosion rates are high, leading to electrode degradation and rising
-          resistance over time
         </p>
         <br />
         <p>
@@ -65,39 +72,29 @@ const pages = [
     content: (
       <>
         <p>
-          • The performance of grounding systems is heavily influenced by the
-          properties of the surrounding soil.
+          The performance of grounding systems is heavily influenced 
+          by the properties of the surrounding soil. 
         </p>
         <br />
         <p>
-          • A large portion of earth resistance is concentrated in a small area
-          around the electrode.
+        A large portion of earth resistance is concentrated in a 
+        small area around the electrode. Improving soil conductivity 
+        near the electrode significantly reduces overall resistance. 
+        Approximately 30–50% of total resistance lies within the first 
+        75–100 mm of soil.
         </p>
         <br />
         <p>
-          • Improving soil conductivity near the electrode significantly reduces
-          overall resistance.
+        Soil resistivity varies based on moisture, temperature, and composition. 
+        These variations must be considered during the design stage for reliable 
+        performance.
         </p>
         <br />
         <p>
-          • Approximately 30–50% of total resistance lies within the first
-          75–100 mm of soil.
+        Using scientific analysis of soil behaviour helps design efficient 
+        grounding systems with optimal results and minimal resources.
         </p>
-        <br />
-        <p>
-          • Soil resistivity varies based on moisture, temperature, and
-          composition.
-        </p>
-        <br />
-        <p>
-          • These variations must be considered during the design stage for
-          reliable performance.
-        </p>
-        <br />
-        <p>
-          • Using scientific analysis of soil behaviour helps design efficient
-          grounding systems with optimal results and minimal resources.
-        </p>
+
       </>
     ),
     image: "/Earthing-Grounding/Image 25.png",
@@ -165,9 +162,9 @@ const pages = [
     ],
   },
   {
-    label: "COPPER BONDED EARTHING RODS",
-    nav: "COPPER BONDED\nEARTHING RODS",
-    title: "COPPER BONDED EARTHING RODS",
+    label: "ADVANTAGE OF COPPER BONDED EARTHING RODS",
+    nav: "ADVANTAGE OF \nCOPPER BONDED\nEARTHING RODS",
+    title: "ADVANTAGE OF COPPER BONDED EARTHING RODS",
     content: (
       <>
         <p>
@@ -199,11 +196,36 @@ const pages = [
       },
     ],
   },
+  { //////////////////////////////////
+    label: "THE TECHNOLOGY ADVANTAGE CARBON-BASED BACKFILL",
+    nav: "THE TECHNOLOGY ADVANTAGE-\nCARBON-BASED\nBACKFILL",
+    title:
+      "JTHE TECHNOLOGY ADVANTAGE CARBON-BASED BACKFILL",
+    content: (
+      <>
+        <p>
+          • Conducts electricity electronically, like a metal — not electrolytically. Zero moisture dependence.
+        </p>
+        <br />
+        <p>
+          • Chemically stable: no leaching, no environmental contamination, no corrosion risk to the electrode.
+        </p>
+        <br />
+        <p>
+          • Dimensionally stable: does not shrink or expand, maintaining consistent contact with the electrode throughout its service life.
+        </p>
+        <br />
+        <p>
+          • Result: consistent, maintenance-free performance across all soil conditions for 15+ years.
+        </p>
+      </>
+    )
+  },
   {
     label: "MAINTENANCE-FREE EARTHING SYSTEM",
     nav: "MAINTENANCE-\nFREE EARTHING\nSYSTEM",
     title:
-      "MAINTENANCE-FREE EARTHING SYSTEM (COPPER BONDED ROD + CARBON BACKFILL)",
+      "JEF MAINTENANCE-FREE EARTHING SYSTEM (COPPER BONDED ROD + CARBON BACKFILL)",
     content: (
       <>
         <p>
@@ -235,36 +257,39 @@ const pages = [
       {
         tags: ["TESTING AND QUALITY ASSURANCE", "DESIGN ENGINEERING"],
         tagDescriptions: [
-          "• Earth rods tested to IEC 62561-2: coating thickness, adhesion, bend, tensile strength, and accelerated corrosion/environmental simulation\n\n• Backfill compounds tested to IEC 62561-7: corrosion impact, leach test, sulphur content (≤ 2%), resistivity, and environmental compliance\n\n• Every component in the JEF earthing system range is type-tested — performance is verified, not assumed",
-          "• System design using CDEGS — modelling soil conditions, calculating step and touch potentials, and optimising grid geometry to meet IEEE 80 and IS 3043 safety requirements\n\n• Fault current levels, soil resistivity variation, and site-specific conditions are all incorporated at the design stage — not discovered at the installation stage\n\n• Simulation identifies potential deficiencies before excavation — reducing project risk and ensuring the installed system performs as designed",
+          "• Earth rods tested as per IEC 62561-2: they undergo mechanical, electrical, and environmental tests like coating thickness, adhesion, bend, tensile strength, and accelerated corrosion tests to ensure long-term reliability.\n\n• Backfill compounds tested as per IEC 62561-7: they undergo a series of tests that comprise of corrosion impact, leach test, sulphur content, resistivity, and environmental compliance test to ensure high performance, long life, and environmental safety.",
+          
+          "• At JEF Earthing systems are designed using the CDEGS software to meet IEEE 80 and IS 3043 safety requirements.\n\n• In addition CDEGS also helps in incorporating soil conditions, calculating step and touch potentials, and optimising grid geometry at the design stage itself.\n\n• Simulation identifies potential deficiencies before excavation — reducing project risk and ensuring the installed system performs as designed",
         ],
       },
     ],
   },
   {
-    label: "APPLICATIONS",
-    nav: "APPLICATIONS",
-    title: "APPLICATIONS",
+    label: "APPLICATIONS OF EARTHING SOLUTIONS",
+    nav: "APPLICATIONS OF EARTHING SOLUTIONS",
+    title: "APPLICATIONS OF \nEARTHING SOLUTIONS",
     content: (
       <>
+        <p>
+          JEF Grounding Systems are suitable for a wide range of segments:
+        </p>
+                <br />
         <p>
           • Solar and wind farms — reliable performance in dry, high-resistivity
           soils where conventional systems degrade rapidly
         </p>
         <br />
         <p>
-          • EHV and HV substations — designed to IEEE 80 for step and touch
+          • Substations — designed to IEEE 80 for step and touch
           potential compliance under maximum fault current conditions
         </p>
         <br />
         <p>
-          • Industrial process plants and manufacturing facilities — stable
-          earthing for sensitive control systems and high-load equipment
+          • Industrial process plants and manufacturing facilities — stable earthing for sensitive, high-load equipment and control systems to help ensure uninterrupted operations.
         </p>
         <br />
         <p>
-          • Commercial buildings, data centres, hospitals, and infrastructure —
-          safety, regulatory compliance, and equipment protection
+          • Commercial buildings, data centres, hospitals, and infrastructure — ensure safety, regulatory compliance, personnel, and equipment protection.
         </p>
       </>
     ),
@@ -272,7 +297,7 @@ const pages = [
   },
 ];
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {

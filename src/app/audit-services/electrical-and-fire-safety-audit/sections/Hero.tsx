@@ -19,16 +19,19 @@ const Hero = ({ title = "ELECTRICAL & FIRE SAFETY AUDIT", videoSrc }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="max-w-[1500px] text-white"
+            className="max-w-[1500px] text-white"   
           >
             <h1 className="mb-4 text-[23px] sm:text-[25px] md:text-[30px] lg:text-[36px] font-bold uppercase leading-[1.15] tracking-[1px]">
               {title}
             </h1>
 
             <p className="max-w-[1200px] text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] leading-[1.7] text-white/90">
-              The world’s first automated AI enabled safety audit platform —
-              developed and patented by JEF. It replaces auditor’s variability
-              with a guided, fully digitized process built for consistency.
+              Powered by the world’s first automated AI enabled safety audit platform — 
+              developed and patented by JEF. It replaces auditor’s variability with a guided, 
+              fully digitized process built for consistency.
+              The platform has been proven at scale, it has processed 600k+ data points and 
+              delivered 15k+ reports with zero data mix-up.
+
             </p>
           </motion.div>
         </div>

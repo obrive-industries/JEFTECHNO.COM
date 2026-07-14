@@ -48,7 +48,7 @@ export default function ExcellenceinElectricalEngineering() {
   {
     name: "EARTH GRID SIMULATION OUTPUTS",
     description:
-      "Earth grid simulation outputs where modelling was performed — GPR, touch potentials distribution, and step potential profile.",
+      "Earth grid simulation outputs where modelling was performed — GPR, touch potential distribution, and step potential profile.",
   },
   {
     name: "COMPLIANCE VERIFICATION",

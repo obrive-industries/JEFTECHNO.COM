@@ -33,13 +33,14 @@ const Hero = ({ title = "INSTRUMENTATION EARTHING AUDIT", videoSrc }) => {
             </h1>
 
             <p className="max-w-[1500px] text-[13px] sm:text-[15px] md:text-[17px] lg:text-[22px] leading-[1.7] text-white/90">
-              JEF has conducted Instrumentation Earthing Audits across more than
-              <span>120</span> control rooms and instrumentation
+              JEF has conducted Instrumentation Earthing Audits across more than 
+              <span> 120</span> control rooms and instrumentation
               panel rooms, auditing over <span>9,500 </span>
-               panels, <span>32,053</span> junction boxes,
-              and <span>2,04,963</span> field instruments 
+               panels, <span>32,000+</span> junction boxes,
+              and <span>2,00,000+</span> field instruments 
               and field assets.
             </p>
+
           </motion.div>
         </div>
       </div>

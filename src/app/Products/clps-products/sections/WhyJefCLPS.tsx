@@ -24,7 +24,7 @@ const cards = [
     image: "/clps/3.png",
     title: "COMPREHENSIVE SYSTEM FROM ONE SOURCE",
     description:
-      "Every component required for a comprehensive lightning protection system — from air termination rod to point-of-use SPD.",
+      "Every component required for a comprehensive lightning protection system — from air termination rod to point-of-use SPD — is available from JEF as a coordinated, type-tested range.",
   },
   {
     id: 4,
@@ -33,12 +33,19 @@ const cards = [
     description:
       "Risk assessment, concept drawings, bill of materials, and budget estimate delivered in under 90 seconds. Built to IS/IEC 62305.",
   },
+  // {
+  //   id: 5,
+  //   image: "/clps/5.png",
+  //   title: "JEF E-BUILD — INSTALLATION QUALITY VERIFIED",
+  //   description:
+  //     "Step-by-step guided installation with real-time remote supervision by qualified engineers and documented certification.",
+  // },
   {
     id: 5,
     image: "/clps/5.png",
-    title: "JEF E-BUILD — INSTALLATION QUALITY VERIFIED",
+    title: "JEF E-BUILD",
     description:
-      "Step-by-step guided installation with real-time remote supervision by qualified engineers and documented certification.",
+      "— An automated tool to guide & monitor the installation of the lightning protection system at sight.",
   },
   {
     id: 6,

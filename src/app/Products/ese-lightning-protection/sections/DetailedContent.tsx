@@ -4,74 +4,74 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pages = [
+  // {
+  //   label: "COMPONENTS OF LIGHTNING PROTECTION SYSTEM",
+  //   nav: "COMPONENTS OF\nLIGHTNING\nPROTECTION SYSTEM",
+  //   title: "COMPONENTS OF LIGHTNING PROTECTION SYSTEM",
+  //   content: (
+  //     <>
+  //       <p>A complete lightning protection system consists of both external and internal components working together to ensure full protection.</p>
+  //       <br />
+  //       <p>The external LPS is responsible for intercepting and safely conducting lightning currents, while the internal LPS protects electrical and electronic systems from induced surges.</p>
+  //     </>
+  //   ),
+  //   subsections: [
+  //     {
+  //       heading: "",
+  //       tags: [],
+  //       customContent: (
+  //         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 mt-4">
+  //           <div className="flex flex-col gap-4">
+  //             <h4 className="text-[#C02429] text-[16px] md:text-[18px] font-bold uppercase">External LPS Components:</h4>
+  //             <div className="flex flex-wrap gap-9 text-white/90 text-[14px] md:text-[16px]">
+  //               <span>• Air Terminals</span>
+  //               <span>• Down Conductors</span>
+  //               <span>• Earthing System</span>
+  //             </div>
+  //           </div>
+  //           <div className="flex flex-col gap-4">
+  //             <h4 className="text-[#C02429] text-[16px] md:text-[18px] font-bold uppercase">Internal LPS Components:</h4>
+  //             <div className="flex flex-wrap gap-9 text-white/90 text-[14px] md:text-[16px]">
+  //               <span>• Equipotential bonding</span>
+  //               <span>• Surge Protection Devices (SPD)</span>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       ),
+  //       footer: "Together, these components create a comprehensive protection system",
+  //     }
+  //   ],
+  // },
+  // {
+  //   label: "WORKING PRINCIPLE OF LPS",
+  //   nav: "WORKING PRINCIPLE\nOF LPS",
+  //   title: "WORKING PRINCIPLE OF LPS",
+  //   content: (
+  //     <>
+  //       <p>The operation of a lightning protection system follows a simple but highly engineered process. When lightning approaches a structure, the air terminal captures the strike. The current is then conducted safely through down conductors and finally dissipated into the ground through the earthing system.</p>
+  //       <br />
+  //       <p>In addition to handling direct strikes, SPDs are used to protect internal systems from transient overvoltage.</p>
+  //     </>
+  //   ),
+  //   subsections: [
+  //     {
+  //       heading: "WORKING STEPS:",
+  //       tags: [
+  //         "Capture lightning through air terminal",
+  //         "Conduct current via down conductors",
+  //         "Dissipate energy through earthing",
+  //         "Protect internal systems using SPD",
+  //       ],
+  //       isListOnly: true,
+  //       layout: "col",
+  //       footer: "This coordinated process ensures complete protection.",
+  //     },
+  //   ],
+  // },
   {
-    label: "COMPONENTS OF LIGHTNING PROTECTION SYSTEM",
-    nav: "COMPONENTS OF\nLIGHTNING\nPROTECTION SYSTEM",
-    title: "COMPONENTS OF LIGHTNING PROTECTION SYSTEM",
-    content: (
-      <>
-        <p>A complete lightning protection system consists of both external and internal components working together to ensure full protection.</p>
-        <br />
-        <p>The external LPS is responsible for intercepting and safely conducting lightning currents, while the internal LPS protects electrical and electronic systems from induced surges.</p>
-      </>
-    ),
-    subsections: [
-      {
-        heading: "",
-        tags: [],
-        customContent: (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 mt-4">
-            <div className="flex flex-col gap-4">
-              <h4 className="text-[#C02429] text-[16px] md:text-[18px] font-bold uppercase">External LPS Components:</h4>
-              <div className="flex flex-wrap gap-9 text-white/90 text-[14px] md:text-[16px]">
-                <span>• Air Terminals</span>
-                <span>• Down Conductors</span>
-                <span>• Earthing System</span>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h4 className="text-[#C02429] text-[16px] md:text-[18px] font-bold uppercase">Internal LPS Components:</h4>
-              <div className="flex flex-wrap gap-9 text-white/90 text-[14px] md:text-[16px]">
-                <span>• Equipotential bonding</span>
-                <span>• Surge Protection Devices (SPD)</span>
-              </div>
-            </div>
-          </div>
-        ),
-        footer: "Together, these components create a comprehensive protection system",
-      }
-    ],
-  },
-  {
-    label: "WORKING PRINCIPLE OF LPS",
-    nav: "WORKING PRINCIPLE\nOF LPS",
-    title: "WORKING PRINCIPLE OF LPS",
-    content: (
-      <>
-        <p>The operation of a lightning protection system follows a simple but highly engineered process. When lightning approaches a structure, the air terminal captures the strike. The current is then conducted safely through down conductors and finally dissipated into the ground through the earthing system.</p>
-        <br />
-        <p>In addition to handling direct strikes, SPDs are used to protect internal systems from transient overvoltage.</p>
-      </>
-    ),
-    subsections: [
-      {
-        heading: "WORKING STEPS:",
-        tags: [
-          "Capture lightning through air terminal",
-          "Conduct current via down conductors",
-          "Dissipate energy through earthing",
-          "Protect internal systems using SPD",
-        ],
-        isListOnly: true,
-        layout: "col",
-        footer: "This coordinated process ensures complete protection.",
-      },
-    ],
-  },
-  {
-    label: "LIGHTNING PROTECTION IN SOLAR FIELDS",
-    nav: "LIGHTNING\nPROTECTION IN\nSOLAR FIELDS",
-    title: "LIGHTNING PROTECTION IN SOLAR FIELDS",
+    label: "LIGHTNING RISKS IN SOLAR FIELDS ",
+    nav: "LIGHTNING\nRISKS IN\nSOLAR FIELDS",
+    title: "LIGHTNING RISKS IN SOLAR FIELDS ",
     content: (
       <>
         <p>Solar power plants are highly exposed installations, typically located in open areas where lightning strikes are more frequent. The large spread of solar modules, combined with elevated mounting structures, increases the probability of direct and indirect lightning effects.</p>
@@ -121,7 +121,7 @@ const pages = [
           "Ideal for large solar fields",
         ],
         isListOnly: true,
-        layout: "row",
+        layout: "col",
       },
     ],
   },
@@ -131,7 +131,7 @@ const pages = [
     title: "A KEY CHALLENGE IN ESE LIGHTNING PROTECTION SYSTEMS",
     content: (
       <>
-        <p>A key challenge in ESE lightning protection systems is the presence of fake or counterfeit products, which closely mimic genuine devices in appearance but lack proper testing and certification. Since ESE performance depends on the validated Delta T (ΔT) parameter as per NF C 17-102, untested products often claim unrealistic values, leading to incorrect protection radius and potential coverage gaps. These products typically do not undergo sequential (multi-shot) testing, meaning their performance may not be consistent under repeated lightning events—especially critical in exposed environments like solar plants. Additionally, inferior materials and lack of high-current testing (e.g., 100 kA, 10/350 μs) can result in failure during actual lightning strikes, causing damage to PV modules, inverters, and associated systems. The absence of compliance, traceability, and authenticity verification further increases risks such as audit failures, insurance issues, and long-term reliability concerns. Ultimately, while ESE technology is effective, the use of non-genuine products can compromise the entire lightning protection system.</p>
+        <p>A key challenge in ESE lightning protection systems is the presence of fake or counterfeit products, which closely mimic genuine devices in appearance but lack proper testing and certification.< br/>Since ESE performance depends on the validated Delta T (ΔT) parameter as per NF C 17-102, untested products often claim unrealistic values, leading to incorrect protection radius and potential coverage gaps. These products typically do not undergo sequential (multi-shot) testing, meaning their performance may not be consistent under repeated lightning events—especially critical in exposed environments like solar plants.< br/>Additionally, inferior materials and lack of high-current testing (e.g., 100 kA, 10/350 μs) can result in failure during actual lightning strikes, causing damage to PV modules, inverters, and associated systems. The absence of compliance, traceability, and authenticity verification further increases risks such as audit failures, insurance issues, and long-term reliability concerns.< br/>Ultimately, while ESE technology is effective, the use of non-genuine products can compromise the entire lightning protection system.</p>
       </>
     ),
     subsections: null,
@@ -183,7 +183,7 @@ const pages = [
   },
 ];
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {
@@ -350,7 +350,7 @@ const DetailedContent = () => {
 
               {/* Tags Area */}
               {sub.tags && sub.tags.length > 0 && (
-                <div className={`flex flex-wrap gap-x-8 gap-y-4 mb-6 ${sub.layout === "col" ? "flex-col" : "flex-row items-center"}`}>
+                <div className={`flex flex-wrap gap-x-8 gap-y-0 mb-6 ${sub.layout === "col" ? "flex-col" : "flex-row items-center"}`}>
                   {sub.tags.map((tag, ti) => {
                     const isActive = activeTags[si] === ti;
                     const isInteractive = sub.tagDescriptions && sub.tagDescriptions[ti] !== null && sub.tagDescriptions[ti] !== undefined;

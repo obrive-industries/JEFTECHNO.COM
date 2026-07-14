@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 
 const pages = [
@@ -13,7 +13,7 @@ const pages = [
     content: (
       <>
         <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
-          Electrical Safety Audit incorporating 500+ checkpoints and precision
+          JEF Electrical Safety Audit incorporates 500+ checkpoints and precision
           measurements across grounding, protection systems, insulation, and
           power quality.
         </p>
@@ -59,16 +59,13 @@ const pages = [
             recommendations
           </li>
           <li>
-            Closure Audit — JEF independently verifies all critical deficiencies
-            are resolved
+            Closure Audit — JEF independently verifies that all critical deficiencies are resolved
           </li>
           <li>
-            Certification — Facility is awarded its JEF Safety Certification
+            Certification — the JEF Safety Certification on meeting the qualification criteria
           </li>
           <li>
-            Staff Training & Certification - Structured training for facility
-            electrical management teams and certificates issued based on
-            assessment scores
+            Staff Training & Certification - Structured training for facility electrical management teams, with certificates awarded for participants.
           </li>
         </ul>
 
@@ -82,18 +79,41 @@ const pages = [
     ),
   },
   {
+    label: "GENERAL FIRE\nSAFETY",
+    title: "GENERAL FIRE SAFETY",
+    content: (
+      <>
+        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
+          Our fire safety audits examine the complete system as an integrated whole — not just extinguisher counts and detector placement.
+        </p>
+
+        <h4 className="text-[#C02429] text-[16px] md:text-[18px] lg:text-[20px] uppercase font-bold tracking-[1px] md:tracking-[1.49px] mt-8 leading-[1.4]">
+          What JEF Covers:
+        </h4>
+
+        <ul className="list-disc space-y-3 pl-5 text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed text-white">
+          <li>Fire Prevention</li>
+          <li>Life Safety</li>
+          <li>Active Fire Protection</li>
+          <li>Passive Fire Protection</li>
+          <li>Mock Drill Review</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     label: "LIFT / ESCALATOR &\nHVAC AUDITS",
     title: "LIFT / ESCALATOR & HVAC AUDITS",
     content: (
       <>
         <ul className="list-disc space-y-5 pl-5 text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed text-white">
-          <li>
-            Lift & Escalator Full inspection across: lift pit, car interior, car
+          <li className="font-normal">
+            <b>Lift & Escalator</b> - Full inspection across: lift pit, car interior, car
             roof, machine room, floor landings, and lift shaft.
           </li>
-          <li>
-            HVAC Assessed for electrical safety, fire alarm integration, and air
-            quality.
+          <li className="font-normal">
+            <b>HVAC</b> - <span>Assessed for electrical safety, fire alarm integration, and air
+            quality.</span>
           </li>
         </ul>
 
@@ -177,7 +197,7 @@ export default function DetailedContent() {
         </motion.div>
 
         <div className="mt-12 md:mt-20 overflow-hidden">
-          <div className="flex gap-4 md:gap-8">
+          <div className="grid grid-cols-2 gap-x-16 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
             {pages.map((tab, index) => {
               const isCurrent = activePage === index;
 
@@ -187,7 +207,7 @@ export default function DetailedContent() {
                   onClick={() => handleTabClick(index)}
                   className="group flex flex-col items-start text-left shrink-0"
                 >
-                  <div className="relative mb-3 h-[2px] w-52 md:w-60 bg-[#d4d0c8]/80">
+                  <div className="relative mb-3 h-[2px] w-full md:w-60 bg-[#d4d0c8]/80">
                     <motion.div
                       className="absolute left-0 top-0 h-full bg-[#C02429]"
                       animate={{ width: isCurrent ? `${progress}%` : "0%" }}

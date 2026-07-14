@@ -71,7 +71,7 @@ export default function WhyChooseRootCauseAnalysis() {
             viewport={{ once: true }}
             className="text-[#C02429] text-[22px] md:text-[32px] font-bold tracking-[3px] uppercase"
           >
-            WHY CHOOSE JEF FOR ROOT CAUSE ANALYSIS?
+            WHY CHOOSE JEF?
           </motion.h2>
 
           <motion.div

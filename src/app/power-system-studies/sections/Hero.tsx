@@ -32,11 +32,11 @@ const Hero = ({ title, videoSrc }) => {
               POWER SYSTEM STUDIES
             </h1>
 
-            <p className="max-w-[1100px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
+            {/* <p className="max-w-[1100px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
               Advanced Computer Simulations to test your System before it goes
               Live. Using industry-leading software, our experts build a virtual
               model of your plant to find and fix weak spots early.
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </div>

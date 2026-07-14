@@ -34,9 +34,9 @@ const Hero = () => {
               and Lightning Protection Zones
             </h1>
 
-            <p className="max-w-[920px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
+            {/* <p className="max-w-[920px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
              Neutralising the invisible risk — protecting sensitive electronic components from high-voltage lightning and internal switching transients.
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </div>

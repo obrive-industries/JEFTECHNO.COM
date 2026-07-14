@@ -17,12 +17,12 @@ const sectors = [
   {
     name: "UNMATCHED ACCURACY",
     description:
-      "AI-guided auditing eliminates human variability — anomalies detected consistently, regardless of auditor.",
+      "Helps ensure unmatched accuracy by using built-in intelligence to detect anomalies more consistently and reducing human dependence.",
   },
   {
     name: "HIGH RELIABILITY",
     description:
-      "Identical, documented audit sequence across all your facilities.",
+      "Structured data collection, automated validation, and expert review create a level of consistency and reliability that no manual process can match.",
   },
   {
     name: "FULL TRANSPARENCY",
@@ -32,17 +32,17 @@ const sectors = [
   {
     name: "GUIDED MOBILE APP",
     description:
-      "Field auditors guided step-by-step — nothing missed, nothing left to individual memory.",
+      "JEF field auditors are guided step-by-step throughout the process, which helps in reducing missed items and human dependence.",
   },
   {
     name: "PROVEN AT SCALE",
     description:
-      "16,000+ reports, 6,30,000+ data points, zero data mix-ups.",
+      "600k+ data points analysed, 15k+ reports delivered with zero data mix-up",
   },
   {
     name: "SPEED",
     description:
-      "Real-time data transfer, automated validation, auto-generated reports.",
+      "JEF’s end-to-end automated process enables us to deliver high-quality reports at unmatched speed.",
   },
   {
     name: "CUSTOM REPORTS",
@@ -50,14 +50,19 @@ const sectors = [
       "Standardised formats, customisable per client — compare findings across facilities and audit cycles.",
   },
   {
-    name: "DATA SECURITY",
+    name: "STANDARDISED, CUSTOMISABLE REPORTS",
     description:
-      "Enterprise-grade, web-based infrastructure — your data stays yours.",
+      "All data is stored in a secure server. Reports are generated in standardised formats customizable to client requirements — enabling direct comparison of findings across facilities, floors, and successive audit cycles.",
   },
   {
-    name: "CLIENT DASHBOARD",
+    name: "STATE-OF-ART DATA SECURITY AND MANAGEMENT",
     description:
-      "Custom dashboards, status updates, reports and collaterals.",
+      "All audit data is secured within the tool's web-based infrastructure with enterprise-grade data security. Every client's information remains entirely confidential to the extent technology of the day permits.",
+  },
+  {
+    name: "CUSTOMER INTERFACE",
+    description:
+      "Access to Customised dashboards, Status update, reports and collaterals.",
   },
 ];
 

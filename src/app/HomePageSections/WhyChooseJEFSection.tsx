@@ -50,7 +50,7 @@ export default function WhyChooseJEFSection() {
             className="w-full lg:w-[45%] h-[250px] sm:h-[320px] lg:h-[375px] overflow-hidden"
           >
             <img
-              src="/HomePageImg/WhyChooseJEFImg/WhyChooseJef1.png"
+              src="/HomePageImg/WhyChooseJEFImg/WhyChooseJef3.jpeg"
               alt="Smart Digitization"
               className="
                 w-full

@@ -36,7 +36,7 @@ const cards = [
   },
   {
     image: "/IS/is-4.png",
-    title: "DOCUMENTED COMPLIANCE WITH INTERNATIONAL STANDARDS",
+    title: "COMPLIANCE WITH INTERNATIONAL STANDARDS",
     description:
       "Audit reports referenced to IEEE 1050-2004, IEEE 1100-2005, IEC 61000-5-2 and related standards, supporting regulatory, insurance, and operator requirements.",
   },
@@ -68,7 +68,7 @@ export default function WhyJefCLPS() {
               text-[#C02429]
             "
           >
-            WHY US FOR INSTRUMENTATION EARTHING AUDIT
+            WHY JEF FOR INSTRUMENTATION EARTHING AUDIT
           </h2>
 
         

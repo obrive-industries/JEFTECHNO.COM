@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 const VISIBLE_TABS = 5;
 
@@ -209,7 +209,6 @@ const pages = [
     title: "WHAT THE ASSESSMENT IDENTIFIES AND DELIVERS",
     content: (
       <>
-        <p className="text-[#C02429] text-[16px] md:text-[18px] lg:text-[20px] font-medium">What We Identify</p>
 
         <ul className="list-disc space-y-5 pl-5 text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed text-white">
           <li>Open and defective risers</li>
@@ -227,27 +226,27 @@ const pages = [
       </>
     ),
   },
-  {
-    label: "WHY JEF FOR\nCOMPREHENSIVE\nEHA?",
-    title: "WHY JEF FOR COMPREHENSIVE EHA?",
-    content: (
-      <>
-        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
-          JEF combines deep field experience, patented testing methodology,
-          sophisticated instruments, and proprietary analysis to deliver a
-          comprehensive understanding of the true health of an earthing system.
-        </p>
+  // {
+  //   label: "WHY JEF FOR\nCOMPREHENSIVE\nEHA?",
+  //   title: "WHY JEF FOR COMPREHENSIVE EHA?",
+  //   content: (
+  //     <>
+  //       <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
+  //         JEF combines deep field experience, patented testing methodology,
+  //         sophisticated instruments, and proprietary analysis to deliver a
+  //         comprehensive understanding of the true health of an earthing system.
+  //       </p>
 
-        <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
-          The assessment is carried out without shutdown and is designed to
-          detect practical field failures that conventional resistance
-          measurements often miss.
-        </p>
-      </>
-    ),
-  },
+  //       <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
+  //         The assessment is carried out without shutdown and is designed to
+  //         detect practical field failures that conventional resistance
+  //         measurements often miss.
+  //       </p>
+  //     </>
+  //   ),
+  // },
   {
-    label: "APPLICATION AREA",
+    label: "APPLICATION AREAS",
     title: "APPLICATION AREAS",
     content: (
       <>
@@ -284,7 +283,7 @@ const pages = [
 
         <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
           JEF has conducted comprehensive earthing health assessments at over
-          500+ substations and carried out earth grid simulation for over 650+
+          400+ substations and carried out earth grid simulation for over 650+
           grids.
         </p>
       </>

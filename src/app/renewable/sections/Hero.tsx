@@ -36,12 +36,7 @@ const Hero = ({ videoSrc }) => {
               RENEWABLE – POWER SYSTEM STUDIES
             </h1>
 
-            {/* Description */}
-            <p className="max-w-[1200px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
-              Seamless Grid Integration for Large-Scale Renewable Energy Plants.
-              We provide the essential engineering studies to ensure your solar,
-              wind, and battery storage projects run flawlessly.
-            </p>
+
           </motion.div>
         </div>
       </div>

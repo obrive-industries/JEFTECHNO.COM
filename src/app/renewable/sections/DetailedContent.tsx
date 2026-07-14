@@ -18,11 +18,11 @@ const pages = [
         <br />
         <p>
           With experience in Grid codes of several countries, we bring
-          comprehensive knowledge & Expertise.
+          comprehensive knowledge & expertise.
         </p>
         <br />
         <p>
-          We have multiple licences & expertise in using all major Softwares
+          We have multiple licences & expertise in using all major software
           like:
         </p>
         <br />
@@ -35,7 +35,7 @@ const pages = [
         <br />
         <p>
           We have the ability to study any possible steady state, dynamic, EMT &
-          Hormonic issues, in a new or existing plant.
+          Harmonic issues, in a new or existing plant.
         </p>
         <br />
         <p>
@@ -91,7 +91,7 @@ const pages = [
   },
 ];
 
-const PROGRESS_DURATION = 6000;
+const PROGRESS_DURATION = 10000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {

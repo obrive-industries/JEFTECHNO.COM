@@ -357,9 +357,6 @@ const services = useMemo(() => [
   In the majority of cases, the root cause is not the instrument by itself. It is the earthing system that underpins it.
 </p>
 
-<p className="ContactUsAnimation self-stretch mt-6 w-[80%] lg:w-[60%] text-center mx-auto font-light text-[#BD222A] max-md:mt-10 max-md:max-w-full">
-  JEF has conducted Instrumentation Earthing Audits across more than 120 control rooms and instrumentation panel rooms, auditing over 9,500 panels, 32,053 junction boxes, and 2,04,963 field instruments and field assets.
-</p>
         </header>
         <div className="flex ContactUsAnimation flex-col self-center mt-3 max-w-full text-sm md:text-base leading-6 text-center text-[#BD222A]  w-[770px] max-md:mt-10">
           <p className="px-56 w-full max-md:px-5 max-md:max-w-full">
@@ -963,7 +960,7 @@ None of these individually cause an immediate, visible failure. Together, they c
   {
     id: 4,
     question: "WHY STANDARD ELECTRICAL TESTING DOES NOT SOLVE THIS",
-    answer: `Routine electrical testing — insulation resistance, continuity, earth pit resistance — is designed for the protective earthing system. It does not examine the signal reference ground, shield termination practices, shield loop current, earth bar segregation, or the global earthing architecture. An installation that passes all routine electrical tests can still have an instrumentation earthing system that is comprehensively non-compliant with IEEE 1050-2004, IEC 61000-5-2, and IEEE 1100-2005 — and that is actively causing operational problems.
+    answer: `Routine electrical testing — insulation resistance, continuity, earth pit resistance — is designed for the protective earthing system. It does not examine the signal reference ground, shield termination practices, shield loop current, earth bar segregation, or the global earthing architecture. An installation that passes all routine electrical tests can still have an instrumentation earthing system that is non-compliant with IEEE 1050-2004, IEC 61000-5-2, and IEEE 1100-2005 — and that is actively causing operational problems.
 
 This is the gap that a specialist Instrumentation Earthing Audit addresses.`,
   },
@@ -971,7 +968,7 @@ This is the gap that a specialist Instrumentation Earthing Audit addresses.`,
   {
     id: 5,
     question: "JEF APPROACH",
-    answer: `JEF's Instrumentation Earthing Audit covers 15 structured tests and inspections applied across panels, junction boxes, field instruments. The scope escalates logically: where shield loop current measurements at the panel level indicate a ground loop condition, the audit is extended to junction boxes and field assets to locate the source. It doesn't end with measurements alone, we rectify the anomalies identified and also perform measurements to cross verify the quality of rectification not just by visual inspection but also check whether the measured values after post rectification are within the acceptable limits prescribed in standards there by ensuring a fool proof system.
+    answer: `JEF's Instrumentation Earthing Audit covers 15 structured tests and inspections applied across panels, junction boxes, field instruments. The scope escalates logically: where shield loop current measurements at the panel level indicate a ground loop condition, the audit is extended to junction boxes and field assets to locate the source. It doesn't end with measurements alone, we rectify the anomalies identified and also perform measurements to cross verify the quality of rectification not just by visual inspection but also check whether the measured values post rectification are within the acceptable limits prescribed in standards there by ensuring a foolproof system.
 
 The approach involves 3 phases  
 Phase -1 – Audit and Identification of gaps / anomalies  
@@ -988,8 +985,8 @@ Phase -3 – Retesting after rectification.`,
 • Detailed report and site photographs post re-audit.`,
   },
 
-  {
-    id: 7,
+  { 
+    id: 7, 
     question: "JEF CAPABILITY",
     answer: `• JEF has conducted Instrumentation Earthing Audits across more than 120 control rooms and instrumentation panel rooms, auditing over 9,500 panels, 32,053 junction boxes, and 2,04,963 field instruments and field assets.  
 • Our patented Smart Digitization process delivers consistent, structured, and auditable reports at scale — enabling systematic tracking of findings across large, multi-room installations and clear prioritisation of corrective actions.`,

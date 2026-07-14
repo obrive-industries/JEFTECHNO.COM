@@ -39,12 +39,12 @@ const Hero = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="max-w-[1000px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
+            {/* <p className="max-w-[1000px] text-[13px] leading-[1.45] text-white/90 sm:text-[15px] md:text-[20px] md:leading-[1.5]">
               Early Streamer Emission technology uses the atmospheric gradient
               to generate ionization which can subsequently increase the
               protected volume. This facilitates the protection of large area,
               simplifying and reducing material and installation costs.
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </div>
