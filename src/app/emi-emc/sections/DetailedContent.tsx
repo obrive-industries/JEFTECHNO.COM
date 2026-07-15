@@ -250,7 +250,7 @@ const DetailedContent = () => {
 
           </motion.div>
 
-          {page.subsections?.map((sub, si) => (
+          {(page as any).subsections?.map((sub, si) => (
             <div key={si} className="mt-8">
               <div className="flex flex-col gap-5">
                 {sub.tags.map((tag, ti) => (

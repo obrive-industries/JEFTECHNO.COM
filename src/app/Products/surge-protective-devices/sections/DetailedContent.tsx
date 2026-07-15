@@ -254,7 +254,7 @@ export default function DetailedContent() {
             })}
           </motion.div>
 
-          {page.subsections?.map((sub, si) => (
+          {(page as any).subsections?.map((sub, si) => (
             <div key={si} className="mt-6">
               <AnimatePresence mode="wait">
                 {activeTags[si] !== undefined ? (
