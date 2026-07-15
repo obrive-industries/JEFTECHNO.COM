@@ -8,7 +8,7 @@ const navItems = [
   { label: "HOME", isActive: true },
   { label: "OUR BUSINESS", isActive: true },
   { label: "CONSULTING SERVICES", isActive: true },
-  { label: "ROOT CAUSE ANALYSIS", isActive: false },
+  { label: "EMI - EMC", isActive: false },
 ];
 
 export default function ProductIntro() {
