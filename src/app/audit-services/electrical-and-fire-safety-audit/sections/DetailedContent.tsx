@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const PROGRESS_DURATION = 10000;
+const PROGRESS_DURATION = 15000;
 const PROGRESS_INTERVAL = 50;
 
 const pages = [

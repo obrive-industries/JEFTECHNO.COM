@@ -33,13 +33,6 @@ const cards = [
     description:
       "Risk assessment, concept drawings, bill of materials, and budget estimate delivered in under 90 seconds. Built to IS/IEC 62305.",
   },
-  // {
-  //   id: 5,
-  //   image: "/clps/5.png",
-  //   title: "JEF E-BUILD — INSTALLATION QUALITY VERIFIED",
-  //   description:
-  //     "Step-by-step guided installation with real-time remote supervision by qualified engineers and documented certification.",
-  // },
   {
     id: 5,
     image: "/clps/5.png",
@@ -56,33 +49,42 @@ const cards = [
   },
 ];
 
+
+// ===================================================================================================================================
+ 
 const duplicatedCards = [...cards, ...cards];
 
-export default function WhyJefCLPS() {
-  const [isPaused, setIsPaused] = useState(false);
+export default function WhyRca() {
+ 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const originalCardsCount = duplicatedCards.length / 2; 
 
-  // Add the keyframe animation dynamically to the document
-  useEffect(() => {
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes scroll {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-50%); }
+  const handlePrev = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev === 0) {
+        return originalCardsCount - 1;
       }
-    `;
-    document.head.appendChild(style);
+      return prev - 1;
+    });
+  };
 
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
+  const handleNext = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev >= originalCardsCount) {
+        return 0;
+      }
+      return prev + 1;
+    });
+  };
 
   return (
     <section className="w-full bg-[#232427] py-16 md:py-[72px] overflow-hidden">
       <div className="section-container">
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
@@ -101,41 +103,53 @@ export default function WhyJefCLPS() {
             "
           >
             WHY JEF CLPS?
-          </h2>
+          </h2> 
 
-         
-           
-           
-
-         
         </motion.div>
 
-        {/* Infinite Slider */}
-        <div 
-          className="mt-12 md:mt-20 relative overflow-hidden w-full"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          <div
-            className="flex gap-6 md:gap-12 w-max"
-            style={{
-              animation: "scroll 45s linear infinite",
-              animationPlayState: isPaused ? "paused" : "running",
-            }}
-          >
+        {/* --- NAVIGATION BUTTONS AND SECTION HEADER --- */}
+        <div className="flex justify-between items-center w-full mt-12 mb-8">
+          <h2 className="text-[#C02429] text-[20px] md:text-[26px] font-bold tracking-[1.49px] uppercase">
+            Why JEF CLPS?
+          </h2>
+          
+          {/* Control Buttons Container */}
+          <div className="flex gap-4">
+            <button
+              onClick={handlePrev}
+              className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#161414] transition-all duration-300"
+            >
+              ←
+            </button>
+            <button
+              onClick={handleNext}
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#161414] hover:bg-white/80 transition-all duration-300"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+          {/* --- CARDS SLIDER --- */}
+          <div className="relative overflow-hidden w-full">
+            <motion.div
+              className="flex gap-6 md:gap-12 w-max"
+              // We let Framer Motion animate directly using a responsive ternary check
+              animate={{
+                x: typeof window !== 'undefined' && window.innerWidth >= 768 
+                  ? `calc(-${currentIndex} * (460px + 48px))` // Desktop: 1 whole card slide
+                  : `calc(-${currentIndex} * (300px + 24px))`  // Mobile: 1 whole card slide
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 25,
+              }}
+            >
             {duplicatedCards.map((card, index) => (
               <div
                 key={index}
-                className="
-                  w-[300px]
-                  md:w-[460px]
-                  min-w-[300px]
-                  md:min-w-[460px]
-                  flex
-                  flex-col
-                  gap-5
-                  group
-                "
+                className="w-[300px] md:w-[460px] min-w-[300px] md:min-w-[460px] flex flex-col gap-5 group"
               >
                 {/* Image */}
                 <div
@@ -143,7 +157,6 @@ export default function WhyJefCLPS() {
                     w-full
                     aspect-[463/239]
                     overflow-hidden
-                   
                   "
                 >
                   <img
@@ -189,7 +202,7 @@ export default function WhyJefCLPS() {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

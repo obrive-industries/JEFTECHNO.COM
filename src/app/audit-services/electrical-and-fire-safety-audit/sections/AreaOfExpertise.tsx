@@ -88,7 +88,9 @@ const sectors = [
       <div className="absolute inset-0 bg-[#1a1a1a]/75" />
 
       <div className="section-container relative z-10">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+
+{/* ====================================================================================================================== */}
+          <div className="flex flex-row items-center justify-between gap-4 lg:items-start">
          <div className="flex-col gap-4">
            <motion.h1
             initial={{ opacity: 0, x: -80 }}
@@ -97,19 +99,24 @@ const sectors = [
             viewport={{ once: true }}
             className="text-[#C02429] uppercase mb-6 text-[26px] md:text-[32px] tracking-[3px] md:tracking-[4.53px] font-bold"
           >
- JEF'S PATENTED SMART SAFETY AUDIT TOOL
+              JEF'S PATENTED SMART SAFETY AUDIT TOOL
           </motion.h1>
           <p className="max-w-[900px] text-[16px] md:text-[18px] leading-[1.6] text-white/80">
-  The world's first automated safety audit platform.
-</p>
+                The world's first automated safety audit platform.
+          </p>
          </div>
-          
 
-          <div className="flex gap-4 lg:mt-2">
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            className="flex gap-2 sm:gap-4 lg:mt-2 shrink-0  mt-40 md:mt-0 md:pt-10 shrink-0"
+          >
             <button
               onClick={prev}
               disabled={atStart}
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all duration-300"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atStart ? 0.4 : 1,
                 background: atStart ? "#ffffff" : "transparent",
@@ -123,7 +130,7 @@ const sectors = [
             <button
               onClick={next}
               disabled={atEnd}
-              className="w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all duration-300"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atEnd ? 0.4 : 1,
                 background: atEnd ? "transparent" : "#ffffff",
@@ -133,8 +140,9 @@ const sectors = [
             >
               →
             </button>
-          </div>
+          </motion.div>
         </div>
+{/* ====================================================================================================================== */}
 
         <div className="relative w-full mt-14 md:mt-20 overflow-hidden">
           <div className="absolute top-[39px] left-[-50vw] right-[-50vw] h-[1px] bg-white/30 z-0" />

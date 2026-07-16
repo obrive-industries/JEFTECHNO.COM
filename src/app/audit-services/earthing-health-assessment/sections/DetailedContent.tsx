@@ -3,7 +3,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
 
-const PROGRESS_DURATION = 10000;
+const PROGRESS_DURATION = 15000;
 const PROGRESS_INTERVAL = 50;
 const VISIBLE_TABS = 5;
 

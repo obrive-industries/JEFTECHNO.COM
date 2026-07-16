@@ -53,16 +53,19 @@ const MobileMenu = () => {
       { label: "Electrical & Fire Safety", path: "/audit-services/electrical-and-fire-safety-audit" },
     ],
     consulting: [
-      { label: "INDUSTRIAL", path: "/power-system-studies" },
-      { 
-        label: "Renewable", 
-        path: "/renewable",
-        subItems: [
-          { label: "Renewable", path: "/renewable" },
-          { label: "PSA", path: "/power-system-studies" },
-          { label: "RCA", path: "/root-cause-analysis" },
-        ]
-      },
+      { label: "INDUSTRIAL POWER SYSTEM STUDIES", path: "/power-system-studies" },
+      { label: "RENEWABLE POWER SYSTEM STUDIES", path: "/renewable" },
+      { label: "ROOT CAUSE ANALYSIS", path: "/root-cause-analysis" },
+      { label: "EMI & EMC", path: "/emi-emc" },
+      // { 
+      //   label: "Renewable", 
+      //   path: "/renewable",
+      //   subItems: [
+      //     { label: "Renewable", path: "/renewable" },
+      //     { label: "PSA", path: "/power-system-studies" },
+      //     { label: "RCA", path: "/root-cause-analysis" },
+      //   ]
+      // },
     ],
     industries: [
       { label: "Oil and Gas", path: "/industries/oilandgas" },

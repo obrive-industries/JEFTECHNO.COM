@@ -154,7 +154,7 @@ const pages = [
   },
 ];
 
-const PROGRESS_DURATION = 10000;
+const PROGRESS_DURATION = 15000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {
@@ -293,7 +293,7 @@ const DetailedContent = () => {
         </div>
 
         <div className="mt-12 md:mt-20 pb-4">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(160px,1fr))] md:grid-cols-4 gap-4 md:gap-10">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(160px,1fr))] md:grid-cols-5 gap-4 md:gap-10">
             {pages.map((tab, index) => {
               const isCurrent = activePage === index;
 

@@ -62,14 +62,17 @@ export default function WhyChooseRootCauseAnalysis() {
     >
       <div className="absolute inset-0 bg-[#1a1a1a]/70" />
 
+
       <div className="section-container relative z-10">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+
+{/* ====================================================================================================================== */}
+          <div className="flex flex-row items-center justify-between gap-4 lg:items-start">
           <motion.h2
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="text-[#C02429] text-[22px] md:text-[32px] font-bold tracking-[3px] uppercase"
+            className="text-[#C02429] text-[22px] md:text-[32px] font-bold tracking-[3px] uppercase max-w-[150px] md:max-w-none leading-tight md:leading-normal"
           >
             WHY CHOOSE JEF?
           </motion.h2>
@@ -79,12 +82,12 @@ export default function WhyChooseRootCauseAnalysis() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="flex gap-4 lg:mt-2"
+            className="flex gap-2 sm:gap-4 lg:mt-2 shrink-0"
           >
             <button
               onClick={prev}
               disabled={atStart}
-              className="flex h-11 w-11 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atStart ? 0.4 : 1,
                 background: atStart ? "#ffffff" : "transparent",
@@ -98,7 +101,7 @@ export default function WhyChooseRootCauseAnalysis() {
             <button
               onClick={next}
               disabled={atEnd}
-              className="flex h-11 w-11 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atEnd ? 0.4 : 1,
                 background: atEnd ? "transparent" : "#ffffff",
@@ -110,6 +113,7 @@ export default function WhyChooseRootCauseAnalysis() {
             </button>
           </motion.div>
         </div>
+{/* ====================================================================================================================== */}
 
         <motion.div
           initial={{ opacity: 0, y: 80 }}

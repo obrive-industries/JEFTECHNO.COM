@@ -1,6 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const cards = [
   {
@@ -33,15 +33,42 @@ const cards = [
   },
 ];
 
+
+// ===================================================================================================================================
+ 
 const duplicatedCards = [...cards, ...cards];
 
-export default function WhyAudit() {
+export default function WhyRca() {
+ 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const originalCardsCount = duplicatedCards.length / 2; 
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev === 0) {
+        return originalCardsCount - 1;
+      }
+      return prev - 1;
+    });
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev >= originalCardsCount) {
+        return 0;
+      }
+      return prev + 1;
+    });
+  };
+
   return (
     <section className="w-full bg-[#232427] py-16 md:py-[72px] overflow-hidden">
       <div className="section-container">
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
@@ -60,37 +87,54 @@ export default function WhyAudit() {
             "
           >
             KEY COMPONENTS OF THE STUDY
-          </h2>
+          </h2> 
 
-         
+
         </motion.div>
 
-        {/* Infinite Slider */}
-        <div className="mt-12 md:mt-20 relative overflow-hidden w-full">
-          <motion.div
-            className="flex gap-6 md:gap-12 w-max"
-            animate={{
-              x: ["0%", "-50%"],
-            }}
-            transition={{
-              duration: 45,
-              ease: "linear",
-              repeat: Infinity,
-            }}
-          >
+        {/* --- NAVIGATION BUTTONS AND SECTION HEADER --- */}
+        <div className="flex justify-between items-center w-full mt-12 mb-8">
+          <h2 className="text-[#C02429] text-[20px] md:text-[26px] font-bold tracking-[1.49px] uppercase">
+            Why JEF CLPS?
+          </h2>
+          
+          {/* Control Buttons Container */}
+          <div className="flex gap-4">
+            <button
+              onClick={handlePrev}
+              className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#161414] transition-all duration-300"
+            >
+              ←
+            </button>
+            <button
+              onClick={handleNext}
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#161414] hover:bg-white/80 transition-all duration-300"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+          {/* --- CARDS SLIDER --- */}
+          <div className="relative overflow-hidden w-full">
+            <motion.div
+              className="flex gap-6 md:gap-12 w-max"
+              // We let Framer Motion animate directly using a responsive ternary check
+              animate={{
+                x: typeof window !== 'undefined' && window.innerWidth >= 768 
+                  ? `calc(-${currentIndex} * (460px + 48px))` // Desktop: 1 whole card slide
+                  : `calc(-${currentIndex} * (300px + 24px))`  // Mobile: 1 whole card slide
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 25,
+              }}
+            >
             {duplicatedCards.map((card, index) => (
               <div
-                key={`${card.id}-${index}`}
-                className="
-                  w-[300px]
-                  md:w-[420px]
-                  min-w-[300px]
-                  md:min-w-[420px]
-                  flex
-                  flex-col
-                  gap-5
-                  group
-                "
+                key={index}
+                className="w-[300px] md:w-[460px] min-w-[300px] md:min-w-[460px] flex flex-col gap-5 group"
               >
                 {/* Image */}
                 <div

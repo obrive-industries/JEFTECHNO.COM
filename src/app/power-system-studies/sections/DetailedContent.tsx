@@ -44,7 +44,7 @@ const pages = [
     content: (
       <>
         <p>
-          JEF has the capability to deliver the following studies using software like ETAP, DIgSILENT, PowerFactory, or SKM Power*Tools as per applicable IEEE and IEC standards.
+          JEF has the capability to deliver the following studies using software like ETAP, DIgSILENT, PowerFactory, or SKM Power Tools as per applicable IEEE and IEC standards.
         </p>
         <br />
         <p>• Load Flow Study (IEEE 399 & 3002.2)</p>
@@ -168,23 +168,9 @@ const pages = [
       </>
     ),
   },
-  {
-    label: "POWER SYSTEM STUDIES",
-    nav: "POWER SYSTEM\nSTUDIES",
-    title: "POWER SYSTEM STUDIES",
-    content: (
-      <>
-        <p><b>-	Full study range. Single accountable team.</b> From ETAP-based steady-state studies to PSCAD electromagnetic transient analysis, we deliver the complete study programme end-to-end with one team responsible for both the analysis and the engineering outcomes.</p>
-        <p><b>-	Software independence.</b> ETAP, PSCAD/EMTDC, PSS/E, DIgSILENT, SKM, and DSA Tools — no software constraint on what we can offer or how we work.</p>
-        <p><b>-	Oil and gas sector depth.</b> Offshore platforms, subsea cables, high-voltage GIS, complex multi-source networks. We know the operating environment and the standards that govern it.</p>
-        <p><b>-	Standards-referenced deliverables.</b> Every finding is traceable to the specific standard clause that defines the requirement.</p>
-        <p><b>-	Methodology beyond the minimum.</b> We identify constraints and failure modes beyond standard studies, providing the project team with a complete picture before decisions become irreversible.</p>
-      </>
-    ),
-  },
 ];
 
-const PROGRESS_DURATION = 10000;
+const PROGRESS_DURATION = 15000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {

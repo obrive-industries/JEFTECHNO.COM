@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+
 import { motion } from "framer-motion";
 
 const cards = [
@@ -48,20 +48,9 @@ const cards = [
   },
 ];
 
+const duplicatedCards = [...cards, ...cards];
+
 export default function WhyRca() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const cardWidth = typeof window !== "undefined" && window.innerWidth >= 768 ? 460 : 300;
-  const gap = typeof window !== "undefined" && window.innerWidth >= 768 ? 48 : 24;
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
-  };
-
-  const offset = -(currentIndex * (cardWidth + gap));
   return (
     <section className="w-full bg-[#232427] py-16 md:py-[72px] overflow-hidden">
       <div className="section-container">
@@ -85,45 +74,36 @@ export default function WhyRca() {
               text-[#C02429]
             "
           >
-            JEF'S EMI/EMC STUDY SERVICE
+            INDUSTRY APPLICATIONS
           </h2>
 
          
            
-           {/* <p className=" text-white text-[14px] md:text-[16px] leading-[1.7]">
-              JEF’s Root Cause Analysis services cater to a wide range of industries, providing customized solutions for:
-            </p> */}
+           <p className="
+              text-white
+              text-[14px]
+              md:text-[16px]
+              leading-[1.7]
+            ">
+  JEF’s Root Cause Analysis services cater to a wide range of industries, providing customized solutions for:
+</p>
          
         </motion.div>
 
-        {/* Manual Carousel */}
-        <div className="mt-12 md:mt-20 relative">
-          {/* Toggle Buttons */}
-          <div className="flex gap-4 md:gap-6 mb-8 justify-center">
-            <button
-              onClick={handlePrev}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white hover:bg-[#C02429] hover:border-[#C02429] transition-all flex items-center justify-center text-white "
-              aria-label="Previous"
-            >
-              ←
-            </button>
-            <button
-              onClick={handleNext}
-              className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white hover:bg-[#C02429] hover:border-[#C02429] transition-all flex items-center justify-center text-white"
-              aria-label="Next"
-            >
-              →
-            </button>
-          </div>
-
-          {/* Carousel Container */}
-          <div className="overflow-hidden w-full">
-            <motion.div
-              className="flex gap-6 md:gap-12"
-              animate={{ x: offset }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
-              {cards.map((card, index) => (
+        {/* Infinite Slider */}
+        <div className="mt-12 md:mt-20 relative overflow-hidden w-full">
+          <motion.div
+            className="flex gap-6 md:gap-12 w-max"
+            animate={{
+              x: ["0%", "-50%"],
+            }}
+            transition={{
+              duration: 45,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+          >
+            {duplicatedCards.map((card, index) => (
               <div
                 key={index}
                 className="
@@ -189,8 +169,7 @@ export default function WhyRca() {
                 </div>
               </div>
             ))}
-            </motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -88,14 +88,9 @@ export default function AdditionalSpecialistStudies() {
       <div className="absolute inset-0 bg-[#1a1a1a]/75" />
 
       <div className="section-container relative z-10">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="max-w-[950px]"
-          >
+
+        {/* ====================================================================================================================== */}
+          <div className="flex flex-row items-center justify-between gap-4 lg:items-start">
             <motion.h1
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -107,19 +102,18 @@ export default function AdditionalSpecialistStudies() {
                 ? "ADDITIONAL SPECIALIST STUDIES"
                 : "AREAS OF EXPERTISE"}
             </motion.h1>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="flex gap-4 lg:mt-2"
+            className="flex gap-2 sm:gap-4 lg:mt-2 shrink-0"
           >
             <button
               onClick={prev}
               disabled={atStart}
-              className="flex h-11 w-11 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atStart ? 0.4 : 1,
                 background: atStart ? "#ffffff" : "transparent",
@@ -133,7 +127,7 @@ export default function AdditionalSpecialistStudies() {
             <button
               onClick={next}
               disabled={atEnd}
-              className="flex h-11 w-11 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12"
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atEnd ? 0.4 : 1,
                 background: atEnd ? "transparent" : "#ffffff",
@@ -145,6 +139,7 @@ export default function AdditionalSpecialistStudies() {
             </button>
           </motion.div>
         </div>
+{/* ====================================================================================================================== */}
 
         <motion.div
           initial={{ opacity: 0, y: 100 }}

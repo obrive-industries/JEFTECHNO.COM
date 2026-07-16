@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const cards = [
   {
@@ -47,59 +48,166 @@ const cards = [
   },
 ];
 
+
+
+// ===================================================================================================================================
+ 
 const duplicatedCards = [...cards, ...cards];
 
-export default function LinesRequiringSpdProtection() {
+export default function WhyRca() {
+ 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const originalCardsCount = duplicatedCards.length / 2; 
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev === 0) {
+        return originalCardsCount - 1;
+      }
+      return prev - 1;
+    });
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => {
+ 
+      if (prev >= originalCardsCount) {
+        return 0;
+      }
+      return prev + 1;
+    });
+  };
+
   return (
-    <section className="w-full overflow-hidden bg-[#232427] py-12 md:py-16">
+    <section className="w-full bg-[#232427] py-16 md:py-[72px] overflow-hidden">
       <div className="section-container">
+        {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="flex flex-col gap-5"
+          className="flex flex-col gap-6"
         >
-          <h2 className="font-montserrat text-[22px] font-bold uppercase tracking-[3px] text-[#C02429] md:text-[30px] md:tracking-[5px]">
+          <h2
+            className="
+              font-montserrat
+              text-[24px]
+              md:text-[32px]
+              uppercase
+              font-bold
+              tracking-[2px]
+              md:tracking-[4px]
+              text-[#C02429]
+            "
+          >
             LINES REQUIRING SPD PROTECTION
-          </h2>
+          </h2> 
 
-          <p className="max-w-[900px] text-[13px] leading-[1.6] text-white md:text-[16px]">
+           <p className="
+              text-white
+              text-[14px]
+              md:text-[16px]
+              leading-[1.7]
+            ">
             IS/IEC 62305 and NBC 2016 require surge protection on all electrical
             and electronic lines entering a structure where an external lightning
             protection system is installed. The CLPS range covers:
           </p>
+
         </motion.div>
 
-        <div className="relative mt-10 w-full overflow-hidden md:mt-14">
-          <motion.div
-            className="flex w-max gap-5 md:gap-7"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 38,
-              ease: "linear",
-              repeat: Infinity,
-            }}
-          >
+        {/* --- NAVIGATION BUTTONS AND SECTION HEADER --- */}
+        <div className="flex justify-between items-center w-full mt-12 mb-8">
+          <h2 className="text-[#C02429] text-[20px] md:text-[26px] font-bold tracking-[1.49px] uppercase">
+            Why JEF CLPS?
+          </h2>
+          
+          {/* Control Buttons Container */}
+          <div className="flex gap-4">
+            <button
+              onClick={handlePrev}
+              className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#161414] transition-all duration-300"
+            >
+              ←
+            </button>
+            <button
+              onClick={handleNext}
+              className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#161414] hover:bg-white/80 transition-all duration-300"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+          {/* --- CARDS SLIDER --- */}
+          <div className="relative overflow-hidden w-full">
+            <motion.div
+              className="flex gap-6 md:gap-12 w-max"
+              // We let Framer Motion animate directly using a responsive ternary check
+              animate={{
+                x: typeof window !== 'undefined' && window.innerWidth >= 768 
+                  ? `calc(-${currentIndex} * (460px + 48px))` // Desktop: 1 whole card slide
+                  : `calc(-${currentIndex} * (300px + 24px))`  // Mobile: 1 whole card slide
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 25,
+              }}
+            >
             {duplicatedCards.map((card, index) => (
               <div
                 key={index}
-                className="group flex w-[240px] min-w-[240px] flex-col gap-4 md:w-[320px] md:min-w-[320px]"
+                className="w-[300px] md:w-[460px] min-w-[300px] md:min-w-[460px] flex flex-col gap-5 group"
               >
-                <div className="aspect-[320/170] w-full overflow-hidden">
+                {/* Image */}
+                <div
+                  className="
+                    w-full
+                    aspect-[463/239]
+                    overflow-hidden
+                  "
+                >
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="
+                      w-full
+                      h-full
+                      object-cover
+                      transition-transform
+                      duration-700
+                      group-hover:scale-105
+                    "
                   />
                 </div>
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-[11px] font-semibold uppercase leading-[1.4] tracking-[0.6px] text-white md:text-[13px]">
+                {/* Content */}
+                <div className="flex flex-col gap-3">
+                  <h3
+                    className="
+                      text-white
+                      uppercase
+                      text-[14px]
+                      md:text-[16px]
+                      leading-[1.5]
+                      font-medium
+                    "
+                  >
                     {card.title}
                   </h3>
 
-                  <p className="text-[11px] font-light leading-[1.6] text-white/70 md:text-[12px]">
+                  <p
+                    className="
+                      text-[#D0D0D0]
+                      text-[12px]
+                      md:text-[14px]
+                      leading-[1.7]
+                      font-light
+                    "
+                  >
                     {card.description}
                   </p>
                 </div>

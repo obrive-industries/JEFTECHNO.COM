@@ -72,85 +72,32 @@ const sectors = [
         fontFamily: "Montserrat, sans-serif",
       }}
     >
-      {/* OVERLAY */}
+ 
       <div className="absolute inset-0 bg-[#1a1a1a]/75" />
-
       <div className="section-container relative z-10">
-        
-        {/* TOP SECTION */}
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
-          
-          {/* LEFT CONTENT */}
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1.1,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="max-w-[950px]"
+        {/* ====================================================================================================================== */}
+          <div className="flex flex-row items-center justify-between gap-4 lg:items-start">
+          <motion.h2
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            className="text-[#C02429] text-[22px] md:text-[32px] font-bold tracking-[3px] uppercase max-w-[150px] md:max-w-none leading-tight md:leading-normal"
           >
-            {/* HEADING */}
-            <motion.h1
-              initial={{ opacity: 0, x: -80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 1,
-                delay: 0.1,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              viewport={{ once: true }}
-              className="
-                text-[#C02429]
-                uppercase
-                mb-6
+            INSTRUMENTATION SYSTEM DELIVERABLES
+          </motion.h2>
 
-                text-[26px]
-                md:text-[32px]
-
-                tracking-[3px]
-                md:tracking-[4.53px]
-
-                font-bold
-              "
-            >
-               INSTRUMENTATION SYSTEM DELIVERABLES
-            </motion.h1>
-
-          
-          </motion.div>
-
-          {/* NAV BUTTONS */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 1,
-              delay: 0.2,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="flex gap-4 lg:mt-2"
+            className="flex gap-2 sm:gap-4 mt-1 md:mt-0 md:pt-10 shrink-0" 
           >
-            {/* PREV */}
             <button
               onClick={prev}
               disabled={atStart}
-              className="
-                w-11
-                h-11
-                md:w-12
-                md:h-12
-
-                rounded-full
-                flex
-                items-center
-                justify-center
-
-                transition-all
-                duration-300
-              "
+              className="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atStart ? 0.4 : 1,
                 background: atStart ? "#ffffff" : "transparent",
@@ -161,24 +108,10 @@ const sectors = [
               ←
             </button>
 
-            {/* NEXT */}
             <button
               onClick={next}
               disabled={atEnd}
-              className="
-                w-11
-                h-11
-                md:w-12
-                md:h-12
-
-                rounded-full
-                flex
-                items-center
-                justify-center
-
-                transition-all
-                duration-300
-              "
+              className="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 md:h-12 md:w-12 text-sm md:text-base"
               style={{
                 opacity: atEnd ? 0.4 : 1,
                 background: atEnd ? "transparent" : "#ffffff",
@@ -190,6 +123,7 @@ const sectors = [
             </button>
           </motion.div>
         </div>
+{/* ====================================================================================================================== */}
 
         {/* SLIDER */}
         <motion.div

@@ -93,7 +93,7 @@ const pages = [
   },
 ];
 
-const PROGRESS_DURATION = 10000;
+const PROGRESS_DURATION = 15000;
 const PROGRESS_INTERVAL = 50;
 
 const DetailedContent = () => {
