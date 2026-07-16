@@ -11,13 +11,13 @@ const downloads = [
     date: "December 11, 2025",
     href: "#",
   },
-  {
-    id: 2,
-    image: "/AboutUs/Download.png",
-    title: "POWER QUALITY ANALYSIS GUIDE",
-    date: "December 11, 2025",
-    href: "#",
-  },
+  // {
+  //   id: 2,
+  //   image: "/AboutUs/Download.png",
+  //   title: "POWER QUALITY ANALYSIS GUIDE",
+  //   date: "December 11, 2025",
+  //   href: "#",
+  // },
 ];
 
 export default function DownloadSection() {

@@ -5,28 +5,28 @@ import { useState } from "react";
 const cards = [
   {
     id: 1,
-    image: "/PQS/4.png",
+    image: "/HomePageImg/PQS/4.png",
     title: "VOLTAGE QUALITY",
     description:
       "Assessing sags, swells, unbalance, and harmonics in the voltage supply.",
   },
   {
     id: 2,
-    image: "/PQS/1.png",
+    image: "/HomePageImg/PQS/1.png",
     title: "CURRENT QUALITY",
     description:
       "Analyzing current distortions and their impact on equipment.",
   },
   {
     id: 3,
-    image: "/PQS/2.png",  
+    image: "/HomePageImg/PQS/2.png",  
     title: "FREQUENCY STABILITY",
     description:
       "Ensuring the frequency remains stable and within acceptable limits.",
   },
   {
     id: 4,
-    image: "/PQS/3.png",  
+    image: "/HomePageImg/PQS/3.png",  
     title: "TRANSIENT ANALYSIS",
     description:
       "Identifying and mitigating short-duration high-energy disturbances.",
