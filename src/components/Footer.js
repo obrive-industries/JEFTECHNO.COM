@@ -321,7 +321,7 @@ const FAQComponent = () => {
                                 src={
                                     isOpen
                                         ? "../AboutUs/DropUpArr.png"
-                                        : "../AboutUs/DropdownArr.png"
+                                        : "../AboutUs/DropDownArr.png"
                                 }
                                 alt=""
                                 className="object-contain flex-1 w-full aspect-square"
