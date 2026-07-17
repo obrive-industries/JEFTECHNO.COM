@@ -71,18 +71,34 @@ function MainFooter() {
        <main className="flex overflow-hidden flex-col items-center lg:pt-24 bg-[#2D2E30]">
 
     {/* FIRST ROW */}
-    <div className="section-container hidden lg:flex flex-row tracking-wider justify-between">
+    {/* <div className="section-container hidden lg:flex flex-row tracking-wider justify-between">
         <Section title="About" items={itemsAbout} />
         <Section title="Locations" items={itemsLocation} />
         <Section title="Our Businesses" items={itemsBusiness} />
         <Section title="News" items={itemNews} />
-    </div>
+    </div> */}
 
     {/* SECOND ROW */}
-    <div className="section-container hidden lg:flex mt-10 gap-30">
+    {/* <div className="section-container hidden lg:flex mt-10 gap-70">
         <Section title="Internal Use" items={itemInternalUse} />
         <Section title="Internal Links" items={itemJefShield} />
-    </div>
+    </div> */}
+
+        {/* FIRST ROW */}
+{/* UNIFIED CONTAINER (Handles both horizontal columns and vertical rows) */}
+        <div className="section-container grid grid-cols-2 md:grid-cols-4 gap-x-8 md:gap-x-12 gap-y-10 md:gap-y-14 tracking-wider">
+        
+        {/* FIRST ROW ITEMS */}
+        <Section title="About" items={itemsAbout} />
+        <Section title="Locations" items={itemsLocation} />
+        <Section title="Our Businesses" items={itemsBusiness} />
+        <Section title="News" items={itemNews} />
+
+        {/* SECOND ROW ITEMS (They will automatically drop down and align perfectly under the first two columns) */}
+        <Section title="Internal Use" items={itemInternalUse} />
+        <Section title="Internal Links" items={itemJefShield} />
+        
+        </div>
 
     {/* MOBILE FAQ */}
     <div className="lg:hidden w-full">
