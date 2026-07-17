@@ -12,8 +12,7 @@ const industriesData = [
     description:
       "We offer comprehensive solutions for the solar and wind power segments.",
     points: [
-      "Lightning Protection & Grounding: Comprehensive lightning protection and grounding solutions, including Supply and Installation, Testing and Commissioning.",
-      "Design Services: Design and detailed engineering for specialized renewable energy infrastructure.",
+      "Lightning Protection & Grounding: Comprehensive lightning protection and grounding solutions, including design Supply and Installation, Testing Commissioning.",
       "Safety & Analysis: LPS adequacy studies and root cause analysis to ensure plant reliability.",
     ],
   },

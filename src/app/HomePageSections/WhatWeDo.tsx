@@ -144,13 +144,13 @@ export default function WhatWeDoSection() {
 
     dots: [
       {
-        heading: "ENSURES COMPLIANCE\nWITH RELEVANT STANDARDS",
+        heading: "EARTHING\nSTUDIES",
         description: `
-• Detects hidden faults in your earthing network
+        • Detects hidden faults in your earthing network
 
-• Prevents equipment damage and shock risk
+        • Prevents equipment damage and shock risk
 
-• Meets safety compliance standards
+        • Ensures compliance with relevant standards
         `,
         x: 150,
         y: 40,
@@ -160,7 +160,7 @@ export default function WhatWeDoSection() {
       },
 
       {
-        heading: "LIGHTNING PROTECTION\n AND SYSTEM ADEQUACY",
+        heading: "LIGHTNING PROTECTION\n SYSTEM ADEQUACY",
         description: `
 • Reviews rods, conductors, and bonding
 
