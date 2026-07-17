@@ -4,8 +4,7 @@ import React, { useState, useContext } from "react";
 import Link from "next/link";
 import { TranslationContext } from "../../context/TranslationContext";
 
-// Accept onClose prop from parent component
-const MobileMenu = ({ onClose }) => {
+const MobileMenu = () => {
   
   const [activeMenu, setActiveMenu] = useState("main");
   const [expandedItems, setExpandedItems] = useState({});
@@ -22,6 +21,7 @@ const MobileMenu = ({ onClose }) => {
       { label: "Home", path: "/" },
       { label: "About", key: "about" },
       { label: "Our Business", key: "business" },
+      
       { label: "Blogs", path: "/blog" },
       { label: "JEF UAE", path: "https://www.jefuae.com/" },
       { label: "JEF SHIELD", path: "https://www.jeftechno.com/JEF_SHIELD/login.php" },
@@ -29,6 +29,7 @@ const MobileMenu = ({ onClose }) => {
     ],
     about: [
       { label: "About Us", path: "/about-us" },
+     
       { label: "Employee Login", path: "https://www.jeftechno.com/Internal_Use/index.php" },
     ],
     business: [
@@ -56,6 +57,15 @@ const MobileMenu = ({ onClose }) => {
       { label: "RENEWABLE POWER SYSTEM STUDIES", path: "/renewable" },
       { label: "ROOT CAUSE ANALYSIS", path: "/root-cause-analysis" },
       { label: "EMI & EMC", path: "/emi-emc" },
+      // { 
+      //   label: "Renewable", 
+      //   path: "/renewable",
+      //   subItems: [
+      //     { label: "Renewable", path: "/renewable" },
+      //     { label: "PSA", path: "/power-system-studies" },
+      //     { label: "RCA", path: "/root-cause-analysis" },
+      //   ]
+      // },
     ],
     industries: [
       { label: "Oil and Gas", path: "/industries/oilandgas" },
@@ -74,7 +84,7 @@ const MobileMenu = ({ onClose }) => {
       >
         {faqData.main.map((item, index) =>
           item.path ? (
-            <Link key={index} href={item.path} onClick={onClose}>
+            <Link key={index} href={item.path}>
               <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                 <span className="uppercase text-white-500 text-lg">
                   {item.label}
@@ -118,7 +128,7 @@ const MobileMenu = ({ onClose }) => {
           <span>ABOUT</span>
         </div>
         {faqData.about.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={item.path}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               {item.label}
             </div>
@@ -145,7 +155,7 @@ const MobileMenu = ({ onClose }) => {
         </div>
         {faqData.business.map((item, index) => (
           item.path ? (
-            <Link key={index} href={item.path} onClick={onClose}>
+            <Link key={index} href={item.path}>
               <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                 <span>{item.label}</span>
               </div>
@@ -187,7 +197,7 @@ const MobileMenu = ({ onClose }) => {
           <span>OUR PRODUCTS</span>
         </div>
         {faqData.products.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={item.path}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>
@@ -213,7 +223,7 @@ const MobileMenu = ({ onClose }) => {
           <span>AUDIT SERVICES</span>
         </div>
         {faqData.audit.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={item.path}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>
@@ -244,7 +254,6 @@ const MobileMenu = ({ onClose }) => {
               <div
                 onClick={() => {
                   if (item.path && expandedItems[item.label]) {
-                    if (onClose) onClose();
                     window.location.href = item.path;
                   } else {
                     toggleItem(item.label);
@@ -264,7 +273,7 @@ const MobileMenu = ({ onClose }) => {
                 />
               </div>
             ) : item.path ? (
-              <Link href={item.path} onClick={onClose}>
+              <Link href={item.path}>
                 <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                   <span>{item.label}</span>
                 </div>
@@ -291,7 +300,7 @@ const MobileMenu = ({ onClose }) => {
             {item.subItems && expandedItems[item.label] && (
               <div className="bg-[#262626]">
                 {item.subItems.map((sub, i) => (
-                  <Link key={i} href={sub.path} onClick={onClose}>
+                  <Link key={i} href={sub.path}>
                     <div className="flex justify-between items-center px-12 py-4 border-b border-gray-800 cursor-pointer text-sm text-gray-300">
                       {sub.label}
                     </div>
@@ -321,7 +330,7 @@ const MobileMenu = ({ onClose }) => {
           <span>INDUSTRIES</span>
         </div>
         {faqData.industries.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={item.path}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>
