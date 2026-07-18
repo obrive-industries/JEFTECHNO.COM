@@ -122,7 +122,7 @@ export default function WhyChooseRootCauseAnalysis() {
           viewport={{ once: true }}
           className="relative mt-10 w-full overflow-hidden md:mt-14"
         >
-          <div className="absolute left-[-50vw] right-[-50vw] top-[39px] z-0 h-[1px] bg-white/30" />
+          {/* <div className="absolute left-[-50vw] right-[-50vw] top-[39px] z-0 h-[1px] bg-white/30" /> */}
 
           <div
             className="relative z-10 flex gap-[20px] transition-transform duration-700 ease-in-out"

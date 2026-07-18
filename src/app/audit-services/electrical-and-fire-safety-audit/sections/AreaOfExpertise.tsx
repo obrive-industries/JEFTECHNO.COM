@@ -145,7 +145,7 @@ const sectors = [
 {/* ====================================================================================================================== */}
 
         <div className="relative w-full mt-14 md:mt-20 overflow-hidden">
-          <div className="absolute top-[39px] left-[-50vw] right-[-50vw] h-[1px] bg-white/30 z-0" />
+          {/* <div className="absolute top-[39px] left-[-50vw] right-[-50vw] h-[1px] bg-white/30 z-0" /> */}
 
           <div
             className="relative flex gap-[20px] transition-transform duration-700 ease-in-out z-10"
