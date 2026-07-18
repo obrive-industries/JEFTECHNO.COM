@@ -1,13 +1,37 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
+// interface TagDescription {
+//   title: string;
+//   description: string;
+// }
+
+// interface Subsection {
+//   heading: string;
+//   body: string;
+//   tags?: string[];
+//   layout: string;
+//   tagDescriptions?: TagDescription[];
+//   tagImages?: string[];
+// }
+
+// interface PageItem {
+//   label: string;
+//   nav: string;
+//   title: string;
+//   content: React.ReactNode;
+//   subsections: Subsection[] | null;
+//   image?: string; // Made optional to prevent property access compilation errors
+// }
 
 const pages = [
   {
     label: "POWER SYSTEM STUDIES",
     nav: "POWER SYSTEM\nSTUDIES",
     title: "POWER SYSTEM STUDIES",
+    subsections: null,
     content: (
       <>
         <p>
@@ -50,6 +74,7 @@ const pages = [
     label: "LIST OF STUDIES FOR RENEWABLE ENERGY",
     nav: "LIST OF STUDIES FOR\nRENEWABLE ENERGY",
     title: "LIST OF STUDIES FOR RENEWABLE ENERGY",
+    subsections: null,
     content: (
       <>
         <p>
@@ -78,6 +103,7 @@ const pages = [
     label: "WHY CHOOSE US?",
     nav: "WHY CHOOSE US?",
     title: "WHY CHOOSE US?",
+    subsections: null,
     content: (
       <>
         <p>
@@ -152,46 +178,45 @@ const DetailedContent = () => {
         </div>
 
         <div className="w-full relative z-20 flex-1">
-          <motion.div
-            key={`content-${activePage}`}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className={`flex gap-8 ${
-              page.image ? "flex-col lg:flex-row lg:items-start" : "flex-col"
-            }`}
-          >
-            {/* Added a safety layout check if content exists */}
-            {page.content && (
-              <div className="flex flex-col flex-1">
-                {React.Children.map(page.content?.props?.children, (child, i) => {
-                  if (React.isValidElement(child) && child.type === "p") {
-                    const element = child as React.ReactElement<{ children?: React.ReactNode }>;
-                    return (
-                      <p
-                        key={i}
-                        className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify"
-                      >
-                        {element.props.children}
-                      </p>
-                    );
-                  }
-                  return child;
-                })}
-              </div>
-            )}
+<motion.div
+  key={`content-${activePage}`}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.4 }}
+  className={`flex gap-8 ${
+    (page as any).image ? "flex-col lg:flex-row lg:items-start" : "flex-col"
+  }`}
+>
+  {page.content && (
+    <div className="flex flex-col flex-1">
+      {React.Children.map((page.content as any)?.props?.children, (child, i) => {
+        if (React.isValidElement(child) && child.type === "p") {
+          const element = child as React.ReactElement<{ children?: React.ReactNode }>;
+          return (
+            <p
+              key={i}
+              className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify"
+            >
+              {element.props.children}
+            </p>
+          );
+        }
+        return child;
+      })}
+    </div>
+  )}
 
-            {page.image && (
-              <motion.img
-                initial={{ opacity: 0, scale: 0.96 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                src={page.image}
-                alt={page.title}
-                className="w-full max-w-[330px] lg:max-w-[360px] object-contain mx-auto lg:mx-0"
-              />
-            )}
-          </motion.div>
+  {(page as any).image && (
+    <motion.img
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      src={(page as any).image}
+      alt={page.title}
+      className="w-full max-w-[330px] lg:max-w-[360px] object-contain mx-auto lg:mx-0"
+    />
+  )}
+</motion.div>
 
           {page.subsections?.map((sub, si) => (
             <div key={si} className="mt-8">
@@ -214,34 +239,34 @@ const DetailedContent = () => {
                 </div>
               )}
 
-              <AnimatePresence mode="wait">
-                {activeTags[si] !== undefined && sub.tagImages?.[activeTags[si]] && (
-                  <motion.img
-                    key={`tag-img-${si}-${activeTags[si]}`}
-                    initial={{ opacity: 0, y: 18 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 18 }}
-                    transition={{ duration: 0.45, ease: "easeOut" }}
-                    src={sub.tagImages[activeTags[si]]}
-                    alt={sub.tags[activeTags[si]]}
-                    className="mt-5 w-full max-w-[520px] object-contain"
-                  />
-                )}
-
-                {activeTags[si] !== undefined &&
-                  sub.tagDescriptions?.[activeTags[si]] && (
-                    <motion.p
-                      key={`tag-desc-${si}-${activeTags[si]}`}
+                <AnimatePresence mode="wait">
+                  {activeTags[si] !== undefined && (sub as any).tagImages?.[activeTags[si]!] && (
+                    <motion.img
+                      key={`tag-img-${si}-${activeTags[si]}`}
                       initial={{ opacity: 0, y: 18 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 18 }}
                       transition={{ duration: 0.45, ease: "easeOut" }}
-                      className="mt-5 whitespace-pre-line text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white"
-                    >
-                      {sub.tagDescriptions[activeTags[si]]}
-                    </motion.p>
+                      src={(sub as any).tagImages[activeTags[si]!]}
+                      alt={sub.tags?.[activeTags[si]!]}
+                      className="mt-5 w-full max-w-[520px] object-contain"
+                    />
                   )}
-              </AnimatePresence>
+
+                  {activeTags[si] !== undefined &&
+                    sub.tagDescriptions?.[activeTags[si]!] && (
+                      <motion.p
+                        key={`tag-desc-${si}-${activeTags[si]}`}
+                        initial={{ opacity: 0, y: 18 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 18 }}
+                        transition={{ duration: 0.45, ease: "easeOut" }}
+                        className="mt-5 whitespace-pre-line text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white"
+                      >
+                        {sub.tagDescriptions[activeTags[si]!].description}
+                      </motion.p>
+                    )}
+                </AnimatePresence>
             </div>
           ))}
         </div>

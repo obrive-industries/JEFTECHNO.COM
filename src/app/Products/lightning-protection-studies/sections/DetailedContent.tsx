@@ -197,22 +197,22 @@ const DetailedContent = () => {
           >
             {/* Added a safety layout check if content exists */}
             {page.content && (
-              <div className="flex flex-col flex-1">
-                {React.Children.map(page.content?.props?.children, (child, i) => {
-                  if (React.isValidElement(child) && child.type === "p") {
-                    const element = child as React.ReactElement<{ children?: React.ReactNode }>;
-                    return (
-                      <p
-                        key={i}
-                        className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify"
-                      >
-                        {element.props.children}
-                      </p>
-                    );
-                  }
-                  return child;
-                })}
-              </div>
+                <div className="flex flex-col flex-1">
+                  {React.Children.map((page.content as any)?.props?.children, (child, i) => {
+                    if (React.isValidElement(child) && child.type === "p") {
+                      const element = child as React.ReactElement<{ children?: React.ReactNode }>;
+                      return (
+                        <p
+                          key={i}
+                          className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify"
+                        >
+                          {element.props.children}
+                        </p>
+                      );
+                    }
+                    return child;
+                  })}
+                </div>
             )}
 
             {page.image && (

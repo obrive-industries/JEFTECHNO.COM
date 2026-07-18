@@ -8,6 +8,8 @@ const pages = [
     label: "ABOUT EMI EMC",
     nav: "ABOUT EMI EMC",
     title: "ABOUT EMI EMC",
+    subsections : null,
+    image : null,
     content: (
       <>
         <p>
@@ -45,6 +47,8 @@ const pages = [
     label: "COMPLIANCE AND STANDARDS",
     nav: "COMPLIANCE\nAND STANDARDS",
     title: "COMPLIANCE AND STANDARDS",
+    subsections : null,
+    image : null,
 
         content: (
       <>
@@ -94,6 +98,8 @@ const pages = [
     label: "INDUSTRY APPLICATIONS",
     nav: "INDUSTRY\nAPPLICATIONS",
     title: "INDUSTRY APPLICATIONS",
+    subsections : null,
+    image : null,
     content: (
       <>
         <p>Our EMI/EMC studies are tailored to meet the needs of various industries:</p>
@@ -116,6 +122,8 @@ const pages = [
     label: "ABOUT AC INTERFERENCE STUDY",
     nav: "ABOUT AC\nINTERFERENCE STUDY",
     title: "ABOUT AC INTERFERENCE STUDY",
+    subsections : null,
+    image: null,
     content: (
       <>
         <p>
@@ -136,6 +144,8 @@ const pages = [
     label: "COMPLIANCE AND STANDARDS FOR AC INTERFERENCE",
     nav: "COMPLIANCE AND STANDARDS FOR AC INTERFERENCE",
     title: "COMPLIANCE AND STANDARDS FOR AC INTERFERENCE",
+    subsections: null,
+    image: null,
     content: (
       <>
         <p>
@@ -243,7 +253,7 @@ const DetailedContent = () => {
               </div>
             )}
 
-            {page.image && (
+            {/* {page.image && (
               <motion.img
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -252,7 +262,7 @@ const DetailedContent = () => {
                 alt={page.title}
                 className="w-full max-w-[330px] lg:max-w-[360px] object-contain mx-auto lg:mx-0"
               />
-            )}
+            )} */}
           </motion.div>
 
           {page.subsections?.map((sub, si) => (

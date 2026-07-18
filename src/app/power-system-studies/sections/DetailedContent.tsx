@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const pages = [
   {
     label: "WHAT WE DO",
     nav: "WHAT WE DO",
     title: "WHAT WE DO",
+    subsections : null,
+    image: null,
     content: (
       <>
         <p>
@@ -41,6 +43,8 @@ const pages = [
     label: "POWER SYSTEM STUDIES",
     nav: "POWER SYSTEM\nSTUDIES",
     title: "POWER SYSTEM STUDIES",
+    subsections: null,
+    image: null,
     content: (
       <>
         <p>
@@ -63,6 +67,8 @@ const pages = [
     label: "ELECTROMAGNETIC TRANSIENT AND IC STUDIES'",
     nav: "ELECTROMAGNETIC\nTRANSIENT AND IC STUDIES",
     title: "ELECTROMAGNETIC TRANSIENT AND INSULATION COORDINATION STUDIES",
+    subsections: null,
+    image: null,
     content: (
       <>
         <p>
@@ -85,6 +91,8 @@ const pages = [
     label: "OUR SOFTWARE CAPABILITY",
     nav: "OUR SOFTWARE\nCAPABILITY",
     title: "OUR SOFTWARE CAPABILITY",
+    subsections: null,
+    image: null,
     content: (
       <>
         <p>
@@ -106,6 +114,8 @@ const pages = [
     label: "THE PROJECTS WE WORK ON",
     nav: "PROJECTS WE WORK ON",
     title: "THE PROJECTS WE WORK ON",
+    subsections: null,
+    image: null,
     content: (
       <>
         <p>
