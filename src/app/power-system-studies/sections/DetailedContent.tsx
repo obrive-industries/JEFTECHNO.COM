@@ -72,7 +72,7 @@ const pages = [
     content: (
       <>
         <p>
-          Time-domain electromagnetic transient simulation for high-voltage GIS
+          JEF has the capability to deliver time-domain electromagnetic transient simulation for high-voltage GIS
           and AIS installations — applied across HV systems using PSCAD/EMTDC.
         </p>
         <br />

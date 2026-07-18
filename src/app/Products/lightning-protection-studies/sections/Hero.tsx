@@ -35,7 +35,7 @@ const Hero = () => {
           >
             {/* Heading */}
             <h1 className="font-montserrat text-[22px] font-bold leading-[1.15] sm:text-[28px] md:text-[42px] md:leading-[1.1]">
-              ESE Lightning Protection
+              ESE NIMBUS — External Lightning Protection
             </h1>
 
             {/* Subtitle */}

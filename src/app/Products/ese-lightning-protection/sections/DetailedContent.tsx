@@ -131,7 +131,13 @@ const pages = [
     title: "A KEY CHALLENGE IN ESE LIGHTNING PROTECTION SYSTEMS",
     content: (
       <>
-        <p>A key challenge in ESE lightning protection systems is the presence of fake or counterfeit products, which closely mimic genuine devices in appearance but lack proper testing and certification.< br/>Since ESE performance depends on the validated Delta T (ΔT) parameter as per NF C 17-102, untested products often claim unrealistic values, leading to incorrect protection radius and potential coverage gaps. These products typically do not undergo sequential (multi-shot) testing, meaning their performance may not be consistent under repeated lightning events—especially critical in exposed environments like solar plants.< br/>Additionally, inferior materials and lack of high-current testing (e.g., 100 kA, 10/350 μs) can result in failure during actual lightning strikes, causing damage to PV modules, inverters, and associated systems. The absence of compliance, traceability, and authenticity verification further increases risks such as audit failures, insurance issues, and long-term reliability concerns.< br/>Ultimately, while ESE technology is effective, the use of non-genuine products can compromise the entire lightning protection system.</p>
+        <p>A key challenge in ESE lightning protection systems is the presence of fake or counterfeit products, which closely mimic genuine devices in appearance but lack proper testing and certification.
+          < br/> < br/>
+        Since ESE performance depends on the validated Delta T (ΔT) parameter as per NF C 17-102, untested products often claim unrealistic values, leading to incorrect protection radius and potential coverage gaps. These products typically do not undergo sequential (multi-shot) testing, meaning their performance may not be consistent under repeated lightning events—especially critical in exposed environments like solar plants.
+        < br/>< br/>
+        Additionally, inferior materials and lack of high-current testing (e.g., 100 kA, 10/350 μs) can result in failure during actual lightning strikes, causing damage to PV modules, inverters, and associated systems. The absence of compliance, traceability, and authenticity verification further increases risks such as audit failures, insurance issues, and long-term reliability concerns.
+        < br/>< br/>
+        Ultimately, while ESE technology is effective, the use of non-genuine products can compromise the entire lightning protection system.</p>
       </>
     ),
     subsections: null,
@@ -176,7 +182,9 @@ const pages = [
     title: "SELECTION OF CORRECT ESE LIGHTNING ARRESTOR",
     content: (
       <>
-        <p>The effectiveness of a lightning protection system depends not only on the design but critically on the correct selection of the ESE lightning arrestor. Choosing a properly tested, certified, and standards-compliant ESE device—with validated ΔT performance and proven reliability through sequential testing—is essential to ensure accurate protection radius and consistent interception of lightning. Any compromise in selection, especially the use of unverified or non-compliant products, can lead to protection gaps, equipment damage, and system failure. Therefore, the right selection of ESE is a key factor in achieving safe, reliable, and long-term lightning protection, particularly in high-risk installations such as solar power plants</p>
+        <p>The effectiveness of a lightning protection system depends not only on the design but critically on the correct selection of the ESE lightning arrestor. Choosing a properly tested, certified, and standards-compliant ESE device—with validated ΔT performance and proven reliability through sequential testing—is essential to ensure accurate protection radius and consistent interception of lightning. 
+          < br/>< br/>
+          Any compromise in selection, especially the use of unverified or non-compliant products, can lead to protection gaps, equipment damage, and system failure. Therefore, the right selection of ESE is a key factor in achieving safe, reliable, and long-term lightning protection, particularly in high-risk installations such as solar power plants</p>
       </>
     ),
     subsections: null,

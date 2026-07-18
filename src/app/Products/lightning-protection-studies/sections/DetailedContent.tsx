@@ -30,6 +30,8 @@ const pages: Page[] = [
       <>
         <p>NIMBUS® - Lightning rod with streaming device (ESE).</p>
         <br />
+        <p>Nimbus® is the series of new-generation lightning rods with electronic early streaming emission (ESE). Radius of protection up to 100m based on emission times of 15 μs, 30 μs, 45 μs and 60 μs.</p>
+        <br />
         <p>•	Tested with lightning currents up to 200 kA (10/350 μs)</p>
         <br />
         <p>•	Highest quality: AISI 316 stainless steel and non-expendable components.</p>

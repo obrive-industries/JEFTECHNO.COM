@@ -200,7 +200,7 @@ const pages = [
     label: "THE TECHNOLOGY ADVANTAGE CARBON-BASED BACKFILL",
     nav: "THE TECHNOLOGY ADVANTAGE-\nCARBON-BASED\nBACKFILL",
     title:
-      "JTHE TECHNOLOGY ADVANTAGE CARBON-BASED BACKFILL",
+      "THE TECHNOLOGY ADVANTAGE CARBON-BASED BACKFILL",
     content: (
       <>
         <p>
@@ -280,8 +280,8 @@ const pages = [
         </p>
         <br />
         <p>
-          • Substations — designed to IEEE 80 for step and touch
-          potential compliance under maximum fault current conditions
+          • Substations — In substations, they ensure safety under high fault current 
+          conditions, protecting both equipment and personnel
         </p>
         <br />
         <p>

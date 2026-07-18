@@ -7,7 +7,7 @@ const navItems = [
   { label: "HOME", isActive: true },
   { label: "OUR BUSINESS", isActive: true },
   {label:"CONSULTING SERVICES",isActive:true},
-  { label: "RENEWABLE", isActive: false },
+  { label: "RENEWABLE – POWER SYSTEM STUDIES", isActive: false },
 ];
 
 export default function ProductIntro() {

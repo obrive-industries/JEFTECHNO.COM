@@ -92,6 +92,7 @@ const pages = [
           interdependent parts. Each addresses a distinct category of threat, 
           and neither is adequate on its own.
         </p>
+        < br/>
         <p>
           The external system manages the direct strike. It intercepts lightning
           at the air termination, routes current through the down conductors and
@@ -99,6 +100,7 @@ const pages = [
           structure from physical damage, fire, and dangerous touch and step
           voltages.
         </p>
+        < br/>
         <p>
           The internal system manages the electrical consequences within the
           building. It uses Equipotential bonding to eliminate dangerous
@@ -108,6 +110,7 @@ const pages = [
           overvoltages — from strikes or internal switching — to levels
           equipment can safely withstand.
         </p>
+        < br/>
         <p>
           IEC 62305-3 requires periodic inspection and maintenance of both
           systems, in intervals set by the Lightning Protection Level and site

@@ -35,7 +35,7 @@ const cards = [
       "By restoring signal integrity and eliminating the operational disruptions caused by instrumentation system noise.",
   },
   { id: 6,
-    image: "/IS/is-4.png",
+    image: "/IS/is-6.png",
     title: "COMPLIANCE WITH INTERNATIONAL STANDARDS",
     description:
       "Audit reports referenced to IEEE 1050-2004, IEEE 1100-2005, IEC 61000-5-2 and related standards, supporting regulatory, insurance, and operator requirements.",

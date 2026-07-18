@@ -62,7 +62,7 @@ const pages = [
             Closure Audit — JEF independently verifies that all critical deficiencies are resolved
           </li>
           <li>
-            Certification — the JEF Safety Certification on meeting the qualification criteria
+            Certification — Facility is awarded the JEF Safety Certification on meeting the qualification criteria.
           </li>
           <li>
             Staff Training & Certification - Structured training for facility electrical management teams, with certificates awarded for participants.
@@ -106,6 +106,9 @@ const pages = [
     title: "LIFT / ESCALATOR & HVAC AUDITS",
     content: (
       <>
+      <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">
+        JEF audits cover:
+      </p>
         <ul className="list-disc space-y-5 pl-5 text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-relaxed text-white">
           <li className="font-normal">
             <b>Lift & Escalator</b> - Full inspection across: lift pit, car interior, car

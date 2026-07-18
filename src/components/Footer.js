@@ -62,7 +62,7 @@ function MainFooter() {
         {name:'Employee Login',path:'https://jef.greythr.com'  }
     ];
     const itemJefShield = [
-        {name:'FAQs',path:'https://www.jeftechno.com/JEF_SHIELD/login.php'  }
+        {name:'FAQ',path:'https://www.jeftechno.com/JEF_SHIELD/login.php'  }
     ];
 
   

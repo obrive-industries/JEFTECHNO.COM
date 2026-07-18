@@ -59,7 +59,7 @@ const pages: PageItem[] = [
         <p>
           JEF SHIELD is built to IS/IEC 62305. It is developed and maintained
           by JEF Group and is designed for the requirements of the Indian and
-          overseas market.
+          international markets.
         </p>
       </>
     ),
@@ -79,7 +79,7 @@ const pages: PageItem[] = [
           {
             title: "Risk Assessment and LPL Determination",
             description:
-              "Calculates the lightning risk for the structure in accordance with IS/IEC 62305-2. Determines whether protection is required and at which LPL. Identifies the most cost-effective protection combination by comparing calculated risk against tolerable levels across combinations of external and internal protection measures.",
+              "• Calculates the lightning risk for the structure in accordance with IS/IEC 62305-2.\n• Determines whether protection is required and at which LPL.\n• Identifies the most cost-effective protection combination by comparing calculated risk against tolerable levels across combinations of external and internal protection measures.",
           },
           {
             title: "Concept Design with 3D Visualization",
@@ -124,11 +124,11 @@ const pages: PageItem[] = [
       <br />
 
       <p>
-        JEF E-BUILD addresses this through a structured, step-by-step
-        installation monitoring platform. Installation teams — including those
-        without deep LPS expertise — work through the installation process
+        JEF E-BUILD is our platform which  addresses this through a structured, step-by-step
+        installation monitoring process. Installation teams — including those
+        without deep Lightning Protection expertise — work through the installation process
         under real-time supervision from qualified engineers who review each
-        completed stage remotely before the team proceeds to the next.
+        completed stage remotely before the team proceeds to the next stage.
       </p>
     </>
   ),
@@ -152,7 +152,7 @@ const pages: PageItem[] = [
         {
           title: "Real-Time Remote Supervision",
           description:
-            "Qualified back-end engineers review the completed work at each stage before the installation proceeds. Non-compliant or incorrectly completed work is identified immediately, while it can still be corrected, rather than after it has been built over.",
+            "Qualified back-end engineers review the completed work at each stage before the installation proceeds. Non-compliant or incorrectly completed work is identified immediately, while it can still be corrected.",
         },
         {
           title: "Remote Certification",

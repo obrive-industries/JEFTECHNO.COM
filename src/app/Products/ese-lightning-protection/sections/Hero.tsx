@@ -40,9 +40,9 @@ const Hero = () => {
               </h1>
 
               {/* Body */}
-              <div className=" mt-2 w-full">
+              {/* <div className=" mt-2 w-full">
                <p className="font-md sm:text-[12px] md:text-[18px] lg:text-[22px]">Preventing Plant Shutdowns and Revenue Loss from Lightning strikes, Deploy scientifically validated protection <br /> designed specifically for high-risk, open-area solar installations.</p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

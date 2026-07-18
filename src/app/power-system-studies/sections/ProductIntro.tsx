@@ -10,7 +10,7 @@ const ProductIntro = () => {
     { label: "HOME", isActive: true },
     { label: "OUR BUSINESS", isActive: true },
     { label: "CONSULTING SERVICES", isActive: true },
-    { label: "POWER SYSTEM STUDIES", isActive: false },
+    { label: "INDUSTRIAL - POWER SYSTEM STUDIES", isActive: false },
   ];
 
   return (

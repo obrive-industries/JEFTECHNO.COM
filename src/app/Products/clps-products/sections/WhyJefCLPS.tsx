@@ -38,7 +38,7 @@ const cards = [
     image: "/clps/5.png",
     title: "JEF E-BUILD",
     description:
-      "— An automated tool to guide & monitor the installation of the lightning protection system at sight.",
+      "An automated tool to guide & monitor the installation of the lightning protection system at sight.",
   },
   {
     id: 6,

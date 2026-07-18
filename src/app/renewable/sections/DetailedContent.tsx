@@ -107,10 +107,14 @@ const pages = [
     content: (
       <>
         <p>
-          With our patented & unique custom designed & developed automation
-          tool, we offer unparalleled customer service & have consistently
-          ‘delighted’ our customers with the quality, completeness and timeliness
-          of our work product.
+          Technology and software independent. ETAP, PSCAD/EMTDC, PSS®E, DIgSILENT PowerFactory, SKM, and other leading platforms—allowing us to recommend the right engineering solution without being limited by software.
+          <br/><br/>
+          Renewable integration expertise. Utility-scale solar PV, wind farms, Battery Energy Storage Systems (BESS), hybrid renewable plants, microgrids, and grid interconnections. We understand inverter-based resources, grid codes, and the operational challenges of modern renewable power systems.
+          <br/><br/>
+          Grid-code compliant deliverables. Every study is aligned with applicable utility requirements and international standards, ensuring traceable, audit-ready documentation for grid approvals and project execution.
+          <br/><br/>
+          Engineering beyond compliance. We don't just validate compliance—we identify network constraints, stability risks, protection coordination issues, and future expansion opportunities, enabling informed decisions before commissioning and throughout the asset lifecycle.
+
         </p>
       </>
     ),

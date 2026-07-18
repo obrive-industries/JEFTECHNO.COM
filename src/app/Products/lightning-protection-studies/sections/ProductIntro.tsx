@@ -62,7 +62,7 @@ export default function ProductIntro() {
                        Early Streamer Emission technology uses the atmospheric gradient to generate ionization which subsequently increases the protected volume, facilitating the protection of large areas while simplifying and reducing material and installation costs.
           </p>
 
-          <p className="text-white/90 font-montserrat font-light text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] tracking-[0.2px]">
+          {/* <p className="text-white/90 font-montserrat font-light text-[14px] sm:text-[16px] md:text-[20px] leading-[1.7] tracking-[0.2px]">
             Capture system - Air terminal
           </p>
 
@@ -74,7 +74,7 @@ export default function ProductIntro() {
             Nimbus® is the series of new generation lightning rods with
             electronic early streaming emission (ESE). Radius of protection up
             to 100m based on emission times of 15 μs, 30 μs, 45 μs and 60 μs.
-          </p>
+          </p> */}
 
           <AnimatePresence>
             {expanded && (
@@ -85,7 +85,7 @@ export default function ProductIntro() {
                 transition={{ duration: 0.55 }}
                 className="overflow-hidden"
               >
-                <div className="mt-8 text-left max-w-[1400px] mx-auto">
+                {/* <div className="mt-8 text-left max-w-[1400px] mx-auto">
                   <h2 className="text-[#C02429] font-montserrat text-[18px] md:text-[22px] font-medium mb-6">
                     Features
                   </h2>
@@ -114,20 +114,20 @@ export default function ProductIntro() {
                       size and with a significant weight reduction.
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
-        <motion.button
+        {/* <motion.button
           onClick={() => setExpanded(!expanded)}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.96 }}
           className="mt-2 text-white uppercase tracking-[2px] text-xs md:text-sm pb-1 hover:text-[#C02429] transition-all"
         >
           {expanded ? "READ LESS" : "READ MORE"}
-        </motion.button>
+        </motion.button> */}
       </header>
     </section>
   );

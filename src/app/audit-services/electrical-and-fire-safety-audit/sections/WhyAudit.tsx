@@ -41,7 +41,7 @@ const cards = [
   },
   {
     id: 6,
-    image: "/EFS/4.png",
+    image: "/EFS/4.jpeg",
     title: "PREVENTIVE MAINTENANCE PROGRAMME",
     description:
       "Asset-level PM schedule to extend asset life.",

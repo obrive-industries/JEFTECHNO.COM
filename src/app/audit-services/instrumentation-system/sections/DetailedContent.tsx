@@ -84,7 +84,7 @@ const pages = [
           practices, shield loop current, earth bar segregation, or the global
           earthing architecture. An installation that passes all routine
           electrical tests can still have an instrumentation earthing system that
-          is comprehensively non-compliant with IEEE 1050-2004, IEC 61000-5-2,
+          is non-compliant with IEEE 1050-2004, IEC 61000-5-2,
           and IEEE 1100-2005 — and that is actively causing operational
           problems.
         </p>
@@ -141,8 +141,8 @@ const pages = [
           doesn’t end with measurements alone, we rectify the anomalies
           identified and also perform measurements to cross verify the quality
           of rectification not just by visual inspection but also check whether
-          the measured values after post rectification are within the acceptable
-          limits prescribed in standards there by ensuring a fool proof system.
+          the measured values post rectification are within the acceptable
+          limits prescribed in standards there by ensuring a foolproof system.
         </p>
 
         <p className="text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5] text-white text-justify">The approach involves 3 phases</p>

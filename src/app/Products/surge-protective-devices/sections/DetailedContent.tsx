@@ -55,7 +55,9 @@ const pages = [
           transient overvoltage from a lightning event or switching operation
           rises to its peak and dissipates in a time measured in microseconds —
           several orders of magnitude faster than the response time of a
-          current-operated protective device. The surge passes through the
+          current-operated protective device.
+          <br /><br />
+          The surge passes through the
           circuit and reaches the connected equipment before any current-sensing
           protective device has begun to respond. SPDs are designed specifically
           for this threat: they detect and respond to voltage excursions at the
