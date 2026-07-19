@@ -88,9 +88,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex fixed w-full z-[60] overflow-hidden flex-col transition-colors duration-900 ${
-        scrollNav || activeSection
-          ? "bg-[#2D2E30]"
+      className={`flex fixed w-full z-[60] overflow-hidden flex-col transition-colors duration-900 
+        
+        ${ scrollNav || activeSection ? "bg-[#2D2E30]"
           : pathname === "/" || pathname === "/about-us" || pathname === "/leadership-team" || pathname === "/root-cause-analysis" || pathname === "/renewable" || pathname === "/power-system-studies" || pathname.includes("audit-services") || pathname.includes("Products")
             ? "lg:bg-transparent"
             : "bg-[#2D2E30]"

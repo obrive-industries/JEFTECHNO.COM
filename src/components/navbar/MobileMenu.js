@@ -23,7 +23,7 @@ const MobileMenu = ({ onClose }) => {
       { label: "About", key: "about" },
       { label: "Our Business", key: "business" },
       { label: "Blogs", path: "/blog" },
-      { label: "JEF UAE", path: "https://www.jefuae.com/" },
+      { label: "JEF UAE", path: "https://www.jefuae.com/", newTab: true},
       { label: "JEF SHIELD", path: "https://www.jeftechno.com/JEF_SHIELD/login.php" },
       { label: "JEF SAFE", path: "https://www.jeftechno.com/" },
     ],
@@ -74,7 +74,13 @@ const MobileMenu = ({ onClose }) => {
       >
         {faqData.main.map((item, index) =>
           item.path ? (
-            <Link key={index} href={item.path} onClick={onClose}>
+            <Link 
+            key={index} 
+            href={item.path} 
+            onClick={onClose}
+            target={item.newTab ? "_blank" : undefined}      // 👈 अगर newTab true है तो "_blank" लगेगा
+            rel={item.newTab ? "noopener noreferrer" : undefined}
+            >
               <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                 <span className="uppercase text-white-500 text-lg">
                   {item.label}

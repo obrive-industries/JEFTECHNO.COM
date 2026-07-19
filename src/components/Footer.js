@@ -42,7 +42,7 @@ function MainFooter() {
 
     const itemsLocation = [
         { name: 'India', path: 'https://www.jeftechno.com/' },
-        { name: 'UAE', path: 'https://www.jefuae.com/' },
+        { name: 'UAE', path: 'https://www.jefuae.com/', newTab: true },
         
     ];
 
@@ -59,7 +59,7 @@ function MainFooter() {
       
     ];
     const itemInternalUse = [
-        {name:'Employee Login',path:'https://jef.greythr.com'  }
+        {name:'Employee Login',path:'https://jef.greythr.com', newTab: true}
     ];
     const itemJefShield = [
         {name:'FAQ',path:'https://www.jeftechno.com/JEF_SHIELD/login.php'  }
@@ -70,44 +70,42 @@ function MainFooter() {
     return (
        <main className="flex overflow-hidden flex-col items-center lg:pt-24 bg-[#2D2E30]">
 
-    {/* FIRST ROW */}
-    {/* <div className="section-container hidden lg:flex flex-row tracking-wider justify-between">
+        {/* FIRST ROW */}
+        {/* <div className="section-container hidden lg:flex flex-row tracking-wider justify-between">
+            <Section title="About" items={itemsAbout} />
+            <Section title="Locations" items={itemsLocation} />
+            <Section title="Our Businesses" items={itemsBusiness} />
+            <Section title="News" items={itemNews} />
+        </div>
+
+        
+        <div className="section-container hidden lg:flex mt-10 gap-70">
+            <Section title="Internal Use" items={itemInternalUse} />
+            <Section title="Internal Links" items={itemJefShield} />
+        </div> */}
+        {/* SECOND ROW */}
+
+
+        {/* FIRST ROW */}
+        {/* UNIFIED CONTAINER (Handles both horizontal columns and vertical rows) */}
+        <div className="section-container hidden lg:grid grid-cols-2 md:grid-cols-4 gap-x-8 md:gap-x-12 gap-y-10 md:gap-y-14 tracking-wider">
+            
+        {/* FIRST ROW ITEMS */}
         <Section title="About" items={itemsAbout} />
         <Section title="Locations" items={itemsLocation} />
         <Section title="Our Businesses" items={itemsBusiness} />
         <Section title="News" items={itemNews} />
-    </div> */}
 
-    {/* SECOND ROW */}
-    {/* <div className="section-container hidden lg:flex mt-10 gap-70">
+        {/* SECOND ROW ITEMS */}
         <Section title="Internal Use" items={itemInternalUse} />
-        <Section title="Internal Links" items={itemJefShield} />
-    </div> */}
+        <Section title="Internal Links" items={itemJefShield} />                                 
+            
+        </div>
 
-        {/* FIRST ROW */}
-{/* UNIFIED CONTAINER (Handles both horizontal columns and vertical rows) */}
-<div className="section-container hidden lg:grid grid-cols-2 md:grid-cols-4 gap-x-8 md:gap-x-12 gap-y-10 md:gap-y-14 tracking-wider">
-    
-  {/* FIRST ROW ITEMS */}
-  <Section title="About" items={itemsAbout} />
-  <Section title="Locations" items={itemsLocation} />
-  <Section title="Our Businesses" items={itemsBusiness} />
-  <Section title="News" items={itemNews} />
-
-  {/* SECOND ROW ITEMS */}
-  <Section title="Internal Use" items={itemInternalUse} />
-  <Section title="Internal Links" items={itemJefShield} />                                  
-
-
-
-  
-    
-</div>
-
-{/* MOBILE FAQ */}
-<div className="lg:hidden w-full">
-  <FAQComponent />
-</div>
+        {/* MOBILE FAQ */}
+        <div className="lg:hidden w-full">
+        <FAQComponent />
+        </div>
 
     <Footer />
 </main>
@@ -195,22 +193,27 @@ function Footer() {
 function Section({ title, items }) {
     return (
         <section className="flex card-slider-footer X-axis-card-anm-footer flex-col min-h-[234px] w-full sm:w-[219px]">
+
             <header className="w-full text-xl font-bold tracking-widest text-red-700 uppercase whitespace-nowrap">
                 {title}
             </header>
+
             <ul className="flex overflow-hidden font-light flex-col mt-4 w-full text-base leading-none text-gray-300">
                 {items.map((item, index) => (
                     <li key={index} className="flex flex-col justify-center items-start py-2.5 w-full">
                         <div className="flex items-center">
-                           <Link href={item.path}>
-  <div className="self-stretch my-auto transition-colors duration-300 hover:text-[#C02429]">
-    {item.name}
-  </div>
-</Link>
+
+                           <Link href={item.path} target={item.newTab ? "_blank" : undefined} rel={item.newTab ? "noopener noreferrer" : undefined}>
+                            <div className="self-stretch my-auto transition-colors duration-300 hover:text-[#C02429]">
+                                {item.name}
+                            </div>
+                           </Link>
+
                         </div>
                     </li>
                 ))}
             </ul>
+
         </section>
     );
 }
@@ -250,7 +253,7 @@ const FAQComponent = () => {
             question: "Locations",
             content: [
                 { label: 'India', path: '' },
-                { label: 'UAE', path: '' },
+                { label: "UAE", path: "https://www.jefuae.com/", newTab: true },
                 { label: 'USA', path: '' },
             ],
             isOpen: false
@@ -275,7 +278,7 @@ const FAQComponent = () => {
          {
             question: "Internal Use",
             content: [
-                { label:"Employee login", path:"/coming-soon" },
+                { label:"Employee login", path:"https://jef.greythr.com" , newTab: true}, 
             ],
             isOpen: false
         },
@@ -360,7 +363,10 @@ const FAQComponent = () => {
                             <ul>
                                 {content.map((item, idx) => (
                                     <li key={idx} className="mb-2">
-                                        <Link href={item.path}>
+                                        <Link href={item.path}
+                                            target={item.newTab ? "_blank" : undefined}
+                                            rel={item.newTab ? "noopener noreferrer" : undefined}
+                                        >
                                             <div className="text-stone-300 hover:text-[#C02429] transition-colors duration-300">
                                                 {item.label}
                                             </div>

@@ -89,7 +89,7 @@ export default function FounderMessageSection() {
                       w-full 
                       h-auto 
                       object-contain 
-                      aspect-[3/4] 
+                      aspect-auto
                       transform-gpu
                     "
                   />
