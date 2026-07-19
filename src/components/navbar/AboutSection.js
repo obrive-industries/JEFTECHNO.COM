@@ -6,7 +6,7 @@ import Link from "next/link";
 const navigationItems = [
   { number: "01", title: "About JEF", path: "/about-us" },
   
-  { number: "02", title: "employee login", path: "https://jef.greythr.com" },
+  { number: "02", title: "employee login", path: "https://jef.greythr.com", newTab: true },
 ];
 
 const contentMap = {
@@ -36,6 +36,7 @@ const AboutSection = () => {
                       href={item.path || "#"}
                       onMouseEnter={() => setHoveredItem(item.number)}
                       className="self-stretch my-auto text-lg hover:text-gray-400 font-medium text-white"
+                      target={item.newTab ? "_blank" : undefined}
                     >
                       {item.title}
                     </Link>
