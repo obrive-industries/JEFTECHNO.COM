@@ -96,7 +96,11 @@ function MainFooter() {
 
   {/* SECOND ROW ITEMS */}
   <Section title="Internal Use" items={itemInternalUse} />
-  <Section title="Internal Links" items={itemJefShield} />
+  <Section title="Internal Links" items={itemJefShield} />                                  
+
+
+
+  
     
 </div>
 
