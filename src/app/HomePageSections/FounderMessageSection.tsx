@@ -9,6 +9,7 @@ export default function FounderMessageSection() {
           
           {/* LEFT CONTENT */}
           <motion.div
+          suppressHydrationWarning
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
@@ -68,6 +69,7 @@ export default function FounderMessageSection() {
           </motion.div>
 
                 <motion.div
+                suppressHydrationWarning
                   initial={{ opacity: 0, x: typeof window !== 'undefined' && window.innerWidth >= 1024 ? 40 : 0, y: typeof window !== 'undefined' && window.innerWidth < 1024 ? 30 : 0 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   transition={{
