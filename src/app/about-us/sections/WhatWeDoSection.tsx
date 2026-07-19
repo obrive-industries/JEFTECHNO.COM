@@ -33,8 +33,8 @@ export default function AboutUsServicesSection() {
       background: "/HomePageImg/WhatWeDoSection/Solution-1.png",
       x: 320,
       y: 450,
-      xmob: 110,
-      ymob: 200,
+      xmob: 460,
+      ymob: 170,
       labelLeft: "-10px",
       labelTop: "50px",
       labelWidth: "120px",
@@ -52,8 +52,8 @@ export default function AboutUsServicesSection() {
       background: "/HomePageImg/WhatWeDoSection/Solution-2.png",
       x: 380,
       y: 330,
-      xmob: 250,
-      ymob: 250,
+      xmob: 370,
+      ymob: 350,
       labelLeft: "0px",
       labelTop: "50px",
       labelWidth: "150px",
@@ -71,8 +71,8 @@ export default function AboutUsServicesSection() {
       background: "/HomePageImg/WhatWeDoSection/Solution-5.png",
       x: 460,
       y: 170,
-      xmob: 410,
-      ymob: 300,
+      xmob: 310,
+      ymob: 480,
       labelLeft: "0px",
       labelTop: "50px",
       labelWidth: "120px",
@@ -155,14 +155,14 @@ export default function AboutUsServicesSection() {
             alt="J"
             className="
               absolute
-              hidden
+  
               md:block
               w-[420px]
               opacity-90
               rotate-[-20deg]
             "
           />
-
+             {/* hidden  removed above*/}
           {services.map((service) => {
             const isActive = activeCard === service.id;
 
